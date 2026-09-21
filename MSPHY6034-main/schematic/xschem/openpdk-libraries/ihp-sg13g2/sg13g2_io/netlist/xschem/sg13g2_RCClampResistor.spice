@@ -1,0 +1,5 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampResistor.sch
+.subckt sg13g2_RCClampResistor p1 p2 !
+*.PININFO p1:B p2:B !:B
+RR1 p1 p2 $SUB=sub! $[rppd] w=1e-6 l=520e-6 b=0 m=1
+.ends

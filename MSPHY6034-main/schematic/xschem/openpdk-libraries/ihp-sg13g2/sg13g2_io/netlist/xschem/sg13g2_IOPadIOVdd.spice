@@ -1,0 +1,64 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_IOPadIOVdd.sch
+.subckt sg13g2_IOPadIOVdd vss vdd ! iovss iovdd iovss1
+*.PININFO iovdd:B vss:B vdd:B !:B iovss1:B iovss:B
+R2 vss ! ptap1 A=24p P=160.6u
+* noconn vdd
+R1 iovss1 ! ptap1 A=2052.0763p P=727.52u
+x1 iovss iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd
++ iovdd iovdd ! net2 sg13g2_Clamp_N43N43D4R
+x2 iovdd net1 ! sg13g2_RCClampResistor
+x3 iovdd iovss1 net1 net2 ! sg13g2_RCClampInverter_noptap
+.ends
+
+* expanding   symbol:  sg13g2_Clamp_N43N43D4R.sym # of pins=4
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_N43N43D4R.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_N43N43D4R.sch
+.subckt sg13g2_Clamp_N43N43D4R iovss pad[21] pad[20] pad[19] pad[18] pad[17] pad[16] pad[15] pad[14] pad[13] pad[12] pad[11]
++ pad[10] pad[9] pad[8] pad[7] pad[6] pad[5] pad[4] pad[3] pad[2] pad[1] pad[0] sub gate
+*.PININFO iovss:B pad[21:0]:B sub:B gate:B
+R1 iovss sub ptap1 A=65.6472p P=386.16u
+MM1 pad[11] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM2 pad[12] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM3 pad[13] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM4 pad[14] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM5 pad[15] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM6 pad[16] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM7 pad[17] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM8 pad[18] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM9 pad[19] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM10 pad[20] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM11 pad[21] gate iovss sub sg13_hv_nmos w=17.6u l=0.6u ng=4 m=1
+DD1 sub gate dantenna l=0.48u w=0.48u
+MM12 pad[0] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM13 pad[1] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM14 pad[2] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM15 pad[3] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM16 pad[4] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM17 pad[5] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM18 pad[6] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM19 pad[7] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM20 pad[8] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM21 pad[9] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+MM22 pad[10] gate iovss sub sg13_hv_nmos w=35.2u l=0.6u ng=8 m=1
+.ends
+
+
+* expanding   symbol:  sg13g2_RCClampResistor.sym # of pins=3
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampResistor.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampResistor.sch
+.subckt sg13g2_RCClampResistor p1 p2 !
+*.PININFO p1:B p2:B !:B
+RR1 p1 p2 $SUB=sub! $[rppd] w=1e-6 l=520e-6 b=0 m=1
+.ends
+
+
+* expanding   symbol:  sg13g2_RCClampInverter_noptap.sym # of pins=5
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampInverter_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampInverter_noptap.sch
+.subckt sg13g2_RCClampInverter_noptap supply iovss in out sub
+*.PININFO supply:B iovss:B out:B in:B sub:B
+MM1 iovss in iovss sub sg13_hv_nmos w=126u l=9.5u ng=14 m=1
+MM2 out in iovss sub sg13_hv_nmos w=108u l=0.5u ng=12 m=1
+MM3 out in supply supply sg13_hv_pmos w=350u l=0.5u ng=50 m=1
+.ends
+

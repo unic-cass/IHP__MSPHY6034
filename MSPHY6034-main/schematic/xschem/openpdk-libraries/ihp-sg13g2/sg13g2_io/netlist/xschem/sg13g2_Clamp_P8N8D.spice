@@ -1,0 +1,10 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_P8N8D.sch
+.subckt sg13g2_Clamp_P8N8D gate iovdd iovss pad[3] pad[2] pad[1] pad[0] sub
+*.PININFO iovss:B gate:B iovdd:B pad[3:0]:B sub:B
+R1 iovss sub ptap1 A=67.0344p P=394.32u
+M1 pad[0] gate iovdd iovdd sg13_hv_pmos w=26.64u l=0.6u ng=4 m=1
+D1 gate iovdd dpantenna l=0.48u w=0.48u
+M2 pad[1] gate iovdd iovdd sg13_hv_pmos w=26.64u l=0.6u ng=4 m=1
+M3 pad[2] gate iovdd iovdd sg13_hv_pmos w=26.64u l=0.6u ng=4 m=1
+M4 pad[3] gate iovdd iovdd sg13_hv_pmos w=26.64u l=0.6u ng=4 m=1
+.ends

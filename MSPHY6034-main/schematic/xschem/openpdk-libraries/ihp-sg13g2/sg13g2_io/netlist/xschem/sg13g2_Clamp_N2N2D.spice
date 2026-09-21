@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_N2N2D.sch
+.subckt sg13g2_Clamp_N2N2D gate pad iovss sub
+*.PININFO iovss:B gate:B pad:B sub:B
+R1 iovss sub ptap1 A=55.7736p P=328.08u
+D1 sub gate dantenna l=0.78u w=0.78u
+M1 pad gate iovss sub sg13_hv_nmos w=4.4u l=0.6u ng=1 m=1
+M2 iovss gate pad sub sg13_hv_nmos w=4.4u l=0.6u ng=1 m=1
+.ends

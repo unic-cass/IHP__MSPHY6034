@@ -1,0 +1,10 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Corner.sch
+.subckt sg13g2_Corner iovdd vdd vss sub iovss1 iovss3 iovss2
+*.PININFO vss:B iovdd:B vdd:B sub:B iovss1:B iovss2:B iovss3:B
+R3 iovss3 sub ptap1 A=2278.0436p P=235.225u
+R4 vss sub ptap1 A=13.1934p P=84.704u
+* noconn iovdd
+* noconn vdd
+R1 iovss1 sub ptap1 A=4546.51p P=420.331u
+R2 iovss2 sub ptap1 A=3344.1864p P=326.866u
+.ends

@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampInverter.sch
+.subckt sg13g2_RCClampInverter supply iovss in out sub
+*.PININFO supply:B iovss:B out:B in:B sub:B
+R1 iovss sub ptap1 A=69.122p P=406.6u
+M1 iovss in iovss sub sg13_hv_nmos w=126u l=9.5u ng=14 m=1
+M2 out in iovss sub sg13_hv_nmos w=108u l=0.5u ng=12 m=1
+M3 out in supply supply sg13_hv_pmos w=350u l=0.5u ng=50 m=1
+.ends

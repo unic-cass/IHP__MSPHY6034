@@ -1,0 +1,8 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:00
+
+.SUBCKT sg13g2_Corner iovss1 iovss2 iovss3 vss
+R$1 \$1 vss ptap1 A=13.1934p P=84.704u
+R$2 \$1 iovss3 ptap1 A=2278.0436p P=235.225u
+R$3 \$1 iovss2 ptap1 A=3344.1864p P=326.866u
+R$4 \$1 iovss1 ptap1 A=4546.51p P=420.331u
+.ENDS sg13g2_Corner

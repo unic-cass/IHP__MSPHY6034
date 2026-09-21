@@ -1,0 +1,7 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_inv_x1.sch
+.subckt sg13g2_io_inv_x1 vss i nq vdd sub
+*.PININFO vss:B nq:B i:B vdd:B sub:B
+R1 vss sub ptap1 A=0.624p P=4.76u
+M7 nq i vss sub sg13_lv_nmos w=3.93u l=0.13u ng=1 m=1
+M8 nq i vdd vdd sg13_lv_pmos w=4.41u l=0.13u ng=1 m=1
+.ends

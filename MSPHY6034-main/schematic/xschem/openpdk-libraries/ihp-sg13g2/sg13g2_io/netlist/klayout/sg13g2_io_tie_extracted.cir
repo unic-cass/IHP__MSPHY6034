@@ -1,0 +1,5 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:37
+
+.SUBCKT sg13g2_io_tie vss
+R$1 \$3 vss ptap1 A=0.6255p P=4.77u
+.ENDS sg13g2_io_tie

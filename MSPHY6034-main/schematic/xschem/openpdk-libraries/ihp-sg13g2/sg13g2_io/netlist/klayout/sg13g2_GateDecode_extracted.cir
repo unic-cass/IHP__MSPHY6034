@@ -1,0 +1,69 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:30
+
+.SUBCKT sg13g2_GateDecode iovdd vdd vss ngate pgate core en
+X$3 \$8 core \$7 vdd vss \$11 sg13g2_io_nor2_x1_noptap
+X$5 en \$8 vdd vss \$11 sg13g2_io_inv_x1_noptap
+X$6 en \$6 core vdd vss \$11 sg13g2_io_nand2_x1_noptap
+R$1 \$11 vss ptap1 A=4.1895p P=30.33u
+M$3 \$I15 \$6 vss \$11 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p
++ PS=6.18u PD=6.18u
+M$4 vss \$I14 pgate \$11 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.646p
++ PS=4.48u PD=4.48u
+M$5 \$I13 \$I15 vss \$11 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.361p
++ PS=4.48u PD=2.28u
+M$6 vss \$6 \$I14 \$11 sg13_hv_nmos L=0.45u W=1.9u AS=0.361p AD=0.646p PS=2.28u
++ PD=4.48u
+M$7 \$I15 \$6 vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u
+M$8 iovdd \$I14 pgate iovdd sg13_hv_pmos L=0.45u W=3.9u AS=1.326p AD=1.326p
++ PS=8.48u PD=8.48u
+M$9 \$I13 \$I14 iovdd iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.057p
++ PS=1.28u PD=0.68u
+M$10 iovdd \$I13 \$I14 iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.057p AD=0.102p
++ PS=0.68u PD=1.28u
+M$12 \$I18 \$7 vss \$11 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p
++ PS=6.18u PD=6.18u
+M$13 vss \$I17 ngate \$11 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.646p
++ PS=4.48u PD=4.48u
+M$14 \$I16 \$I18 vss \$11 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.361p
++ PS=4.48u PD=2.28u
+M$15 vss \$7 \$I17 \$11 sg13_hv_nmos L=0.45u W=1.9u AS=0.361p AD=0.646p
++ PS=2.28u PD=4.48u
+M$16 \$I18 \$7 vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u
+M$17 iovdd \$I17 ngate iovdd sg13_hv_pmos L=0.45u W=3.9u AS=1.326p AD=1.326p
++ PS=8.48u PD=8.48u
+M$18 \$I16 \$I17 iovdd iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.057p
++ PS=1.28u PD=0.68u
+M$19 iovdd \$I16 \$I17 iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.057p AD=0.102p
++ PS=0.68u PD=1.28u
+.ENDS sg13g2_GateDecode
+
+.SUBCKT sg13g2_io_nand2_x1_noptap i1 nq i0 vdd vss \$6
+M$1 vss i0 \$8 \$6 sg13_lv_nmos L=0.13u W=3.93u AS=1.3362p AD=0.7467p PS=8.54u
++ PD=4.31u
+M$2 \$8 i1 nq \$6 sg13_lv_nmos L=0.13u W=3.93u AS=0.7467p AD=1.4148p PS=4.31u
++ PD=8.58u
+M$3 vdd i0 nq vdd sg13_lv_pmos L=0.13u W=4.41u AS=1.4994p AD=0.8379p PS=9.5u
++ PD=4.79u
+M$4 nq i1 vdd vdd sg13_lv_pmos L=0.13u W=4.41u AS=0.8379p AD=1.5876p PS=4.79u
++ PD=9.54u
+.ENDS sg13g2_io_nand2_x1_noptap
+
+.SUBCKT sg13g2_io_nor2_x1_noptap i1 i0 nq vdd vss \$6
+M$1 vss i0 nq \$6 sg13_lv_nmos L=0.13u W=3.93u AS=1.3362p AD=0.7467p PS=8.54u
++ PD=4.31u
+M$2 nq i1 vss \$6 sg13_lv_nmos L=0.13u W=3.93u AS=0.7467p AD=1.4148p PS=4.31u
++ PD=8.58u
+M$3 vdd i0 \$8 vdd sg13_lv_pmos L=0.13u W=4.41u AS=1.4994p AD=0.8379p PS=9.5u
++ PD=4.79u
+M$4 \$8 i1 nq vdd sg13_lv_pmos L=0.13u W=4.41u AS=0.8379p AD=1.5876p PS=4.79u
++ PD=9.54u
+.ENDS sg13g2_io_nor2_x1_noptap
+
+.SUBCKT sg13g2_io_inv_x1_noptap i nq vdd vss \$5
+M$1 vss i nq \$5 sg13_lv_nmos L=0.13u W=3.93u AS=1.3362p AD=1.3362p PS=8.54u
++ PD=8.54u
+M$2 vdd i nq vdd sg13_lv_pmos L=0.13u W=4.41u AS=1.4994p AD=1.4994p PS=9.5u
++ PD=9.5u
+.ENDS sg13g2_io_inv_x1_noptap

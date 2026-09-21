@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_SecondaryProtection.sch
+.subckt sg13g2_SecondaryProtection core iovdd iovss pad !
+*.PININFO iovss:B core:B pad:B iovdd:B !:B
+R1 iovss ! ptap1 A=9.0304p P=53.12u
+DD1 core iovdd dpantenna l=4.98u w=0.64u
+DD2 ! core dantenna l=3.1u w=0.64u
+RR3 pad core $SUB=sub! $[rppd] w=1e-6 l=2e-6 b=0 m=1
+.ends
