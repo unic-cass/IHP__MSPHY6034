@@ -1,0 +1,18 @@
+21-Sep-2026 21:59:00 | INFO    | Your Klayout version is: KLayout 0.30.5
+21-Sep-2026 21:59:00 | INFO    | Running SG13G2 LVS checks on design /home/admin/work/final/IHP__MSPHY6034/dependencies/OTA/release/v.1.0.0/gds/OTA5174.gds on cell OTA5174
+21-Sep-2026 21:59:13 | INFO    | ==============================================================================
+21-Sep-2026 21:59:13 | INFO    | Important Summary
+21-Sep-2026 21:59:13 | INFO    | +------------------+-------------------------------------------------------------------------------------------------------+
+21-Sep-2026 21:59:13 | INFO    | | Status           | FAIL                                                                                                  |
+21-Sep-2026 21:59:13 | INFO    | | Mode             | COMPARE                                                                                               |
+21-Sep-2026 21:59:13 | INFO    | | Outcome          | Comparison mode: FAIL (netlists do not match).                                                        |
+21-Sep-2026 21:59:13 | INFO    | | Layout           | OTA5174.gds                                                                                           |
+21-Sep-2026 21:59:13 | INFO    | | Top Cell         | OTA5174                                                                                               |
+21-Sep-2026 21:59:13 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/dependencies/OTA/OTA-main/verification/lvs/lvs_run_OTA5174_deep |
+21-Sep-2026 21:59:13 | INFO    | | Warnings         | 0                                                                                                     |
+21-Sep-2026 21:59:13 | INFO    | | Errors           | 1                                                                                                     |
+21-Sep-2026 21:59:13 | INFO    | | Run Time (s)     | 13.674                                                                                                |
+21-Sep-2026 21:59:13 | INFO    | +------------------+-------------------------------------------------------------------------------------------------------+
+21-Sep-2026 21:59:13 | ERROR   | Key errors:
+21-Sep-2026 21:59:13 | ERROR   |   - 2026-09-21 21:59:12 +0700: Memory Usage (434556K) : ERROR : Netlists don't match
+21-Sep-2026 21:59:13 | INFO    | ==============================================================================
