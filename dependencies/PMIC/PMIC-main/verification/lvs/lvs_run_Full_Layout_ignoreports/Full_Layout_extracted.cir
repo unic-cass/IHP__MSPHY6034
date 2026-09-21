@@ -1,0 +1,134 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 21/09/2026 21:42
+
+.SUBCKT Full_Layout Vboot|vboot A|B|Y G1|TRIG|Trig Vsource GND|IGND|VSS G2|vg
++ Q|Qn Q|Reset vgmd78 VFE|X|vfe RESET|Reset|reset Qn|set VRE|X|vre vgmd5 vgmd1
++ Vs|vs VDDLS VHLS VDD A|Y A|Y$1 A|Y$2 A|B|Y$1 A|Y$3 A|IN_CONTROL|in VOUT VH
+M$1 \$61 Vs|vs GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=2.24u
++ AS=1.0528p AD=1.0528p PS=5.24u PD=5.24u rfmode=0
+M$3 VFE|X|vfe \$71 GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.1331p PS=2.16u PD=1.12u rfmode=0
+M$4 GND|IGND|VSS A|B|Y \$75 GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.64u
++ AS=0.1331p AD=0.1216p PS=1.12u PD=1.02u rfmode=0
+M$5 \$75 A|Y \$71 GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1216p
++ AD=0.2176p PS=1.02u PD=1.96u rfmode=0
+M$6 VRE|X|vre \$72 GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.1331p PS=2.16u PD=1.12u rfmode=0
+M$7 GND|IGND|VSS A|B|Y$1 \$76 GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.64u
++ AS=0.1331p AD=0.1216p PS=1.12u PD=1.02u rfmode=0
+M$8 \$76 A|Y$1 \$72 GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1216p
++ AD=0.2176p PS=1.02u PD=1.96u rfmode=0
+M$9 A|B|Y A|Y$2 GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$10 A|Y$1 A|B|Y GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$11 A|Y$2 A|B|Y$1 GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$12 A|B|Y$1 A|Y$3 GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$13 A|Y A|B|Y$1 GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u W=0.74u
++ AS=0.2516p AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$14 A|Y$3 A|IN_CONTROL|in GND|IGND|VSS GND|IGND|VSS sg13_lv_nmos L=0.13u
++ W=0.74u AS=0.2516p AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$15 \$11 \$11 GND|IGND|VSS GND|IGND|VSS sg13_hv_nmos L=2u W=200u AS=39.5p
++ AD=39.5p PS=217.9u PD=217.9u rfmode=0
+M$35 \$9 Q|Reset Vsource Vsource sg13_hv_nmos L=0.5u W=3u AS=1.02p AD=1.02p
++ PS=6.68u PD=6.68u rfmode=0
+M$36 Vsource Q|Qn \$3 Vsource sg13_hv_nmos L=0.5u W=3u AS=1.02p AD=1.02p
++ PS=6.68u PD=6.68u rfmode=0
+M$37 G1|TRIG|Trig \$3 Vsource Vsource sg13_hv_nmos L=0.5u W=72u AS=14.13p
++ AD=14.13p PS=84.42u PD=84.42u rfmode=0
+M$61 G2|vg vgmd78 GND|IGND|VSS GND|IGND|VSS sg13_hv_nmos L=0.45u W=2000u
++ AS=510.4p AD=510.4p PS=2142.08u PD=2142.08u rfmode=0
+M$161 \$23 \$11 GND|IGND|VSS GND|IGND|VSS sg13_hv_nmos L=2u W=200u AS=39.5p
++ AD=39.5p PS=217.9u PD=217.9u rfmode=0
+M$281 RESET|Reset|reset VFE|X|vfe \$23 GND|IGND|VSS sg13_hv_nmos L=0.5u W=30u
++ AS=6.6p AD=6.6p PS=38.2u PD=38.2u rfmode=0
+M$286 \$23 VRE|X|vre Qn|set GND|IGND|VSS sg13_hv_nmos L=0.5u W=30u AS=6.6p
++ AD=6.6p PS=38.2u PD=38.2u rfmode=0
+M$291 Q|Reset RESET|Reset|reset \$59 Vsource sg13_hv_nmos L=3u W=5u AS=1.025p
++ AD=1.025p PS=9.6u PD=9.6u rfmode=0
+M$301 Vsource Q|Qn \$59 Vsource sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$311 Q|Qn Q|Reset \$34 Vsource sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$321 Vsource Qn|set \$34 Vsource sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$331 GND|IGND|VSS Vs|vs vgmd78 GND|IGND|VSS sg13_hv_nmos L=0.45u W=250u
++ AS=65.05p AD=64.5p PS=273.01u PD=272.9u rfmode=0
+M$356 vgmd5 \$61 GND|IGND|VSS GND|IGND|VSS sg13_hv_nmos L=0.45u W=60u AS=17.4p
++ AD=16.95p PS=73.48u PD=73.39u rfmode=0
+M$362 vgmd1 Vs|vs GND|IGND|VSS GND|IGND|VSS sg13_hv_nmos L=0.45u W=60u AS=17.1p
++ AD=17.6p PS=73.42u PD=73.52u rfmode=0
+M$368 VOUT G2|vg GND|IGND|VSS GND|IGND|VSS sg13_hv_nmos L=0.45u W=40800u
++ AS=14616p AD=14616p PS=44523.2u PD=44523.2u rfmode=0
+M$572 VOUT G1|TRIG|Trig VH VOUT sg13_hv_nmos L=0.45u W=40800u AS=14616p
++ AD=14616p PS=44523.2u PD=44523.2u rfmode=0
+M$8528 \$61 Vs|vs VDDLS VDDLS sg13_lv_pmos L=0.13u W=2.24u AS=1.0528p
++ AD=1.0528p PS=5.24u PD=5.24u rfmode=0
+M$8530 A|Y A|B|Y$1 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p
++ PS=2.92u PD=2.92u rfmode=0
+M$8531 A|Y$2 A|B|Y$1 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p
++ PS=2.92u PD=2.92u rfmode=0
+M$8532 A|B|Y A|Y$2 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p
++ PS=2.92u PD=2.92u rfmode=0
+M$8533 VFE|X|vfe \$71 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.1918p PS=2.92u PD=1.5u rfmode=0
+M$8534 VDD A|B|Y \$71 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1918p AD=0.1596p
++ PS=1.5u PD=1.22u rfmode=0
+M$8535 \$71 A|Y VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1596p AD=0.2856p
++ PS=1.22u PD=2.36u rfmode=0
+M$8536 A|Y$1 A|B|Y VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p
++ PS=2.92u PD=2.92u rfmode=0
+M$8537 A|B|Y$1 A|Y$3 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p
++ PS=2.92u PD=2.92u rfmode=0
+M$8538 A|Y$3 A|IN_CONTROL|in VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u rfmode=0
+M$8539 VRE|X|vre \$72 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.1918p PS=2.92u PD=1.5u rfmode=0
+M$8540 VDD A|B|Y$1 \$72 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1918p AD=0.1596p
++ PS=1.5u PD=1.22u rfmode=0
+M$8541 \$72 A|Y$1 VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1596p AD=0.2856p
++ PS=1.22u PD=2.36u rfmode=0
+M$8542 G1|TRIG|Trig \$3 Vboot|vboot Vboot|vboot sg13_hv_pmos L=0.5u W=195u
++ AS=37.5p AD=37.5p PS=223u PD=223u rfmode=0
+M$8607 RESET|Reset|reset RESET|Reset|reset \$49 \$49 sg13_hv_pmos L=0.5u W=1u
++ AS=0.34p AD=0.34p PS=2.68u PD=2.68u rfmode=0
+M$8608 Qn|set Qn|set \$40 \$40 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u rfmode=0
+M$8609 \$49 Qn|set Vboot|vboot Vboot|vboot sg13_hv_pmos L=0.5u W=1u AS=0.34p
++ AD=0.34p PS=2.68u PD=2.68u rfmode=0
+M$8610 \$40 RESET|Reset|reset Vboot|vboot Vboot|vboot sg13_hv_pmos L=0.5u W=1u
++ AS=0.34p AD=0.34p PS=2.68u PD=2.68u rfmode=0
+M$8611 RESET|Reset|reset RESET|Reset|reset Vboot|vboot Vboot|vboot sg13_hv_pmos
++ L=1u W=0.5u AS=0.17p AD=0.17p PS=1.68u PD=1.68u rfmode=0
+M$8612 Qn|set RESET|Reset|reset Vboot|vboot Vboot|vboot sg13_hv_pmos L=1u W=5u
++ AS=1.7p AD=1.7p PS=10.68u PD=10.68u rfmode=0
+M$8613 Vboot|vboot Qn|set RESET|Reset|reset Vboot|vboot sg13_hv_pmos L=1u W=5u
++ AS=1.7p AD=1.7p PS=10.68u PD=10.68u rfmode=0
+M$8614 Vboot|vboot Qn|set Qn|set Vboot|vboot sg13_hv_pmos L=1u W=0.5u AS=0.17p
++ AD=0.17p PS=1.68u PD=1.68u rfmode=0
+M$8615 Vboot|vboot Vboot|vboot \$6 Vboot|vboot sg13_hv_pmos L=0.5u W=6u
++ AS=2.04p AD=2.04p PS=12.68u PD=12.68u rfmode=0
+M$8616 \$3 \$9 Vboot|vboot Vboot|vboot sg13_hv_pmos L=0.5u W=3u AS=1.02p
++ AD=1.02p PS=6.68u PD=6.68u rfmode=0
+M$8617 Vboot|vboot \$3 \$9 Vboot|vboot sg13_hv_pmos L=0.5u W=1u AS=0.34p
++ AD=0.34p PS=2.68u PD=2.68u rfmode=0
+M$8618 Vboot|vboot Qn|set Q|Qn Vboot|vboot sg13_hv_pmos L=3u W=5u AS=1.025p
++ AD=1.025p PS=9.6u PD=9.6u rfmode=0
+M$8628 Vboot|vboot Q|Reset Q|Qn Vboot|vboot sg13_hv_pmos L=3u W=5u AS=1.025p
++ AD=1.025p PS=9.6u PD=9.6u rfmode=0
+M$8638 Vboot|vboot Q|Qn Q|Reset Vboot|vboot sg13_hv_pmos L=3u W=5u AS=1.025p
++ AD=1.025p PS=9.6u PD=9.6u rfmode=0
+M$8648 Vboot|vboot RESET|Reset|reset Q|Reset Vboot|vboot sg13_hv_pmos L=3u W=5u
++ AS=1.025p AD=1.025p PS=9.6u PD=9.6u rfmode=0
+M$8658 G2|vg vgmd78 VHLS VHLS sg13_hv_pmos L=0.4u W=2500u AS=638p AD=638p
++ PS=2677.6u PD=2677.6u rfmode=0
+M$8708 vgmd78 vgmd5 VHLS VHLS sg13_hv_pmos L=0.4u W=300u AS=81.1p AD=81.6p
++ PS=326.22u PD=326.32u rfmode=0
+M$8738 vgmd5 vgmd1 VHLS VHLS sg13_hv_pmos L=0.4u W=10u AS=5.6p AD=6.1p
++ PS=21.12u PD=21.22u rfmode=0
+M$8739 vgmd1 vgmd5 VHLS VHLS sg13_hv_pmos L=0.4u W=10u AS=6.75p AD=7p PS=21.35u
++ PD=21.4u rfmode=0
+C$8940 Vboot|vboot Vsource cap_cmim w=42u l=100u A=4200p P=284u m=56
+C$8996 A|B|Y GND|IGND|VSS cap_cmim w=40u l=80u A=3200p P=240u m=3
+.ENDS Full_Layout

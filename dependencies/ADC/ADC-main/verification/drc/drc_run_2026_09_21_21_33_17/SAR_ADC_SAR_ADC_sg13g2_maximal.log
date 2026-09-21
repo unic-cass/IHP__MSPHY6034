@@ -1,0 +1,9 @@
+# Logfile created on 2026-09-21 21:33:54 +0700 by logger.rb/61378
+2026-09-21 21:33:54 +0700: Memory Usage (416592K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /home/admin/work/final/IHP__MSPHY6034/dependencies/ADC/release/v.1.0.0/gds/SAR_ADC.gds
+2026-09-21 21:33:54 +0700: Memory Usage (416592K) : Ruby Version for klayout: 2.5.9
+2026-09-21 21:33:54 +0700: Memory Usage (418124K) : Loading database to memory is complete.
+2026-09-21 21:33:54 +0700: Memory Usage (418124K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/admin/work/final/IHP__MSPHY6034/dependencies/ADC/ADC-main/verification/drc/drc_run_2026_09_21_21_33_17/SAR_ADC_SAR_ADC_sg13g2_maximal.lyrdb
+2026-09-21 21:33:54 +0700: Memory Usage (418124K) : Evaluate switches.
+2026-09-21 21:33:54 +0700: Memory Usage (418124K) : Klayout will use 96 thread(s)
+2026-09-21 21:33:54 +0700: Memory Usage (418124K) : deep mode is enabled for sg13g2_maximal runset.
+2026-09-21 21:34:42 +0700: Memory Usage (756028K) : KLayout DRC run for maximum ruleSet completed in 48.71 seconds

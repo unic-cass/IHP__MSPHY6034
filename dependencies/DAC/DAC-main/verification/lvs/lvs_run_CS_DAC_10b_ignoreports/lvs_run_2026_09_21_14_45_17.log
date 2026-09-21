@@ -1,0 +1,18 @@
+21-Sep-2026 21:45:18 | INFO    | Your Klayout version is: KLayout 0.30.5
+21-Sep-2026 21:45:18 | INFO    | Running SG13G2 LVS checks on design /home/admin/work/final/IHP__MSPHY6034/dependencies/DAC/release/v.1.0.0/gds/CS_DAC_10b.gds on cell CS_DAC_10b
+21-Sep-2026 21:45:29 | INFO    | ==============================================================================
+21-Sep-2026 21:45:29 | INFO    | Important Summary
+21-Sep-2026 21:45:29 | INFO    | +------------------+-----------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 21:45:29 | INFO    | | Status           | FAIL                                                                                                            |
+21-Sep-2026 21:45:29 | INFO    | | Mode             | COMPARE                                                                                                         |
+21-Sep-2026 21:45:29 | INFO    | | Outcome          | Comparison mode: FAIL (netlists do not match).                                                                  |
+21-Sep-2026 21:45:29 | INFO    | | Layout           | CS_DAC_10b.gds                                                                                                  |
+21-Sep-2026 21:45:29 | INFO    | | Top Cell         | CS_DAC_10b                                                                                                      |
+21-Sep-2026 21:45:29 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/dependencies/DAC/DAC-main/verification/lvs/lvs_run_CS_DAC_10b_ignoreports |
+21-Sep-2026 21:45:29 | INFO    | | Warnings         | 0                                                                                                               |
+21-Sep-2026 21:45:29 | INFO    | | Errors           | 1                                                                                                               |
+21-Sep-2026 21:45:29 | INFO    | | Run Time (s)     | 11.846                                                                                                          |
+21-Sep-2026 21:45:29 | INFO    | +------------------+-----------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 21:45:29 | ERROR   | Key errors:
+21-Sep-2026 21:45:29 | ERROR   |   - 2026-09-21 21:45:28 +0700: Memory Usage (461216K) : ERROR : Netlists don't match
+21-Sep-2026 21:45:29 | INFO    | ==============================================================================

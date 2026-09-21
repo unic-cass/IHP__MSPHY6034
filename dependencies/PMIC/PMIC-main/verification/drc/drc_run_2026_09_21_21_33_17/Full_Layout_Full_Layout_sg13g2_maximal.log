@@ -1,0 +1,9 @@
+# Logfile created on 2026-09-21 21:34:56 +0700 by logger.rb/61378
+2026-09-21 21:34:56 +0700: Memory Usage (416020K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /home/admin/work/final/IHP__MSPHY6034/dependencies/PMIC/release/v.1.0.0/gds/Full_Layout.gds
+2026-09-21 21:34:56 +0700: Memory Usage (416020K) : Ruby Version for klayout: 2.5.9
+2026-09-21 21:34:56 +0700: Memory Usage (418088K) : Loading database to memory is complete.
+2026-09-21 21:34:56 +0700: Memory Usage (418088K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/admin/work/final/IHP__MSPHY6034/dependencies/PMIC/PMIC-main/verification/drc/drc_run_2026_09_21_21_33_17/Full_Layout_Full_Layout_sg13g2_maximal.lyrdb
+2026-09-21 21:34:56 +0700: Memory Usage (418088K) : Evaluate switches.
+2026-09-21 21:34:56 +0700: Memory Usage (418088K) : Klayout will use 96 thread(s)
+2026-09-21 21:34:56 +0700: Memory Usage (418088K) : deep mode is enabled for sg13g2_maximal runset.
+2026-09-21 21:36:29 +0700: Memory Usage (1079080K) : KLayout DRC run for maximum ruleSet completed in 93.22 seconds

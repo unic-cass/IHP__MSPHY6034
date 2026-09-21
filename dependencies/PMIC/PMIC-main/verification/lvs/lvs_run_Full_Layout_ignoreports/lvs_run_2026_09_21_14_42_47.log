@@ -1,0 +1,16 @@
+21-Sep-2026 21:42:47 | INFO    | Your Klayout version is: KLayout 0.30.5
+21-Sep-2026 21:42:47 | INFO    | Running SG13G2 LVS checks on design /home/admin/work/final/IHP__MSPHY6034/dependencies/PMIC/release/v.1.0.0/gds/Full_Layout.gds on cell Full_Layout
+21-Sep-2026 21:44:12 | INFO    | ==============================================================================
+21-Sep-2026 21:44:12 | INFO    | Important Summary
+21-Sep-2026 21:44:12 | INFO    | +------------------+--------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 21:44:12 | INFO    | | Status           | PASS                                                                                                               |
+21-Sep-2026 21:44:12 | INFO    | | Mode             | COMPARE                                                                                                            |
+21-Sep-2026 21:44:12 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                                                            |
+21-Sep-2026 21:44:12 | INFO    | | Layout           | Full_Layout.gds                                                                                                    |
+21-Sep-2026 21:44:12 | INFO    | | Top Cell         | Full_Layout                                                                                                        |
+21-Sep-2026 21:44:12 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/dependencies/PMIC/PMIC-main/verification/lvs/lvs_run_Full_Layout_ignoreports |
+21-Sep-2026 21:44:12 | INFO    | | Warnings         | 0                                                                                                                  |
+21-Sep-2026 21:44:12 | INFO    | | Errors           | 0                                                                                                                  |
+21-Sep-2026 21:44:12 | INFO    | | Run Time (s)     | 85.243                                                                                                             |
+21-Sep-2026 21:44:12 | INFO    | +------------------+--------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 21:44:12 | INFO    | ==============================================================================
