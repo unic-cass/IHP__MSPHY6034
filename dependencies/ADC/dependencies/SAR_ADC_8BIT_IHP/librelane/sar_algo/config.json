@@ -1,0 +1,56 @@
+{
+  "DESIGN_NAME": "sar_algo",
+
+  "VERILOG_FILES": [
+    "dir::sar_algo.v"
+  ],
+
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+
+  "CLOCK_PORT": "fclk_in",
+  "CLOCK_PERIOD": 62.5,
+
+  "VDD_NETS": ["VDD"],
+  "GND_NETS": ["VSS"],
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [0, 0, 160, 80],
+
+  "FP_CORE_UTIL": 45,
+  "PL_TARGET_DENSITY_PCT": 60,
+
+
+
+  "FP_PDN_CORE_RING": true,
+
+
+  "FP_PDN_CORE_RING_VLAYER": "Metal5",
+
+
+  "FP_PDN_CORE_RING_HLAYER": "Metal4",
+
+  "FP_PDN_CORE_RING_VWIDTH": 3,
+  "FP_PDN_CORE_RING_HWIDTH": 3,
+
+  "FP_PDN_CORE_RING_VSPACING": 2,
+  "FP_PDN_CORE_RING_HSPACING": 2,
+
+  "FP_PDN_CORE_RING_VOFFSET": 1.2,
+  "FP_PDN_CORE_RING_HOFFSET": 1.2,
+
+
+  "RT_MIN_LAYER": "Metal2",
+  "RT_MAX_LAYER": "Metal4",
+
+  "RT_SIGNAL_LAYERS": ["Metal2", "Metal3", "Metal4"],
+  "RT_CLOCK_LAYERS": ["Metal3", "Metal4"],
+
+
+
+  "RUN_KLAYOUT": true,
+  "RUN_MAGIC_DRC": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_LVS": true,
+
+  "ERROR_ON_LINTER_ERRORS": true
+}

@@ -1,0 +1,61 @@
+v {xschem version=3.4.5 file_version=1.2
+*
+* This file is part of XSCHEM,
+* a schematic capture and Spice/Vhdl/Verilog netlisting tool for circuit
+* simulation.
+* Copyright (C) 1998-2023 Stefan Frederik Schippers
+*
+* This program is free software; you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation; either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program; if not, write to the Free Software
+* Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+}
+G {}
+K {type=delay
+verilog_ignore=true
+vhdl_ignore=true
+format="@name [ @@fclk_in @@rst @@vdd @@vss ] [ @@fdac_clk @@fclk_comp @@fclk_samp ] null @dut
+.model @dut @d_cosim_model simulation=@model"
+template="name=adut
+dut=dut
+d_cosim_model= d_cosim
+model=./clk_gen.so" }
+V {}
+S {}
+E {}
+L 4 -82.5 -30 -77.5 -30 {}
+L 4 -82.5 -10 -77.5 -10 {}
+L 4 -82.5 10 -77.5 10 {}
+L 4 -82.5 30 -77.5 30 {}
+L 4 82.5 -20 77.5 -20 {}
+L 4 82.5 0 77.5 0 {}
+L 4 82.5 20 77.5 20 {}
+B 5 -82.5 -32.5 -77.5 -27.5 {name=fclk_in dir=in verilog_type=wire propag=0}
+B 5 -82.5 -12.5 -77.5 -7.5 {name=rst dir=in verilog_type=wire propag=0}
+B 5 -82.5 7.5 -77.5 12.5 {name=vdd dir=in verilog_type=wire propag=0}
+B 5 -82.5 27.5 -77.5 32.5 {name=vss dir=in verilog_type=wire propag=0}
+B 5 77.5 -22.5 82.5 -17.5 {name=fdac_clk dir=out verilog_type=wire propag=1}
+B 5 77.5 -2.5 82.5 2.5 {name=fclk_comp dir=out verilog_type=wire propag=1}
+B 5 77.5 17.5 82.5 22.5 {name=fclk_samp dir=out verilog_type=wire propag=1}
+T {@name} 0 45 0 0 0.12 0.12 {}
+T {@d_cosim_model} 0 -35 0 0 0.12 0.12 {}
+T {fclk_in} -90 -32.5 0 1 0.12 0.12 {}
+T {rst} -90 -12.5 0 1 0.12 0.12 {}
+T {vdd} -90 7.5 0 1 0.12 0.12 {}
+T {vss} -90 27.5 0 1 0.12 0.12 {}
+T {fdac_clk} 90 -22.5 0 0 0.12 0.12 {}
+T {fclk_comp} 90 -2.5 0 0 0.12 0.12 {}
+T {fclk_samp} 90 17.5 0 0 0.12 0.12 {}
+L 4 50 -40 50 40 {}
+L 4 -50 -40 -50 40 {}
+L 4 -50 40 50 40 {}
+L 4 -50 -40 50 -40 {}

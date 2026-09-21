@@ -1,0 +1,133 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 24/03/2026 00:51
+
+.SUBCKT Full_Layout Logic_VDD G1 G2 GND VH VOUT \$1.IN_CONTROL \$5.VDDLS
++ \$5.vgmd78 \$5.vs \$5.vgmd1 \$5.vgmd5
+M$1 \$5.vgmd78 \$5.vs GND GND sg13_hv_nmos L=0.45u W=250u AS=64.5p AD=65.05p
++ PS=272.9u PD=273.01u
+M$26 \$5.vgmd1 \$5.vs GND GND sg13_hv_nmos L=0.45u W=60u AS=17.6p AD=17.1p
++ PS=73.52u PD=73.42u
+M$32 \$5.vgmd78 \$5.vgmd5 \$I10 \$I10 sg13_hv_pmos L=0.4u W=300u AS=81.6p
++ AD=81.1p PS=326.32u PD=326.22u
+M$62 \$I10 \$5.vgmd5 \$5.vgmd1 \$I10 sg13_hv_pmos L=0.4u W=10u AS=7p AD=6.75p
++ PS=21.4u PD=21.35u
+M$63 \$I10 \$5.vgmd1 \$5.vgmd5 \$I10 sg13_hv_pmos L=0.4u W=10u AS=6.1p AD=5.6p
++ PS=21.22u PD=21.12u
+C$64 \$I22 GND cap_cmim w=80u l=40u A=3200p P=240u m=3
+M$67 \$15 \$I21 \$I32 \$15 sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p PS=9.6u
++ PD=9.6u
+M$77 \$I18 \$I17 \$I32 \$15 sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p PS=9.6u
++ PD=9.6u
+M$87 \$I19 \$I21 \$I18 \$I19 sg13_hv_pmos L=3u W=5u AS=1.025p AD=1.025p PS=9.6u
++ PD=9.6u
+M$97 \$I19 \$I17 \$I18 \$I19 sg13_hv_pmos L=3u W=5u AS=1.025p AD=1.025p PS=9.6u
++ PD=9.6u
+M$107 \$I21 \$I21 \$I19 \$I19 sg13_hv_pmos L=1u W=0.5u AS=0.17p AD=0.17p
++ PS=1.68u PD=1.68u
+M$108 \$I20 \$I20 \$I19 \$I19 sg13_hv_pmos L=1u W=0.5u AS=0.17p AD=0.17p
++ PS=1.68u PD=1.68u
+M$109 \$I20 \$I21 \$I19 \$I19 sg13_hv_pmos L=1u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u
+M$110 \$I21 \$I20 \$I19 \$I19 sg13_hv_pmos L=1u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u
+M$111 \$I34 \$I21 \$I21 \$I34 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$112 \$I19 \$I21 \$I35 \$I19 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$113 \$I35 \$I20 \$I20 \$I35 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$114 \$I19 \$I20 \$I34 \$I19 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$115 \$I33 \$I25 \$I20 GND sg13_hv_nmos L=0.5u W=30u AS=6.6p AD=6.6p PS=38.2u
++ PD=38.2u
+M$120 \$I21 \$I23 \$I33 GND sg13_hv_nmos L=0.5u W=30u AS=6.6p AD=6.6p PS=38.2u
++ PD=38.2u
+M$125 \$13 \$I19 \$I19 \$I19 sg13_hv_pmos L=0.5u W=6u AS=2.04p AD=2.04p
++ PS=12.68u PD=12.68u
+M$126 \$12 \$12 GND GND sg13_hv_nmos L=2u W=200u AS=39.5p AD=39.5p PS=217.9u
++ PD=217.9u
+M$146 \$I33 \$12 GND GND sg13_hv_nmos L=2u W=200u AS=39.5p AD=39.5p PS=217.9u
++ PD=217.9u
+C$166 \$I19 \$15 cap_cmim w=100u l=42u A=4200p P=284u m=56
+M$222 \$15 \$I18 \$I37 \$15 sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p PS=9.6u
++ PD=9.6u
+M$232 \$I17 \$I20 \$I37 \$15 sg13_hv_nmos L=3u W=5u AS=1.025p AD=1.025p PS=9.6u
++ PD=9.6u
+M$242 \$I19 \$I18 \$I17 \$I19 sg13_hv_pmos L=3u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u
+M$252 \$I19 \$I20 \$I17 \$I19 sg13_hv_pmos L=3u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u
+M$262 G1 \$I39 \$15 \$15 sg13_hv_nmos L=0.5u W=72u AS=14.13p AD=14.13p
++ PS=84.42u PD=84.42u
+M$286 \$I39 \$I40 \$I19 \$I19 sg13_hv_pmos L=0.5u W=3u AS=1.02p AD=1.02p
++ PS=6.68u PD=6.68u
+M$287 \$I19 \$I39 \$I40 \$I19 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$288 \$15 \$I17 \$I40 \$15 sg13_hv_nmos L=0.5u W=3u AS=1.02p AD=1.02p PS=6.68u
++ PD=6.68u
+M$289 \$I39 \$I18 \$15 \$15 sg13_hv_nmos L=0.5u W=3u AS=1.02p AD=1.02p PS=6.68u
++ PD=6.68u
+M$290 \$I19 \$I39 G1 \$I19 sg13_hv_pmos L=0.5u W=195u AS=37.5p AD=37.5p PS=223u
++ PD=223u
+M$355 \$I51 \$I43 \$I52 GND sg13_lv_nmos L=0.13u W=0.64u AS=0.2176p AD=0.1216p
++ PS=1.96u PD=1.02u
+M$356 GND \$I41 \$I52 GND sg13_lv_nmos L=0.13u W=0.64u AS=0.1331p AD=0.1216p
++ PS=1.12u PD=1.02u
+M$357 GND \$I51 \$I23 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.1331p AD=0.2516p
++ PS=1.12u PD=2.16u
+M$358 Logic_VDD \$I43 \$I51 Logic_VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p
++ AD=0.1596p PS=2.36u PD=1.22u
+M$359 Logic_VDD \$I41 \$I51 Logic_VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1918p
++ AD=0.1596p PS=1.5u PD=1.22u
+M$360 Logic_VDD \$I51 \$I23 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1918p
++ AD=0.3808p PS=1.5u PD=2.92u
+M$361 \$I53 \$I42 \$I54 GND sg13_lv_nmos L=0.13u W=0.64u AS=0.2176p AD=0.1216p
++ PS=1.96u PD=1.02u
+M$362 GND \$I22 \$I54 GND sg13_lv_nmos L=0.13u W=0.64u AS=0.1331p AD=0.1216p
++ PS=1.12u PD=1.02u
+M$363 GND \$I53 \$I25 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.1331p AD=0.2516p
++ PS=1.12u PD=2.16u
+M$364 Logic_VDD \$I42 \$I53 Logic_VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p
++ AD=0.1596p PS=2.36u PD=1.22u
+M$365 Logic_VDD \$I22 \$I53 Logic_VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1918p
++ AD=0.1596p PS=1.5u PD=1.22u
+M$366 Logic_VDD \$I53 \$I25 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1918p
++ AD=0.3808p PS=1.5u PD=2.92u
+M$367 GND \$1.IN_CONTROL \$I44 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p
++ AD=0.2516p PS=2.16u PD=2.16u
+M$368 Logic_VDD \$1.IN_CONTROL \$I44 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u
++ AS=0.3808p AD=0.3808p PS=2.92u PD=2.92u
+M$369 GND \$I41 \$I45 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
++ PS=2.16u PD=2.16u
+M$370 Logic_VDD \$I41 \$I45 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u
+M$371 GND \$I44 \$I41 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
++ PS=2.16u PD=2.16u
+M$372 Logic_VDD \$I44 \$I41 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u
+M$373 GND \$I41 \$I42 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
++ PS=2.16u PD=2.16u
+M$374 Logic_VDD \$I41 \$I42 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u
+M$375 GND \$I22 \$I43 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
++ PS=2.16u PD=2.16u
+M$376 Logic_VDD \$I22 \$I43 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u
+M$377 GND \$I45 \$I22 GND sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
++ PS=2.16u PD=2.16u
+M$378 Logic_VDD \$I45 \$I22 Logic_VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u
+M$379 VOUT G1 VH VOUT sg13_hv_nmos L=0.45u W=40800u AS=14616p AD=14616p
++ PS=44523.2u PD=44523.2u
+M$4459 GND G2 VOUT GND sg13_hv_nmos L=0.45u W=40800u AS=14616p AD=14616p
++ PS=44523.2u PD=44523.2u
+M$8539 G2 \$5.vgmd78 GND GND sg13_hv_nmos L=0.45u W=2000u AS=510.4p AD=510.4p
++ PS=2142.08u PD=2142.08u
+M$8739 \$5.vgmd5 \$I50 GND GND sg13_hv_nmos L=0.45u W=60u AS=16.95p AD=17.4p
++ PS=73.39u PD=73.48u
+M$8745 G2 \$5.vgmd78 \$I10 \$I10 sg13_hv_pmos L=0.4u W=2500u AS=638p AD=638p
++ PS=2677.6u PD=2677.6u
+M$8995 \$I50 \$5.vs \$5.VDDLS \$5.VDDLS sg13_lv_pmos L=0.13u W=2.24u AS=1.0528p
++ AD=1.0528p PS=5.24u PD=5.24u
+M$8997 \$I50 \$5.vs GND GND sg13_lv_nmos L=0.13u W=2.24u AS=1.0528p AD=1.0528p
++ PS=5.24u PD=5.24u
+.ENDS Full_Layout

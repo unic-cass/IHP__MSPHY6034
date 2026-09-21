@@ -1,0 +1,42 @@
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/testio.sch
+**.subckt testio
+V6 net2 GND 0
+V7 net1 GND 3.3
+V8 net3 GND 0
+V9 net4 GND 1.2
+x1 net3 net4 net2 net1 out in sg13g2_IOPadIn
+V1 in GND dc 0 ac 0 PULSE(0 1.2 0 10p 10p 0.05u 0.1u)
+C1 out GND 500f m=1
+**** begin user architecture code
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerHBT.lib hbt_typ
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+
+
+
+
+.include $PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+.include $PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi
+
+
+
+
+
+
+.param temp=27
+.control
+save all
+tran 1u 30u
+write iopad.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

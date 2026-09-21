@@ -1,0 +1,12 @@
+13-Sep-2026 06:32:33 | INFO    | KLayout version detected: 0.30.11 (required >= 0.30.5)
+13-Sep-2026 06:32:33 | WARNING | KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.12). Re-align with: pip install klayout==0.30.11
+13-Sep-2026 06:32:33 | INFO    | Using DRC JSON file: /opt/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+13-Sep-2026 06:32:33 | INFO    | Running IHP-SG13G2 main checks on design /home/designer/shared/FloatingGateDCDC/layout/klayout/Full_Layout.gds, topcell: Full_Layout
+13-Sep-2026 06:32:59 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /home/designer/shared/FloatingGateDCDC/layout/klayout/Full_Layout.gds, topcell: Full_Layout
+13-Sep-2026 06:33:41 | INFO    | Completed running Sg13g2_maximal checks.
+13-Sep-2026 06:33:41 | ERROR   | ==================================================================================
+13-Sep-2026 06:33:41 | ERROR   | ❌ --- KLayout DRC Check Failed: Violations were detected in the layout. --- ❌
+13-Sep-2026 06:33:41 | ERROR   | ==================================================================================
+13-Sep-2026 06:33:41 | ERROR   | Violated rules are : {'MIM.gR'}
+
+13-Sep-2026 06:33:41 | INFO    | Total DRC Run time: 68.20 seconds (including execution, analysis, and reporting)

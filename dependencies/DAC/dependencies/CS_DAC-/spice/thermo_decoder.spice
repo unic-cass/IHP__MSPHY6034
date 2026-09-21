@@ -1,0 +1,42 @@
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/thermo_decoder.sch
+.subckt thermo_decoder D1 D2 D3 D4 D5 D6 D7 X0 X1 X2 VDD VSS
+*.PININFO X2:I X1:I X0:I D7:O D6:O D5:O D4:O D3:O D1:O D2:O VDD:I VSS:I
+x1 net1 X0 X1 VDD VSS sg13g2_and2_2
+x2 D7 X2 net1 VDD VSS sg13g2_and2_2
+x3 D6 X1 X2 VDD VSS sg13g2_and2_2
+x4 D2 X2 X1 VDD VSS sg13g2_or2_2
+x5 D1 D2 X0 VDD VSS sg13g2_or2_2
+x6 net3 X0 X1 VDD VSS sg13g2_or2_2
+x7 D5 X2 net3 VDD VSS sg13g2_and2_2
+x8 net2 X0 X1 VDD VSS sg13g2_and2_2
+x9 D3 net2 X2 VDD VSS sg13g2_or2_2
+x10 D4 X2 VDD VSS sg13g2_buf_2
+.ends
+
+.SUBCKT sg13g2_or2_2 X A B VDD VSS
+*.PININFO A:I B:I X:O VDD:B VSS:B
+MP1 net2 B net3 VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+MP0 net3 A VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+MP2 X net2 VDD VDD sg13_lv_pmos m=1 w=2.24u l=130.00n ng=2
+MN1 net2 A VSS VSS sg13_lv_nmos m=1 w=550.00n l=130.00n ng=1
+MN0 net2 B VSS VSS sg13_lv_nmos m=1 w=550.00n l=130.00n ng=1
+MN2 X net2 VSS VSS sg13_lv_nmos m=1 w=1.48u l=130.00n ng=2
+.ENDS
+
+.SUBCKT sg13g2_and2_2 X A B VDD VSS
+*.PININFO A:I B:I X:O VDD:B VSS:B
+MN0 net1 A net2 VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MN2 X net1 VSS VSS sg13_lv_nmos m=1 w=1.48u l=130.00n ng=2
+MN1 net2 B VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MP0 net1 B VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+MP2 X net1 VDD VDD sg13_lv_pmos m=1 w=2.24u l=130.00n ng=2
+MP1 net1 A VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+.ENDS
+
+.SUBCKT sg13g2_buf_2 X A VDD VSS
+*.PININFO A:I X:O VDD:B VSS:B
+MN0 net1 A VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MN1 X net1 VSS VSS sg13_lv_nmos m=1 w=1.48u l=130.00n ng=2
+MP1 X net1 VDD VDD sg13_lv_pmos m=1 w=2.24u l=130.00n ng=2
+MP0 net1 A VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+.ENDS

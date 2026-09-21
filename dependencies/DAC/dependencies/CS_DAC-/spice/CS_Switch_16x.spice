@@ -1,0 +1,12 @@
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_16x.sch
+.subckt CS_Switch_16x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM3 net1 VBIAS net2 VSS sg13_hv_nmos w=5.2u l=0.45u ng=1 m=1
+MM4 net2 VBIAS VSS VSS sg13_hv_nmos w=5.2u l=0.45u ng=1 m=1
+MM5 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM6 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM7 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
+MM8 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
+.ends

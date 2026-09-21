@@ -1,0 +1,4 @@
+# Team4 SoC source tree: a separate git repo (branch `zip_only`) used as the
+# origin for the imported dependency blocks. Never commit it as a gitlink —
+# its objects live only in its private .git, so a submodule pointer would dangle.
+IHP_SoC_team4/

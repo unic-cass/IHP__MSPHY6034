@@ -1,0 +1,7 @@
+** sch_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/inverter.sch
+.subckt inverter vdd vi vo gnd
+
+XM5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+XM7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends inverter
+

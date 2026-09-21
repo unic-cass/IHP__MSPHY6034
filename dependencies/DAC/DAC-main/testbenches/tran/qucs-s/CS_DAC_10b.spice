@@ -1,0 +1,312 @@
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_DAC_10b.sch
+.subckt CS_DAC_10b CLK OUTN OUTP VBIAS VDD VSS X1 X10 X2 X3 X4 X5 X6 X7 X8 X9
+*.PININFO X9:I X8:I X7:I X6:I X5:I X4:I X3:I X2:I X10:I X1:I VSS:B VDD:I VBIAS:I OUTP:B OUTN:B CLK:I
+x3 net8 net9 net10 net11 net12 net13 net14 X5 X6 X7 VDD VSS thermo_decoder
+x4 net1 net2 net3 net4 net5 net6 net7 X8 X9 X10 VDD VSS thermo_decoder
+x1 net8 net9 net10 net11 net12 net13 net14 CLK net1 net2 net3 net4 net5 net6 net7 OUTN OUTP VBIAS VDD VSS 6MSB
+x2 CLK OUTN OUTP VBIAS VDD VSS X1 X2 X3 X4 4LSB_weighted
+.ends
+
+* expanding   symbol:  thermo_decoder.sym # of pins=12
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/thermo_decoder.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/thermo_decoder.sch
+.subckt thermo_decoder D1 D2 D3 D4 D5 D6 D7 X0 X1 X2 VDD VSS
+*.PININFO X2:I X1:I X0:I D7:O D6:O D5:O D4:O D3:O D1:O D2:O VDD:I VSS:I
+x1 net1 X0 X1 VDD VSS sg13g2_and2_2
+x2 D7 X2 net1 VDD VSS sg13g2_and2_2
+x3 D6 X1 X2 VDD VSS sg13g2_and2_2
+x4 D2 X2 X1 VDD VSS sg13g2_or2_2
+x5 D1 D2 X0 VDD VSS sg13g2_or2_2
+x6 net3 X0 X1 VDD VSS sg13g2_or2_2
+x7 D5 X2 net3 VDD VSS sg13g2_and2_2
+x8 net2 X0 X1 VDD VSS sg13g2_and2_2
+x9 D3 net2 X2 VDD VSS sg13g2_or2_2
+x10 D4 X2 VDD VSS sg13g2_buf_2
+.ends
+
+
+* expanding   symbol:  6MSB.sym # of pins=20
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/6MSB.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/6MSB.sch
+.subckt 6MSB C1 C2 C3 C4 C5 C6 C7 CLK D1 D2 D3 D4 D5 D6 D7 OUTN OUTP VBIAS VDD VSS
+*.PININFO VSS:B VDD:I VBIAS:I OUTP:B OUTN:B D7:I D6:I D5:I D4:I D3:I D2:I D1:I CLK:I C7:I C6:I C5:I C4:I C3:I C2:I C1:I
+x33 CLK C1 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x1 CLK C2 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x2 CLK C3 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x3 CLK C4 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x4 CLK C5 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x5 CLK C6 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x6 CLK C7 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x7 CLK VSS OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x8 CLK C1 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x9 CLK C2 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x10 CLK C3 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x11 CLK C4 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x12 CLK C5 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x13 CLK C6 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x14 CLK C7 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x15 CLK VSS OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x64 CLK C7 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x21 CLK VSS OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x22 CLK C6 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x23 CLK C5 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x17 CLK C4 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x18 CLK C3 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x16 CLK C2 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x19 CLK C1 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x20 CLK C1 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x24 CLK C2 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x25 CLK C3 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x26 CLK C4 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x27 CLK C5 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x28 CLK C6 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x29 CLK C7 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x30 CLK VSS OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x31 CLK VSS OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x32 CLK C7 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x34 CLK C6 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x35 CLK C5 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x36 CLK C4 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x37 CLK C3 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x38 CLK C2 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x39 CLK C1 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x40 CLK C1 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x41 CLK C2 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x42 CLK C3 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x43 CLK C4 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x44 CLK C5 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x45 CLK C6 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x46 CLK C7 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x47 CLK VSS OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x48 CLK VSS OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x49 CLK C7 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x50 CLK C6 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x51 CLK C5 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x52 CLK C4 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x53 CLK C3 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x54 CLK C2 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x55 CLK C1 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x56 CLK C1 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x57 CLK C2 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x58 CLK C3 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x59 CLK C4 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x60 CLK C5 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x61 CLK C6 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x62 CLK C7 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+.ends
+
+
+* expanding   symbol:  4LSB_weighted.sym # of pins=10
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/4LSB_weighted.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/4LSB_weighted.sch
+.subckt 4LSB_weighted CLK OUTN OUTP VBIAS VDD VSS X1 X2 X3 X4
+*.PININFO X4:I X3:I X2:I X1:I VSS:B VDD:I VBIAS:I OUTP:B OUTN:B CLK:I
+x4 net3 net4 CLK X2 VDD VDD VSS sg13g2_dfrbp_2
+x6 net5 net6 CLK X3 VDD VDD VSS sg13g2_dfrbp_2
+x7 net7 net8 CLK X4 VDD VDD VSS sg13g2_dfrbp_2
+x2 net2 net1 OUTN OUTP VBIAS VSS CS_Switch_1x
+x3 net4 net3 OUTN OUTP VBIAS VSS CS_Switch_2x
+x5 net6 net5 OUTN OUTP VBIAS VSS CS_Switch_4x
+x8 net8 net7 OUTN OUTP VBIAS VSS CS_Switch_8x
+x1 net1 net2 CLK X1 VDD VDD VSS sg13g2_dfrbp_2
+.ends
+
+
+* expanding   symbol:  sg13g2_and2_2.sym # of pins=3
+** sym_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sym/xschem/sg13g2_and2_2.sym
+** sch_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sch/xschem/sg13g2_and2_2.sch
+.subckt sg13g2_and2_2 X A B VDD VSS
+
+*.PININFO A:I B:I X:O
+MM1 net1 A net2 VSS sg13_lv_nmos w=640.00n l=130.00n ng=1
+MM2 net2 B VSS VSS sg13_lv_nmos w=640.00n l=130.00n ng=1
+MM3 X net1 VSS VSS sg13_lv_nmos w=1.48u l=130.00n ng=2
+MM4 net1 B VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1
+MM5 net1 A VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1
+MM6 X net1 VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+.ends
+
+
+* expanding   symbol:  sg13g2_or2_2.sym # of pins=3
+** sym_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sym/xschem/sg13g2_or2_2.sym
+** sch_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sch/xschem/sg13g2_or2_2.sch
+.subckt sg13g2_or2_2 X A B VDD VSS
+
+*.PININFO X:O B:I A:I
+MM1 net1 B VSS VSS sg13_lv_nmos w=550.00n l=130.00n ng=1
+MM2 net1 A VSS VSS sg13_lv_nmos w=550.00n l=130.00n ng=1
+MM3 X net1 VSS VSS sg13_lv_nmos w=1.48u l=130.00n ng=2
+MM4 net2 A VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1
+MM5 net1 B net2 VDD sg13_lv_pmos w=840.00n l=130.00n ng=1
+MM6 X net1 VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+.ends
+
+
+* expanding   symbol:  sg13g2_buf_2.sym # of pins=2
+** sym_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sym/xschem/sg13g2_buf_2.sym
+** sch_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sch/xschem/sg13g2_buf_2.sch
+.subckt sg13g2_buf_2 X A VDD VSS
+
+*.PININFO A:I X:O
+MM1 net1 A VSS VSS sg13_lv_nmos w=640.00n l=130.00n ng=1
+MM2 X net1 VSS VSS sg13_lv_nmos w=1.48u l=130.00n ng=2
+MM3 net1 A VDD VDD sg13_lv_pmos w=1.000u l=130.00n ng=1
+MM4 X net1 VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+.ends
+
+
+* expanding   symbol:  Unit_cell.sym # of pins=9
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/Unit_cell.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/Unit_cell.sch
+.subckt Unit_cell CLK Ci OUTN OUTP Ri Ri-1 VBIAS VDD VSS
+*.PININFO VSS:B VDD:I VBIAS:I Ri-1:I Ri:I OUTP:B OUTN:B Ci:I CLK:I
+x2 net1 Ri Ci VDD VSS sg13g2_or2_2
+x3 net2 Ri-1 net1 VDD VSS sg13g2_nand2_2
+x6 net4 net3 CLK net2 VDD VDD VSS sg13g2_dfrbp_2
+x1 net4 net3 OUTN OUTP VBIAS VSS CS_Switch_16x
+.ends
+
+
+* expanding   symbol:  sg13g2_dfrbp_2.sym # of pins=5
+** sym_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sym/xschem/sg13g2_dfrbp_2.sym
+** sch_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sch/xschem/sg13g2_dfrbp_2.sch
+.subckt sg13g2_dfrbp_2 Q Q_N CLK D RESET_B VDD VSS
+
+*.PININFO D:I RESET_B:I CLK:I Q:O Q_N:O
+MM1 Db D net12 VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM2 net12 RESET_B VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM3 net2 clkneg net11 VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM4 net11 net3 VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM5 net3 net2 net7 VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM6 net7 RESET_B VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM7 Q_N net2 VSS VSS sg13_lv_nmos w=1.48u l=130.00n ng=2
+MM8 net1 net2 VSS VSS sg13_lv_nmos w=640.00n l=130.00n ng=1
+MM9 Q net1 VSS VSS sg13_lv_nmos w=1.48u l=130.00n ng=2
+MM10 clkneg CLK VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1
+MM11 clkpos clkneg VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1
+MM12 Db clkneg net4 VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM13 net4 clkpos net10 VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM14 net10 net5 net6 VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM15 net6 RESET_B VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1
+MM16 net5 net4 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1
+MM17 net5 clkpos net2 VSS sg13_lv_nmos w=740.00n l=130.00n ng=1
+MM18 Db RESET_B VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM19 Db D VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM20 net9 net3 VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM21 net2 clkpos net9 VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM22 net3 net2 VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM23 net3 RESET_B VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM24 Q_N net2 VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+MM25 net1 net2 VDD VDD sg13_lv_pmos w=1.000u l=130.00n ng=1
+MM26 Q net1 VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+MM27 clkneg CLK VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1
+MM28 clkpos clkneg VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1
+MM29 Db clkpos net4 VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM30 net8 net5 VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM31 net4 clkneg net8 VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM32 net4 RESET_B VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1
+MM33 net5 net4 VDD VDD sg13_lv_pmos w=1.000u l=130.00n ng=1
+MM34 net5 clkneg net2 VDD sg13_lv_pmos w=1.000u l=130.00n ng=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_1x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_1x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_1x.sch
+.subckt CS_Switch_1x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM7 net1 VBIAS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM5 net2 VBIAS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM6 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM8 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM10 VSS VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_2x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_2x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_2x.sch
+.subckt CS_Switch_2x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM7 net1 VBIAS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1
+MM5 net2 VBIAS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM6 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM8 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM10 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_4x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_4x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_4x.sch
+.subckt CS_Switch_4x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM5 net1 VBIAS net2 VSS sg13_hv_nmos w=1.2u l=0.45u ng=1
+MM6 net2 VBIAS VSS VSS sg13_hv_nmos w=1.2u l=0.45u ng=1
+MM7 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM8 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+MM10 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_8x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_8x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_8x.sch
+.subckt CS_Switch_8x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM5 net1 VBIAS net2 VSS sg13_hv_nmos w=2.4u l=0.48u ng=1
+MM6 net2 VBIAS VSS VSS sg13_hv_nmos w=2.4u l=0.48u ng=1
+MM7 VSS VSS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1
+MM8 VSS VSS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1
+MM10 net2 VSS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1
+.ends
+
+
+* expanding   symbol:  sg13g2_nand2_2.sym # of pins=3
+** sym_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sym/xschem/sg13g2_nand2_2.sym
+** sch_path: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/sch/xschem/sg13g2_nand2_2.sch
+.subckt sg13g2_nand2_2 Y A B VDD VSS
+
+*.PININFO Y:O B:I A:I
+MM1 Y A net1 VSS sg13_lv_nmos w=1.44u l=130.00n ng=2
+MM2 net1 B VSS VSS sg13_lv_nmos w=1.44u l=130.00n ng=2
+MM3 Y A VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+MM4 Y B VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2
+.ends
+
+
+* expanding   symbol:  CS_Switch_16x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_16x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_16x.sch
+.subckt CS_Switch_16x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1
+MM3 net1 VBIAS net2 VSS sg13_hv_nmos w=5.2u l=0.45u ng=1
+MM4 net2 VBIAS VSS VSS sg13_hv_nmos w=5.2u l=0.45u ng=1
+MM5 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM6 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1
+MM7 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1
+MM8 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1
+.ends
+

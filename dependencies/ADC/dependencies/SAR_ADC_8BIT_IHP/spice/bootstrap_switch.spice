@@ -1,0 +1,39 @@
+** sch_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sch
+.subckt bootstrap_switch vdd vi vo clk gnd
+*.iopin gnd
+*.iopin vdd
+*.iopin vi
+*.iopin vo
+*.iopin clk
+XM1 vdd net2 net1 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM3 vdd net1 net2 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM4 net7 net10 net3 net3 sg13_lv_pmos w=500n l=0.13u ng=1 m=1
+XM2 vdd net2 net3 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM6 net5 gp vdd vdd sg13_lv_pmos w=500n l=130n ng=1 m=1
+XM5 net5 vdd net4 gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XM7 net4 clk_not gnd gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XC5 net2 clk_not cap_cmim w=4.665e-6 l=6.99e-6 m=1
+XC6 net3 net6 cap_cmim w=9.39e-6 l=6.99e-6 m=1
+XM8 net6 net5 vi gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XM9 vo net7 vi gnd sg13_lv_nmos w=2.5u l=0.13u ng=1 m=1
+XM10 net8 vdd net7 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+XM11 gnd clk_not net8 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+XM12 net6 clk_not gnd gnd sg13_lv_nmos w=1.3u l=0.4u ng=1 m=1
+XC1 net1 net9 cap_cmim w=4.665e-6 l=6.99e-6 m=1
+x1 vdd clk clk_not gnd inverter
+x2 vdd gp net10 gnd inverter
+x3 vdd clk_not net9 gnd inverter
+.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/inverter.sym
+** sch_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/inverter.sch
+.subckt inverter vdd vi vo gnd
+*.iopin vi
+*.iopin vo
+*.iopin gnd
+*.iopin vdd
+XM5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+XM7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends
+

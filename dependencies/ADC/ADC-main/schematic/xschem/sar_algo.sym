@@ -1,0 +1,117 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @@EN @@Om @@Op @@VDD @@VSS @@clk_algo @@fclk_comp @@fclk_in @@fclk_samp @@fdac_clk @@rst @@B0 @@B1 @@B2 @@B3 @@B4 @@B5 @@B6 @@BN0 @@BN1 @@BN2 @@BN3 @@BN4  @@BN5 @@BN6 @@D0 @@D1 @@D2 @@D3 @@D4 @@D5 @@D6 @@D7 @symname"
+template="name=x1"
+}
+V {}
+S {type=subcircuit
+format="@name @@VSS @@Op @@clk_algo @@fclk_in @@fdac_clk @@fclk_comp @@fclk_samp @@En @@rst @@Om @@BN0 @@VDD @@B0 @@BN1 @@B1 @@BN2 @@B2 @@BN3 @@B3 @@BN4 @@B4 @@BN5 @@B5 @@BN6 @@D0 @@D1 @@D2 @@D3 @@D4 @@D5 @@D7 @@B6 @@D6 @symname"
+template="name=x1"
+}
+E {}
+L 4 187.5 -350 192.5 -350 {}
+L 4 187.5 -330 192.5 -330 {}
+L 4 187.5 -310 192.5 -310 {}
+L 4 187.5 -290 192.5 -290 {}
+L 4 187.5 -270 192.5 -270 {}
+L 4 187.5 -250 192.5 -250 {}
+L 4 187.5 -230 192.5 -230 {}
+L 4 187.5 -210 192.5 -210 {}
+L 4 347.5 -520 352.5 -520 {}
+L 4 347.5 -500 352.5 -500 {}
+L 4 347.5 -480 352.5 -480 {}
+L 4 347.5 -460 352.5 -460 {}
+L 4 347.5 -440 352.5 -440 {}
+L 4 347.5 -420 352.5 -420 {}
+L 4 347.5 -400 352.5 -400 {}
+L 4 347.5 -380 352.5 -380 {}
+L 4 347.5 -360 352.5 -360 {}
+L 4 347.5 -340 352.5 -340 {}
+L 4 347.5 -320 352.5 -320 {}
+L 4 347.5 -300 352.5 -300 {}
+L 4 347.5 -280 352.5 -280 {}
+L 4 347.5 -260 352.5 -260 {}
+L 4 347.5 -240 352.5 -240 {}
+L 4 347.5 -220 352.5 -220 {}
+L 4 347.5 -200 352.5 -200 {}
+L 4 347.5 -180 352.5 -180 {}
+L 4 347.5 -160 352.5 -160 {}
+L 4 347.5 -140 352.5 -140 {}
+L 4 347.5 -120 352.5 -120 {}
+L 4 347.5 -100 352.5 -100 {}
+L 4 347.5 -80 352.5 -80 {}
+L 4 347.5 -60 352.5 -60 {}
+L 4 347.5 -40 352.5 -40 {}
+L 4 320 -530 320 -30 {}
+L 4 220 -530 220 -30 {}
+L 4 220 -30 320 -30 {}
+L 4 220 -530 320 -530 {}
+B 5 187.5 -352.5 192.5 -347.5 {name=VDD dir=in verilog_type=wire propag=0}
+B 5 187.5 -332.5 192.5 -327.5 {name=VSS dir=in verilog_type=wire propag=0}
+B 5 187.5 -312.5 192.5 -307.5 {name=fclk_in dir=in verilog_type=wire propag=0}
+B 5 187.5 -292.5 192.5 -287.5 {name=rst dir=in verilog_type=wire propag=0}
+B 5 187.5 -272.5 192.5 -267.5 {name=Op dir=in verilog_type=wire propag=0}
+B 5 187.5 -252.5 192.5 -247.5 {name=Om dir=in verilog_type=wire propag=0}
+B 5 187.5 -232.5 192.5 -227.5 {name=En dir=in verilog_type=wire propag=0}
+B 5 187.5 -212.5 192.5 -207.5 {name=clk_algo dir=in verilog_type=wire propag=0}
+B 5 347.5 -522.5 352.5 -517.5 {name=fdac_clk dir=out verilog_type=wire propag=1}
+B 5 347.5 -502.5 352.5 -497.5 {name=fclk_comp dir=out verilog_type=wire propag=1}
+B 5 347.5 -482.5 352.5 -477.5 {name=fclk_samp dir=out verilog_type=wire propag=1}
+B 5 347.5 -462.5 352.5 -457.5 {name=B6 dir=out verilog_type=wire propag=1}
+B 5 347.5 -442.5 352.5 -437.5 {name=B5 dir=out verilog_type=wire propag=1}
+B 5 347.5 -422.5 352.5 -417.5 {name=B4 dir=out verilog_type=wire propag=1}
+B 5 347.5 -402.5 352.5 -397.5 {name=B3 dir=out verilog_type=wire propag=1}
+B 5 347.5 -382.5 352.5 -377.5 {name=B2 dir=out verilog_type=wire propag=1}
+B 5 347.5 -362.5 352.5 -357.5 {name=B1 dir=out verilog_type=wire propag=1}
+B 5 347.5 -342.5 352.5 -337.5 {name=B0 dir=out verilog_type=wire propag=1}
+B 5 347.5 -322.5 352.5 -317.5 {name=BN6 dir=out verilog_type=wire propag=1}
+B 5 347.5 -302.5 352.5 -297.5 {name=BN5 dir=out verilog_type=wire propag=1}
+B 5 347.5 -282.5 352.5 -277.5 {name=BN4 dir=out verilog_type=wire propag=1}
+B 5 347.5 -262.5 352.5 -257.5 {name=BN3 dir=out verilog_type=wire propag=1}
+B 5 347.5 -242.5 352.5 -237.5 {name=BN2 dir=out verilog_type=wire propag=1}
+B 5 347.5 -222.5 352.5 -217.5 {name=BN1 dir=out verilog_type=wire propag=1}
+B 5 347.5 -202.5 352.5 -197.5 {name=BN0 dir=out verilog_type=wire propag=1}
+B 5 347.5 -182.5 352.5 -177.5 {name=D7 dir=out verilog_type=wire propag=1}
+B 5 347.5 -162.5 352.5 -157.5 {name=D6 dir=out verilog_type=wire propag=1}
+B 5 347.5 -142.5 352.5 -137.5 {name=D5 dir=out verilog_type=wire propag=1}
+B 5 347.5 -122.5 352.5 -117.5 {name=D4 dir=out verilog_type=wire propag=1}
+B 5 347.5 -102.5 352.5 -97.5 {name=D3 dir=out verilog_type=wire propag=1}
+B 5 347.5 -82.5 352.5 -77.5 {name=D2 dir=out verilog_type=wire propag=1}
+B 5 347.5 -62.5 352.5 -57.5 {name=D1 dir=out verilog_type=wire propag=1}
+B 5 347.5 -42.5 352.5 -37.5 {name=D0 dir=out verilog_type=wire propag=1}
+T {VDD} 180 -352.5 0 1 0.12 0.12 {}
+T {VSS} 180 -332.5 0 1 0.12 0.12 {}
+T {fclk_in} 180 -312.5 0 1 0.12 0.12 {}
+T {rst} 180 -292.5 0 1 0.12 0.12 {}
+T {Op} 180 -272.5 0 1 0.12 0.12 {}
+T {Om} 180 -252.5 0 1 0.12 0.12 {}
+T {En} 180 -232.5 0 1 0.12 0.12 {}
+T {clk_algo} 180 -212.5 0 1 0.12 0.12 {}
+T {fdac_clk} 360 -522.5 0 0 0.12 0.12 {}
+T {fclk_comp} 360 -502.5 0 0 0.12 0.12 {}
+T {fclk_samp} 360 -482.5 0 0 0.12 0.12 {}
+T {B6} 360 -462.5 0 0 0.12 0.12 {}
+T {B5} 360 -442.5 0 0 0.12 0.12 {}
+T {B4} 360 -422.5 0 0 0.12 0.12 {}
+T {B3} 360 -402.5 0 0 0.12 0.12 {}
+T {B2} 360 -382.5 0 0 0.12 0.12 {}
+T {B1} 360 -362.5 0 0 0.12 0.12 {}
+T {B0} 360 -342.5 0 0 0.12 0.12 {}
+T {BN6} 360 -322.5 0 0 0.12 0.12 {}
+T {BN5} 360 -302.5 0 0 0.12 0.12 {}
+T {BN4} 360 -282.5 0 0 0.12 0.12 {}
+T {BN3} 360 -262.5 0 0 0.12 0.12 {}
+T {BN2} 360 -242.5 0 0 0.12 0.12 {}
+T {BN1} 360 -222.5 0 0 0.12 0.12 {}
+T {BN0} 360 -202.5 0 0 0.12 0.12 {}
+T {D7} 360 -182.5 0 0 0.12 0.12 {}
+T {D6} 360 -162.5 0 0 0.12 0.12 {}
+T {D5} 360 -142.5 0 0 0.12 0.12 {}
+T {D4} 360 -122.5 0 0 0.12 0.12 {}
+T {D3} 360 -102.5 0 0 0.12 0.12 {}
+T {D2} 360 -82.5 0 0 0.12 0.12 {}
+T {D1} 360 -62.5 0 0 0.12 0.12 {}
+T {D0} 360 -42.5 0 0 0.12 0.12 {}
+T {@symname} 219.5 -476 0 0 0.3 0.3 {}
+T {@name} 245 -512 0 0 0.2 0.2 {}

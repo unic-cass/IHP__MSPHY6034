@@ -1,0 +1,6 @@
+Control 25 -590 m1
+Vout 347 -137 m1
+Vin -108 -135 m1
+!Control 24 547 m1
+vdd 246 361 m1
+gnd 177 -306 m1

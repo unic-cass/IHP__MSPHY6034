@@ -1,0 +1,23 @@
+** sch_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sch
+.subckt dynamic_comparator vdd vbias v+ v- out- out+ clk gnd
+*.iopin vdd
+*.iopin gnd
+*.ipin v+
+*.ipin v-
+*.ipin vbias
+*.ipin clk
+*.opin out-
+*.opin out+
+XM13 net1 clk net2 vdd sg13_lv_pmos w=18u l=0.3u ng=4 m=1
+XM3 net2 vbias vdd vdd sg13_lv_pmos w=18u l=0.3u ng=4 m=1
+XM2 net4 v+ net1 vdd sg13_lv_pmos w=32u l=200n ng=4 m=1
+XM1 net3 v- net1 vdd sg13_lv_pmos w=32u l=200n ng=4 m=1
+XM4 out- net3 vdd vdd sg13_lv_pmos w=8u l=0.200u ng=1 m=1
+XM5 out+ net4 vdd vdd sg13_lv_pmos w=8u l=0.200u ng=1 m=1
+XM11 gnd net4 out+ gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM12 gnd net3 out- gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM6 gnd net3 net4 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM10 gnd clk net4 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM7 gnd clk net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM8 gnd net4 net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+.ends

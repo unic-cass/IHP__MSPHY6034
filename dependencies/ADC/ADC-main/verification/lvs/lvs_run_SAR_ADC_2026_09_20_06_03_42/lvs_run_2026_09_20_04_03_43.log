@@ -1,0 +1,19 @@
+20-Sep-2026 06:03:43 | INFO    | Your Klayout version is: KLayout 0.30.11 (required >= 0.30.5)
+20-Sep-2026 06:03:43 | WARNING | KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.12). Re-align with: pip install klayout==0.30.11
+20-Sep-2026 06:03:43 | INFO    | Running SG13G2 LVS checks on design /home/designer/shared/SAR_ADC_8BIT_IHP/gds/SAR_ADC.gds on cell SAR_ADC
+20-Sep-2026 06:03:49 | INFO    | ==============================================================================
+20-Sep-2026 06:03:49 | INFO    | Important Summary
+20-Sep-2026 06:03:49 | INFO    | +------------------+--------------------------------------------------------------------------------+
+20-Sep-2026 06:03:49 | INFO    | | Status           | PASS                                                                           |
+20-Sep-2026 06:03:49 | INFO    | | Mode             | COMPARE                                                                        |
+20-Sep-2026 06:03:49 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                        |
+20-Sep-2026 06:03:49 | INFO    | | Layout           | SAR_ADC.gds                                                                    |
+20-Sep-2026 06:03:49 | INFO    | | Top Cell         | SAR_ADC                                                                        |
+20-Sep-2026 06:03:49 | INFO    | | Results Dir      | /home/designer/shared/SAR_ADC_8BIT_IHP/gds/lvs_run_SAR_ADC_2026_09_20_06_03_42 |
+20-Sep-2026 06:03:49 | INFO    | | Warnings         | 1                                                                              |
+20-Sep-2026 06:03:49 | INFO    | | Errors           | 0                                                                              |
+20-Sep-2026 06:03:49 | INFO    | | Run Time (s)     | 6.266                                                                          |
+20-Sep-2026 06:03:49 | INFO    | +------------------+--------------------------------------------------------------------------------+
+20-Sep-2026 06:03:49 | WARNING | Key warnings:
+20-Sep-2026 06:03:49 | WARNING |   - KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.12). Re-align with: pip install klayout==0.30.11
+20-Sep-2026 06:03:49 | INFO    | ==============================================================================

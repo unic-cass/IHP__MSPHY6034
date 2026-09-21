@@ -1,0 +1,3 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x vi vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=-19 y=63 sg13_lv_pmos
+x vi gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=-19 y=-234 sg13_lv_nmos

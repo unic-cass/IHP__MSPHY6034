@@ -1,0 +1,12 @@
+** sch_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.iopin Vout
+*.iopin Vin
+*.iopin !Control
+*.iopin Control
+*.iopin gnd
+*.iopin vdd
+XM1 Vin Control Vout gnd sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+XM2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends T_gate
+

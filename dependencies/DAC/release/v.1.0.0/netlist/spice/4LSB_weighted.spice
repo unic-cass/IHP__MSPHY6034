@@ -1,0 +1,120 @@
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/4LSB_weighted.sch
+.subckt 4LSB_weighted CLK OUTN OUTP VBIAS VDD VSS X1 X2 X3 X4
+*.PININFO X4:I X3:I X2:I X1:I VSS:B VDD:I VBIAS:I OUTP:B OUTN:B CLK:I
+x4 net3 net4 CLK X2 VDD VDD VSS sg13g2_dfrbp_2
+x6 net5 net6 CLK X3 VDD VDD VSS sg13g2_dfrbp_2
+x7 net7 net8 CLK X4 VDD VDD VSS sg13g2_dfrbp_2
+x2 net2 net1 OUTN OUTP VBIAS VSS CS_Switch_1x
+x3 net4 net3 OUTN OUTP VBIAS VSS CS_Switch_2x
+x5 net6 net5 OUTN OUTP VBIAS VSS CS_Switch_4x
+x8 net8 net7 OUTN OUTP VBIAS VSS CS_Switch_8x
+x1 net1 net2 CLK X1 VDD VDD VSS sg13g2_dfrbp_2
+.ends
+
+* expanding   symbol:  /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_1x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_1x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_1x.sch
+.subckt CS_Switch_1x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM7 net1 VBIAS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM5 net2 VBIAS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM6 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM8 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_2x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_2x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_2x.sch
+.subckt CS_Switch_2x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM7 net1 VBIAS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+MM5 net2 VBIAS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM6 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM8 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM10 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_4x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_4x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_4x.sch
+.subckt CS_Switch_4x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM5 net1 VBIAS net2 VSS sg13_hv_nmos w=1.2u l=0.45u ng=1 m=1
+MM6 net2 VBIAS VSS VSS sg13_hv_nmos w=1.2u l=0.45u ng=1 m=1
+MM7 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM8 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+MM10 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_8x.sym # of pins=6
+** sym_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_8x.sym
+** sch_path: /home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_Switch_8x.sch
+.subckt CS_Switch_8x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+MM1 OUTP INP net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM2 OUTN INN net1 VSS sg13_lv_nmos w=2u l=0.13u ng=1 m=1
+MM3 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM4 VSS VSS net1 VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+MM5 net1 VBIAS net2 VSS sg13_hv_nmos w=2.4u l=0.48u ng=1 m=1
+MM6 net2 VBIAS VSS VSS sg13_hv_nmos w=2.4u l=0.48u ng=1 m=1
+MM7 VSS VSS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+MM8 VSS VSS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+MM9 net2 VSS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+MM10 net2 VSS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+.ends
+
+.SUBCKT sg13g2_dfrbp_2 Q Q_N CLK D RESET_B VDD VSS
+*.PININFO CLK:I D:I RESET_B:I Q:O Q_N:O VDD:B VSS:B
+MN11 net12 net2 VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN10 net5 clkneg net12 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN12 net2 net5 net11 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN13 net11 RESET_B VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN14 Q_N net5 VSS VSS sg13_lv_nmos m=1 w=1.48u l=130.00n ng=2
+MN0 Db D net10 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN1 net10 RESET_B VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN4 Db clkneg net6 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN5 net6 clkpos net9 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN6 net9 net4 net8 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN7 net8 RESET_B VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN8 net4 net6 VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN2 clkneg CLK VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN9 net4 clkpos net5 VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN3 clkpos clkneg VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN16 Q net1 VSS VSS sg13_lv_nmos m=1 w=1.48u l=130.00n ng=2
+MN15 net1 net5 VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MP11 net5 clkpos net3 VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP12 net2 net5 VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP13 net2 RESET_B VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP14 Q_N net5 VDD VDD sg13_lv_pmos m=1 w=2.24u l=130.00n ng=2
+MP4 Db clkpos net6 VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP0 Db RESET_B VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP1 Db D VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP5 net7 net4 VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP6 net6 clkneg net7 VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP7 net6 RESET_B VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP2 clkneg CLK VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
+MP3 clkpos clkneg VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
+MP8 net4 net6 VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+MP9 net4 clkneg net5 VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+MP16 Q net1 VDD VDD sg13_lv_pmos m=1 w=2.24u l=130.00n ng=2
+MP10 net3 net2 VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP15 net1 net5 VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+.ENDS

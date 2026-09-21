@@ -1,0 +1,3 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x Control Vin Vout gnd s=13600,536 d=13600,536 l=26 w=200 x=24 y=-462 sg13_lv_nmos
+x !Control Vin Vout vdd s=27200,936 d=27200,936 l=26 w=400 x=24 y=35 sg13_lv_pmos

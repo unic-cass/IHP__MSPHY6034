@@ -1,0 +1,34 @@
+{
+  "DESIGN_NAME": "serial2parallel",
+
+  "VERILOG_FILES": [
+    "dir::serial2parallel.v"
+  ],
+
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20,
+
+  "FP_SIZING": "absolute",
+"DIE_AREA": [0, 0, 540, 200],
+"FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 60,
+
+  "VDD_NETS": ["VDD"],
+  "GND_NETS": ["VSS"],
+
+  "FP_PDN_CORE_RING": true,
+
+  "RT_MIN_LAYER": "Metal2",
+  "RT_MAX_LAYER": "Metal4",
+
+  "RT_SIGNAL_LAYERS": ["Metal2", "Metal3", "Metal4"],
+  "RT_CLOCK_LAYERS": ["Metal3", "Metal4"],
+
+  "RUN_MAGIC_DRC": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_LVS": true,
+
+  "ERROR_ON_LINTER_ERRORS": true
+}

@@ -1,0 +1,140 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -170 -10 -170 50 {
+lab=#net1}
+N 80 50 310 50 {
+lab=#net1}
+N 310 -10 310 50 {
+lab=#net1}
+N -170 50 80 50 {
+lab=#net1}
+N 80 130 140 130 {
+lab=VSS}
+N 140 130 140 230 {
+lab=VSS}
+N 80 230 140 230 {
+lab=VSS}
+N 80 260 140 260 {
+lab=VSS}
+N 140 230 140 260 {
+lab=VSS}
+N 40 170 40 230 {
+lab=VBIAS}
+N -20 170 40 170 {
+lab=VBIAS}
+N 40 130 40 170 {
+lab=VBIAS}
+N -170 -210 -170 -140 {
+lab=OUTP}
+N 310 -230 310 -140 {
+lab=OUTN}
+N -280 -10 -170 -10 {lab=#net1}
+N -170 -80 -170 -10 {
+lab=#net1}
+N 310 -10 380 -10 {lab=#net1}
+N 310 -80 310 -10 {
+lab=#net1}
+N 80 160 80 200 {
+lab=#net2}
+N 80 90 80 100 {
+lab=#net1}
+N -160 90 80 90 {lab=#net1}
+N 80 80 80 90 {
+lab=#net1}
+N 80 80 270 80 {lab=#net1}
+N 80 50 80 80 {
+lab=#net1}
+C {lab_wire.sym} -20 170 0 0 {name=p1 sig_type=std_logic lab=VBIAS}
+C {lab_wire.sym} -210 -110 0 0 {name=p2 sig_type=std_logic lab=INP}
+C {lab_wire.sym} 350 -110 0 1 {name=p5 sig_type=std_logic lab=INN}
+C {lab_wire.sym} 310 -230 0 1 {name=p6 sig_type=std_logic lab=OUTN}
+C {lab_wire.sym} -170 -210 0 0 {name=p7 sig_type=std_logic lab=OUTP}
+C {lab_wire.sym} 80 260 3 0 {name=p10 sig_type=std_logic lab=VSS}
+C {iopin.sym} -500 -60 0 0 { name=p11 lab=VSS }
+C {ipin.sym} -500 -80 0 0 { name=p12 lab=VBIAS }
+C {iopin.sym} -500 -100 0 0 { name=p13 lab=OUTP }
+C {iopin.sym} -500 -120 0 0 { name=p14 lab=OUTN }
+C {ipin.sym} -500 -140 0 0 { name=p15 lab=INP }
+C {ipin.sym} -500 -160 0 0 { name=p16 lab=INN }
+C {sg13g2_pr/sg13_lv_nmos.sym} -190 -110 0 0 {name=M1
+l=0.13u
+w=2u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_nmos.sym} 330 -110 0 1 {name=M2
+l=0.13u
+w=2u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {lab_wire.sym} 310 -110 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -170 -110 0 1 {name=p4 sig_type=std_logic lab=VSS}
+C {sg13g2_pr/sg13_hv_nmos.sym} 60 130 0 0 {name=M3
+l=0.45u
+w=5.2u
+ng=1
+m=1
+model=sg13_hv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_hv_nmos.sym} 60 230 0 0 {name=M4
+l=0.45u
+w=5.2u
+ng=1
+m=1
+model=sg13_hv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_nmos.sym} -260 -40 0 1 {name=M5
+l=0.13u
+w=0.5u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_nmos.sym} 360 -40 0 0 {name=M6
+l=0.13u
+w=0.5u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {lab_wire.sym} -280 -40 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -280 -70 0 0 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 340 -40 0 0 {name=p17 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 380 -70 0 1 {name=p18 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 380 -40 0 1 {name=p19 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -240 -40 0 1 {name=p20 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -160 150 3 0 {name=p21 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -160 120 0 0 {name=p22 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -120 120 0 1 {name=p23 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 230 110 0 0 {name=p24 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 270 110 0 1 {name=p25 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 270 140 0 1 {name=p26 sig_type=std_logic lab=VSS}
+C {sg13g2_pr/sg13_hv_nmos.sym} -140 120 0 1 {name=M7
+l=0.45u
+w=0.65u
+ng=1
+m=1
+model=sg13_hv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_hv_nmos.sym} 250 110 0 0 {name=M8
+l=0.45u
+w=0.65u
+ng=1
+m=1
+model=sg13_hv_nmos
+spiceprefix=X
+}

@@ -1,0 +1,54 @@
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/T_gate_switch_tb.sch
+**.subckt T_gate_switch_tb Vo
+*.iopin Vo
+V1 vref GND 0.6
+V2 Control GND PULSE(0 1.2 0 1u 1u 10u 20u)
+V3 vdd GND 1.2
+C1 Vo GND 7p m=1
+x1 net1 GND Vo GND Control vdd T_gate
+x2 Control vref Vo GND net1 vdd T_gate
+x3 vdd Control net1 GND inverter
+**** begin user architecture code
+
+
+.control
+save all
+tran 1u 100u
+write T_gate_tb.raw
+.endc
+
+
+ .lib cornerMOSlv.lib mos_tt
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  T_gate.sym # of pins=6
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/T_gate.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.iopin Vout
+*.iopin Vin
+*.iopin !Control
+*.iopin Control
+*.iopin gnd
+*.iopin vdd
+XM1 Vin Control Vout gnd sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+XM2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/inverter.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/inverter.sch
+.subckt inverter vdd vi vo gnd
+*.iopin vi
+*.iopin vo
+*.iopin gnd
+*.iopin vdd
+XM5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+XM7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends
+
+.GLOBAL GND
+.end

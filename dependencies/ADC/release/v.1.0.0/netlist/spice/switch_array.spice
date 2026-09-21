@@ -1,0 +1,45 @@
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/switch_array.sch
+.subckt switch_array vref vdd gnd S5 S6 D5 D6 S_MSB D_MSB S1 S2 D1 D2 S3 D3 S4 D4
+*.PININFO S_MSB:B S6:B D_MSB:B D6:B S5:B D5:B S4:B S3:B S2:B D4:B D3:B D2:B S1:B D1:B vdd:B vref:B gnd:B
+x1 D_MSB vref S_MSB gnd net1 vdd T_gate
+x2 D4 vref S4 gnd net4 vdd T_gate
+x4 net4 gnd S4 gnd D4 vdd T_gate
+x5 net5 gnd S3 gnd D3 vdd T_gate
+x6 net6 gnd S2 gnd D2 vdd T_gate
+x8 net7 gnd S1 gnd D1 vdd T_gate
+x9 D1 vref S1 gnd net7 vdd T_gate
+x11 D2 vref S2 gnd net6 vdd T_gate
+x12 net3 gnd S5 gnd D5 vdd T_gate
+x14 D5 vref S5 gnd net3 vdd T_gate
+x15 D6 vref S6 gnd net2 vdd T_gate
+x17 net2 gnd S6 gnd D6 vdd T_gate
+x18 net1 gnd S_MSB gnd D_MSB vdd T_gate
+x20 D3 vref S3 gnd net5 vdd T_gate
+x3 vdd D4 net4 gnd inverter
+x7 vdd D_MSB net1 gnd inverter
+x10 vdd D6 net2 gnd inverter
+x13 vdd D5 net3 gnd inverter
+x16 vdd D3 net5 gnd inverter
+x19 vdd D2 net6 gnd inverter
+x21 vdd D1 net7 gnd inverter
+.ends
+
+* expanding   symbol:  T_gate.sym # of pins=6
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/T_gate.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.PININFO Vout:B Vin:B !Control:B Control:B gnd:B vdd:B
+M1 Vin Control Vout gnd sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+M2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/inverter.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/inverter.sch
+.subckt inverter vdd vi vo gnd
+*.PININFO vi:B vo:B gnd:B vdd:B
+M5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+M7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends
+

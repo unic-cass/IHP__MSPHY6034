@@ -1,0 +1,5 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x B gnd a_n15_n246# gnd s=4300,268 d=2500,148 l=26 w=50 x=-40 y=-245 sg13_lv_nmos
+x A Vo vdd vdd s=3800,176 d=6800,336 l=26 w=100 x=61 y=69 sg13_lv_pmos
+x B vdd Vo vdd s=6800,336 d=3800,176 l=26 w=100 x=-40 y=69 sg13_lv_pmos
+x A a_n15_n246# Vo gnd s=2500,148 d=4300,268 l=26 w=50 x=73 y=-245 sg13_lv_nmos

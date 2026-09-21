@@ -1,0 +1,31 @@
+# ===============================
+# Portable xschemrc for SAR_ADC_8BIT_IHP
+# ===============================
+
+# Load PDK config
+source $::env(PDK_ROOT)/$::env(PDK)/libs.tech/xschem/xschemrc
+
+# --------------------------------
+
+# --------------------------------
+set PROJECT_ROOT [file dirname [info script]]
+
+# --------------------------------
+# Init library path nếu chưa tồn tại
+# --------------------------------
+if {![info exists XSCHEM_LIBRARY_PATH]} {
+    set XSCHEM_LIBRARY_PATH ""
+}
+
+# --------------------------------
+# Add all block folders
+# --------------------------------
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/inverter
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/nand_gate
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/bootstrap_switch
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/T_gate
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/C-DAC
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/comparator
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/switch_array
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/SAR_ADC
+append XSCHEM_LIBRARY_PATH :$PROJECT_ROOT/../algorithm/xschem

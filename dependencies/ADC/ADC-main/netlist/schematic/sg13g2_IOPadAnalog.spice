@@ -1,0 +1,8 @@
+* sg13g2_IOPadAnalog
+.subckt sg13g2_IOPadAnalog vss vdd iovss iovdd pad padres
+Xnclamp iovss iovdd pad sg13g2_Clamp_N20N0D
+Xpclamp iovss iovdd pad sg13g2_Clamp_P20N0D
+Xdcndiode iovss pad iovdd sg13g2_DCNDiode
+Xdcpdiode pad iovdd iovss sg13g2_DCPDiode
+Xsecondprot iovdd iovss pad padres sg13g2_SecondaryProtection
+.ends sg13g2_IOPadAnalog

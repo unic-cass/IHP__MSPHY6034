@@ -1,0 +1,8 @@
+* sg13g2_IOPadVdd
+.subckt sg13g2_IOPadVdd vss vdd iovss iovdd
+Xnclamp iovss iovdd vdd ngate sg13g2_Clamp_N43N43D4R
+Xrcres vdd res_cap sg13g2_RCClampResistor
+Xrcinv vdd iovss res_cap ngate sg13g2_RCClampInverter
+Xpad_guard iovss sg13g2_GuardRing_N16000W6624HFF
+.ends sg13g2_IOPadVdd
+

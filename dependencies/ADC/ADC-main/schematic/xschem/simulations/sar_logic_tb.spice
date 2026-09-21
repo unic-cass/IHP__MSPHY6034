@@ -1,0 +1,79 @@
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/sar_logic_tb.sch
+**.subckt sar_logic_tb
+A4 [ Om ] [ net5 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A3 [ rst ] [ net1 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A5 [ net6 ] [ B5 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A1 [ net7 ] [ B4 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A6 [ clk ] [ net3 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A7 [ Op ] [ net2 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A8 [ En ] [ net4 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A9 [ net8 ] [ B3 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A10 [ net9 ] [ B2 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A11 [ net10 ] [ B1 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+V6 Op GND 0
+V5 Om GND 1.2
+A12 [ net11 ] [ B0 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A13 [ net12 ] [ BN7 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A14 [ net13 ] [ BN6 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A15 [ net14 ] [ BN5 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A16 [ net15 ] [ BN4 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A17 [ net16 ] [ BN3 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A18 [ net17 ] [ BN2 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A19 [ net18 ] [ BN1 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A20 [ net19 ] [ BN0 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A21 [ net20 ] [ D7 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A22 [ net21 ] [ D6 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A23 [ net22 ] [ D5 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A24 [ net23 ] [ D4 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A25 [ net24 ] [ D3 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A26 [ net25 ] [ D2 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A27 [ net26 ] [ D1 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A28 [ net27 ] [ D0 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+V4 clk GND dc 0 ac 0 PULSE(0 1.2 0 10p 10p 5u 10u)
+adut1 [ net3 net2 net4 net5 net1 ] [ net6 net7 net8 net9 net10 net11 net12 net13 net14 net15 net16 net17 net18 net19 net20 net21
++ net22 net23 net24 net25 net26 net27 ] null dut
+.model dut d_cosim simulation=./sar_logic.so
+V2 rst GND dc 0 ac 0 PULSE(0 1.2 100u 1n 1n 10u 1m)
+V1 En GND dc 0 ac 0 PULSE(1.2 0 0 1n 1n 30u 1m)
+**** begin user architecture code
+
+
+.param temp=27
+.control
+save all
+tran 1u 200u
+write sar_logic.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

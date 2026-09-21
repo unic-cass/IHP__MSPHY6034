@@ -1,0 +1,5 @@
+* sg13g2_IOPadVss
+.subckt sg13g2_IOPadVss vss vdd iovss iovdd
+Xdcndiode iovss vss iovdd sg13g2_DCNDiode
+Xdcpdiode vss iovdd iovss sg13g2_DCPDiode
+.ends sg13g2_IOPadVss

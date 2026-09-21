@@ -1,0 +1,25 @@
+** sch_path: /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/xschem/C-DAC.sch
+.subckt C-DAC vin vo C5 C6 C3 C4 C2 C1 vref C_MSB
+*.iopin vin
+*.iopin vo
+*.iopin C6
+*.iopin C5
+*.iopin C4
+*.iopin C3
+*.iopin C2
+*.iopin C1
+*.iopin vref
+*.iopin C_MSB
+XC1 vo vref cap_cmim w=5.71e-6 l=5.71e-6 m=1
+XC2 vo C1 cap_cmim w=5.71e-6 l=5.71e-6 m=1
+XC3 vo C2 cap_cmim w=5.71e-6 l=5.71e-6 m=2
+XC4 vo C3 cap_cmim w=5.71e-6 l=5.71e-6 m=4
+XC5 vo C4 cap_cmim w=5.71e-6 l=5.71e-6 m=8
+XC6 vo C5 cap_cmim w=5.71e-6 l=5.71e-6 m=16
+XC7 vo C6 cap_cmim w=5.71e-6 l=5.71e-6 m=32
+XC8 vo C_MSB cap_cmim w=5.71e-6 l=5.71e-6 m=64
+R1 vin vo 1 m=1
+XC9 net1 net2 cap_cmim w=5.71e-6 l=5.71e-6 m=40
+* noconn #net1
+* noconn #net2
+.ends

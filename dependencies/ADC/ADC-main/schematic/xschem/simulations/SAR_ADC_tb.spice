@@ -1,0 +1,290 @@
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/SAR_ADC_tb.sch
+**.subckt SAR_ADC_tb D6 D5 D4 D3 D2 D1 D0 D7 dac_clk
+*.iopin D6
+*.iopin D5
+*.iopin D4
+*.iopin D3
+*.iopin D2
+*.iopin D1
+*.iopin D0
+*.iopin D7
+*.iopin dac_clk
+V1 clk_comp GND dc 0 ac 0 PULSE(0 1.2 comparator_delay 10p 10p T_algo_PW T_algo)
+V6 vdd GND 1.2
+V7 bias GND 0.6
+V12 dac_clk GND dc 0 ac 0 PULSE(0 1.2 DAC_delay 10p 10p DAC_PW T)
+V11 vin_pos GND dc 0 ac 0 SIN(0.6 0.3 12.7k 0 0 0)
+V4 vin_neg GND dc 0 ac 0 SIN(0.6 0.3 12.7k 0 0 180)
+V5 clk_samp GND dc 0 ac 0 PULSE(0 1.2 0 10p 10p T_half T)
+C3 clk_algo GND 20f m=1
+x7 vdd vdd GND net12 net11 BN5 BN6 net10 BN_MSB net16 net15 BN1 BN2 net14 BN3 net13 BN4 switch_array
+x4 vdd vdd GND net7 net8 B5 B6 net9 B_MSB net3 net4 B1 B2 net5 B3 net6 B4 switch_array
+x2 net2 CDAC_v+ net7 net8 net5 net6 net4 net3 vdd net9 C-DAC
+x8 vdd clk_algo Om Op GND nand_gate
+A1 [ clk_algo ] [ net17 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A2 [ Op ] [ net18 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A3 [ vdd ] [ net19 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A4 [ Om ] [ net20 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A5 [ clk_samp ] [ net21 ] adc1
+.model adc1 adc_bridge in_low=0.2 in_high=0.8
+A6 [ net43 ] [ B1 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A7 [ net42 ] [ B2 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A8 [ net41 ] [ B3 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A9 [ net40 ] [ B4 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A10 [ net39 ] [ B5 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A11 [ net38 ] [ B6 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A12 [ net37 ] [ B_MSB ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A13 [ net36 ] [ BN1 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A14 [ net35 ] [ BN2 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A15 [ net34 ] [ BN3 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A16 [ net33 ] [ BN4 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A17 [ net32 ] [ BN5 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A18 [ net31 ] [ BN6 ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A19 [ net30 ] [ BN_MSB ] dac1
+.model dac1 dac_bridge out_low=0.2 out_high=0.8
+A20 [ net29 ] [ D7 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A21 [ net28 ] [ D6 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A22 [ net27 ] [ D5 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A23 [ net26 ] [ D4 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A24 [ net25 ] [ D3 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A25 [ net24 ] [ D2 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A26 [ net23 ] [ D1 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+A27 [ net22 ] [ D0 ] dac1
+.model dac1 dac_bridge out_low=0 out_high=1.2
+x1 vdd vin_pos net2 clk_samp GND bootstrap_switch
+x6 vdd vin_neg net1 clk_samp GND bootstrap_switch
+x3 vdd bias CDAC_v+ CDAC_v- Om Op clk_comp GND dynamic_comparator
+x9 net1 CDAC_v- net12 net11 net14 net13 net15 net16 vdd net10 C-DAC
+adut [ net17 net18 net19 net20 net21 ] [ net43 net42 net41 net40 net39 net38 net37 net36 net35 net34 net33 net32 net31 net30 net29
++ net28 net27 net26 net25 net24 net23 net22 ] null dut
+.model dut d_cosim simulation=./sar_logic.so
+**** begin user architecture code
+
+
+.param temp=27
+.param T = 1u
+.param T_half = T/2
+.param T_algo = T/16
+.param T_algo_delay = T/10
+.param T_algo_PW = T/32
+.param DAC_delay = 0.99*T
+.param DAC_PW = T/20
+.param comparator_delay = 0.328*T
+
+.control
+tran 1n 320m
+let vin_diff = v(Vin_pos) - v(Vin_neg)
+let comp_diff = v(op)- v(om)
+set wr_singlescale
+set wr_vecnames
+wrdata bit_data.txt D0 D1 D2 D3 D4 D5 D6 D7 vin_diff dac_clk
+write SAR_ADC_tb.raw
+.endc
+
+
+ .lib cornerMOSlv.lib mos_tt
+.lib /opt/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  switch_array.sym # of pins=17
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/switch_array.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/switch_array.sch
+.subckt switch_array vref vdd gnd S5 S6 D5 D6 S_MSB D_MSB S1 S2 D1 D2 S3 D3 S4 D4
+*.iopin S_MSB
+*.iopin S6
+*.iopin D_MSB
+*.iopin D6
+*.iopin S5
+*.iopin D5
+*.iopin S4
+*.iopin S3
+*.iopin S2
+*.iopin D4
+*.iopin D3
+*.iopin D2
+*.iopin S1
+*.iopin D1
+*.iopin vdd
+*.iopin vref
+*.iopin gnd
+x1 D_MSB vref S_MSB gnd net2 vdd T_gate
+x2 net2 gnd net1 gnd D_MSB vdd T_gate
+x3 D6 vref S6 gnd net3 vdd T_gate
+x4 net3 gnd S6 gnd D6 vdd T_gate
+x5 D5 vref S5 gnd net4 vdd T_gate
+x6 net4 gnd S5 gnd D5 vdd T_gate
+x7 D3 vref S3 gnd net6 vdd T_gate
+x8 D4 vref S4 gnd net5 vdd T_gate
+x9 net5 gnd S4 gnd D4 vdd T_gate
+x10 net6 gnd S3 gnd D3 vdd T_gate
+x11 D2 vref S2 gnd net7 vdd T_gate
+x12 net7 gnd S2 gnd D2 vdd T_gate
+x13 D1 vref S1 gnd net8 vdd T_gate
+x14 net8 gnd S1 gnd D1 vdd T_gate
+x15 vdd D_MSB net2 gnd inverter
+x16 vdd D6 net3 gnd inverter
+x17 vdd D5 net4 gnd inverter
+x18 vdd D4 net5 gnd inverter
+x19 vdd D3 net6 gnd inverter
+x20 vdd D2 net7 gnd inverter
+x21 vdd D1 net8 gnd inverter
+.ends
+
+
+* expanding   symbol:  C-DAC.sym # of pins=10
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/C-DAC.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/C-DAC.sch
+.subckt C-DAC vin vo C5 C6 C3 C4 C2 C1 vref C_MSB
+*.iopin vin
+*.iopin vo
+*.iopin C6
+*.iopin C5
+*.iopin C4
+*.iopin C3
+*.iopin C2
+*.iopin C1
+*.iopin vref
+*.iopin C_MSB
+XC1 vo vref cap_cmim w=5.71e-6 l=5.71e-6 m=1
+XC2 vo C1 cap_cmim w=5.71e-6 l=5.71e-6 m=1
+XC3 vo C2 cap_cmim w=5.71e-6 l=5.71e-6 m=2
+XC4 vo C3 cap_cmim w=5.71e-6 l=5.71e-6 m=4
+XC5 vo C4 cap_cmim w=5.71e-6 l=5.71e-6 m=8
+XC6 vo C5 cap_cmim w=5.71e-6 l=5.71e-6 m=16
+XC7 vo C6 cap_cmim w=5.71e-6 l=5.71e-6 m=32
+XC8 vo C_MSB cap_cmim w=5.71e-6 l=5.71e-6 m=64
+R1 vin vo 1 m=1
+XC9 net1 net2 cap_cmim w=5.71e-6 l=5.71e-6 m=40
+* noconn #net1
+* noconn #net2
+.ends
+
+
+* expanding   symbol:  nand_gate.sym # of pins=5
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/nand_gate.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/nand_gate.sch
+.subckt nand_gate vdd Vo B A gnd
+*.iopin vdd
+*.iopin gnd
+*.ipin A
+*.opin Vo
+*.ipin B
+XM5 Vo A vdd vdd sg13_lv_pmos w=0.5u l=0.13u ng=1 m=1
+XM6 Vo A net1 gnd sg13_lv_nmos w=0.25u l=0.13u ng=1 m=1
+XM1 net1 B gnd gnd sg13_lv_nmos w=0.25u l=0.13u ng=1 m=1
+XM2 Vo B vdd vdd sg13_lv_pmos w=0.5u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  bootstrap_switch.sym # of pins=5
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sch
+.subckt bootstrap_switch vdd vi vo clk gnd
+*.iopin gnd
+*.iopin vdd
+*.iopin vi
+*.iopin vo
+*.iopin clk
+XM1 vdd net2 net1 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM3 vdd net1 net2 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM4 net7 net10 net3 net3 sg13_lv_pmos w=500n l=0.13u ng=1 m=1
+XM2 vdd net2 net3 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM6 net5 gp vdd vdd sg13_lv_pmos w=500n l=130n ng=1 m=1
+XM5 net5 vdd net4 gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XM7 net4 clk_not gnd gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XC5 net2 clk_not cap_cmim w=4.665e-6 l=6.99e-6 m=1
+XC6 net3 net6 cap_cmim w=9.39e-6 l=6.99e-6 m=1
+XM8 net6 net5 vi gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XM9 vo net7 vi gnd sg13_lv_nmos w=2.5u l=0.13u ng=1 m=1
+XM10 net8 vdd net7 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+XM11 gnd clk_not net8 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+XM12 net6 clk_not gnd gnd sg13_lv_nmos w=1.3u l=0.4u ng=1 m=1
+XC1 net1 net9 cap_cmim w=4.665e-6 l=6.99e-6 m=1
+x1 vdd clk clk_not gnd inverter
+x2 vdd gp net10 gnd inverter
+x3 vdd clk_not net9 gnd inverter
+.ends
+
+
+* expanding   symbol:  dynamic_comparator.sym # of pins=8
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sch
+.subckt dynamic_comparator vdd vbias v+ v- out- out+ clk gnd
+*.iopin vdd
+*.iopin gnd
+*.ipin v+
+*.ipin v-
+*.ipin vbias
+*.ipin clk
+*.opin out-
+*.opin out+
+XM13 net1 clk net2 vdd sg13_lv_pmos w=18u l=0.3u ng=4 m=1
+XM3 net2 vbias vdd vdd sg13_lv_pmos w=18u l=0.3u ng=4 m=1
+XM2 net4 v+ net1 vdd sg13_lv_pmos w=32u l=200n ng=4 m=1
+XM1 net3 v- net1 vdd sg13_lv_pmos w=32u l=200n ng=4 m=1
+XM4 out- net3 vdd vdd sg13_lv_pmos w=8u l=0.200u ng=1 m=1
+XM5 out+ net4 vdd vdd sg13_lv_pmos w=8u l=0.200u ng=1 m=1
+XM11 gnd net4 out+ gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM12 gnd net3 out- gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM6 gnd net3 net4 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM10 gnd clk net4 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM7 gnd clk net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM8 gnd net4 net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  T_gate.sym # of pins=6
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/T_gate.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.iopin Vout
+*.iopin Vin
+*.iopin !Control
+*.iopin Control
+*.iopin gnd
+*.iopin vdd
+XM1 Vin Control Vout gnd sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+XM2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/inverter.sym
+** sch_path: /home/designer/shared/SAR_ADC_8BIT_IHP/xschem/inverter.sch
+.subckt inverter vdd vi vo gnd
+*.iopin vi
+*.iopin vo
+*.iopin gnd
+*.iopin vdd
+XM5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+XM7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends
+
+.GLOBAL GND
+.end

@@ -1,0 +1,750 @@
+* NGSPICE file created from sar_logic.ext - technology: ihp-sg13g2
+
+* Black-box entry subcircuit for sg13g2_tiehi abstract view
+.subckt sg13g2_tiehi VDD VSS L_HI
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_1 abstract view
+.subckt sg13g2_fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_2 abstract view
+.subckt sg13g2_fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_8 abstract view
+.subckt sg13g2_decap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a21oi_1 abstract view
+.subckt sg13g2_a21oi_1 VSS VDD A1 A2 Y B1
+.ends
+
+* Black-box entry subcircuit for sg13g2_inv_1 abstract view
+.subckt sg13g2_inv_1 VDD Y A VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_dlygate4sd3_1 abstract view
+.subckt sg13g2_dlygate4sd3_1 A VDD VSS X
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_4 abstract view
+.subckt sg13g2_decap_4 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_1 abstract view
+.subckt sg13g2_buf_1 A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand4_1 abstract view
+.subckt sg13g2_nand4_1 B C A Y VDD VSS D
+.ends
+
+* Black-box entry subcircuit for sg13g2_o21ai_1 abstract view
+.subckt sg13g2_o21ai_1 B1 VDD Y VSS A1 A2
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor3_1 abstract view
+.subckt sg13g2_nor3_1 A B C Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_dfrbpq_1 abstract view
+.subckt sg13g2_dfrbpq_1 RESET_B VSS VDD D Q CLK
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand3_1 abstract view
+.subckt sg13g2_nand3_1 B C A Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2b_1 abstract view
+.subckt sg13g2_nand2b_1 Y B A_N VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2_1 abstract view
+.subckt sg13g2_nand2_1 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and2_1 abstract view
+.subckt sg13g2_and2_1 A B X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_16 abstract view
+.subckt sg13g2_buf_16 X A VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor2_1 abstract view
+.subckt sg13g2_nor2_1 A B Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and3_1 abstract view
+.subckt sg13g2_and3_1 X A B C VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand3b_1 abstract view
+.subckt sg13g2_nand3b_1 B C Y VDD VSS A_N
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor2b_1 abstract view
+.subckt sg13g2_nor2b_1 A B_N Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a21o_1 abstract view
+.subckt sg13g2_a21o_1 A2 A1 B1 X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a22oi_1 abstract view
+.subckt sg13g2_a22oi_1 Y B1 B2 A2 A1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_or2_1 abstract view
+.subckt sg13g2_or2_1 VSS VDD X B A
+.ends
+
+.subckt sar_logic BN[0] BN[1] BN[2] BN[3] BN[4] BN[5] BN[6] B[0] B[1] B[2] B[3] B[4]
++ B[5] B[6] D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7] En Om Op clk gnd rst vdd
+X_246__51 vdd gnd net50 sg13g2_tiehi
+XFILLER_12_54 vdd gnd sg13g2_fill_1
+X_234__54 vdd gnd net53 sg13g2_tiehi
+XFILLER_5_195 vdd gnd sg13g2_fill_2
+XFILLER_5_140 vdd gnd sg13g2_decap_8
+X_200_ gnd vdd net3 _035_ _045_ net60 sg13g2_a21oi_1
+X_131_ vdd _063_ net64 gnd sg13g2_inv_1
+XFILLER_2_110 vdd gnd sg13g2_fill_2
+XFILLER_9_66 vdd gnd sg13g2_fill_2
+XFILLER_9_11 vdd gnd sg13g2_decap_8
+XFILLER_11_297 vdd gnd sg13g2_decap_8
+Xhold63 net21 vdd gnd net62 sg13g2_dlygate4sd3_1
+Xhold74 net9 vdd gnd net73 sg13g2_dlygate4sd3_1
+Xhold85 counter\[1\] vdd gnd net84 sg13g2_dlygate4sd3_1
+XFILLER_3_260 vdd gnd sg13g2_decap_8
+XFILLER_6_78 vdd gnd sg13g2_decap_4
+XFILLER_0_274 vdd gnd sg13g2_decap_8
+XFILLER_0_285 vdd gnd sg13g2_fill_2
+Xoutput20 net20 D[1] vdd gnd sg13g2_buf_1
+Xoutput7 net7 BN[2] vdd gnd sg13g2_buf_1
+XFILLER_11_0 vdd gnd sg13g2_decap_8
+XFILLER_3_35 vdd gnd sg13g2_decap_8
+XFILLER_3_68 vdd gnd sg13g2_decap_8
+XFILLER_12_33 vdd gnd sg13g2_decap_8
+XFILLER_12_44 vdd gnd sg13g2_fill_2
+XFILLER_12_88 vdd gnd sg13g2_fill_2
+XFILLER_6_119 vdd gnd sg13g2_fill_2
+XFILLER_5_174 vdd gnd sg13g2_decap_8
+X_130_ vdd _062_ net61 gnd sg13g2_inv_1
+XFILLER_0_69 vdd gnd sg13g2_decap_8
+XFILLER_11_232 vdd gnd sg13g2_fill_1
+XFILLER_11_276 vdd gnd sg13g2_decap_8
+XFILLER_7_269 vdd gnd sg13g2_decap_8
+Xhold64 net22 vdd gnd net63 sg13g2_dlygate4sd3_1
+Xhold75 net16 vdd gnd net74 sg13g2_dlygate4sd3_1
+Xhold86 _059_ vdd gnd net85 sg13g2_dlygate4sd3_1
+XFILLER_6_35 vdd gnd sg13g2_decap_8
+XFILLER_0_220 vdd gnd sg13g2_fill_1
+XFILLER_0_253 vdd gnd sg13g2_decap_8
+Xoutput10 net10 BN[5] vdd gnd sg13g2_buf_1
+Xoutput21 net21 D[2] vdd gnd sg13g2_buf_1
+Xoutput8 net8 BN[3] vdd gnd sg13g2_buf_1
+XFILLER_10_308 vdd gnd sg13g2_fill_1
+XFILLER_3_14 vdd gnd sg13g2_decap_8
+X_252__45 vdd gnd net44 sg13g2_tiehi
+XFILLER_8_183 vdd gnd sg13g2_fill_2
+XFILLER_0_48 vdd gnd sg13g2_decap_8
+X_189_ _086_ net27 _082_ _040_ vdd gnd _097_ sg13g2_nand4_1
+XFILLER_9_68 vdd gnd sg13g2_fill_1
+XFILLER_7_248 vdd gnd sg13g2_decap_8
+XFILLER_6_292 vdd gnd sg13g2_decap_8
+XFILLER_3_295 vdd gnd sg13g2_decap_8
+Xhold65 net24 vdd gnd net64 sg13g2_dlygate4sd3_1
+Xhold76 net13 vdd gnd net75 sg13g2_dlygate4sd3_1
+Xhold87 counter\[0\] vdd gnd net86 sg13g2_dlygate4sd3_1
+XFILLER_6_14 vdd gnd sg13g2_decap_8
+XFILLER_0_232 vdd gnd sg13g2_decap_8
+XFILLER_0_298 vdd gnd sg13g2_decap_8
+Xoutput11 net11 BN[6] vdd gnd sg13g2_buf_1
+Xoutput22 net22 D[3] vdd gnd sg13g2_buf_1
+Xoutput9 net9 BN[4] vdd gnd sg13g2_buf_1
+XFILLER_9_129 vdd gnd sg13g2_decap_8
+XFILLER_2_305 vdd gnd sg13g2_decap_4
+XFILLER_5_7 vdd gnd sg13g2_decap_8
+XFILLER_0_27 vdd gnd sg13g2_decap_8
+XFILLER_2_124 vdd gnd sg13g2_decap_8
+XFILLER_2_157 vdd gnd sg13g2_decap_8
+XFILLER_2_179 vdd gnd sg13g2_decap_4
+X_188_ _098_ vdd _039_ gnd _093_ _038_ sg13g2_o21ai_1
+XFILLER_9_47 vdd gnd sg13g2_decap_8
+XFILLER_9_25 vdd gnd sg13g2_decap_8
+XFILLER_7_227 vdd gnd sg13g2_decap_8
+XFILLER_7_205 vdd gnd sg13g2_fill_2
+XFILLER_1_81 vdd gnd sg13g2_decap_8
+XFILLER_6_271 vdd gnd sg13g2_decap_8
+Xhold66 net20 vdd gnd net65 sg13g2_dlygate4sd3_1
+Xhold77 net14 vdd gnd net76 sg13g2_dlygate4sd3_1
+Xhold88 _022_ vdd gnd net87 sg13g2_dlygate4sd3_1
+XFILLER_6_48 vdd gnd sg13g2_fill_1
+XFILLER_3_274 vdd gnd sg13g2_decap_8
+Xoutput12 net12 B[0] vdd gnd sg13g2_buf_1
+Xoutput23 net23 D[4] vdd gnd sg13g2_buf_1
+XFILLER_3_49 vdd gnd sg13g2_decap_4
+XFILLER_10_129 vdd gnd sg13g2_fill_2
+XFILLER_12_170 vdd gnd sg13g2_decap_4
+X_243__36 vdd gnd net35 sg13g2_tiehi
+XFILLER_5_122 vdd gnd sg13g2_fill_1
+XFILLER_5_188 vdd gnd sg13g2_decap_8
+X_187_ _081_ _085_ _092_ _038_ vdd gnd sg13g2_nor3_1
+XFILLER_9_59 vdd gnd sg13g2_decap_8
+XFILLER_9_280 vdd gnd sg13g2_decap_8
+Xclkload0 vdd clkload0/Y clknet_2_1__leaf_clk gnd sg13g2_inv_1
+XFILLER_1_60 vdd gnd sg13g2_decap_8
+X_239_ net43 gnd vdd _009_ net21 clknet_2_1__leaf_clk sg13g2_dfrbpq_1
+XFILLER_6_250 vdd gnd sg13g2_decap_8
+Xhold67 net19 vdd gnd net66 sg13g2_dlygate4sd3_1
+Xhold78 net11 vdd gnd net77 sg13g2_dlygate4sd3_1
+XFILLER_3_253 vdd gnd sg13g2_decap_8
+Xoutput13 net13 B[1] vdd gnd sg13g2_buf_1
+Xoutput24 net24 D[5] vdd gnd sg13g2_buf_1
+XFILLER_0_267 vdd gnd sg13g2_decap_8
+XFILLER_7_70 vdd gnd sg13g2_fill_2
+XFILLER_3_28 vdd gnd sg13g2_decap_8
+XFILLER_5_304 vdd gnd sg13g2_decap_4
+XFILLER_12_193 vdd gnd sg13g2_fill_1
+XFILLER_12_26 vdd gnd sg13g2_decap_8
+XFILLER_0_18 vdd gnd sg13g2_decap_4
+X_255_ net56 gnd vdd _025_ counter\[3\] clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+X_186_ gnd vdd _036_ _037_ _004_ net30 sg13g2_a21oi_1
+XFILLER_11_269 vdd gnd sg13g2_decap_8
+Xclkload1 vdd clkload1/Y clknet_2_3__leaf_clk gnd sg13g2_inv_1
+XFILLER_7_207 vdd gnd sg13g2_fill_1
+XFILLER_10_280 vdd gnd sg13g2_decap_8
+X_238_ net45 gnd vdd _008_ net20 clknet_2_1__leaf_clk sg13g2_dfrbpq_1
+X_169_ net27 _097_ _085_ _100_ vdd gnd sg13g2_nand3_1
+Xhold68 net18 vdd gnd net67 sg13g2_dlygate4sd3_1
+Xhold79 counter\[2\] vdd gnd net78 sg13g2_dlygate4sd3_1
+XFILLER_3_210 vdd gnd sg13g2_fill_2
+XFILLER_3_232 vdd gnd sg13g2_decap_8
+XFILLER_6_28 vdd gnd sg13g2_decap_8
+XFILLER_0_202 vdd gnd sg13g2_decap_8
+XFILLER_0_246 vdd gnd sg13g2_decap_8
+Xoutput14 net14 B[2] vdd gnd sg13g2_buf_1
+Xoutput25 net25 D[6] vdd gnd sg13g2_buf_1
+X_255__57 vdd gnd net56 sg13g2_tiehi
+XFILLER_12_150 vdd gnd sg13g2_fill_1
+XFILLER_8_176 vdd gnd sg13g2_decap_8
+XFILLER_4_72 vdd gnd sg13g2_decap_4
+XFILLER_2_138 vdd gnd sg13g2_decap_8
+XFILLER_3_7 vdd gnd sg13g2_decap_8
+X_254_ net48 gnd vdd net79 counter\[2\] clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+X_185_ _037_ net74 _035_ vdd gnd sg13g2_nand2b_1
+XFILLER_9_39 vdd gnd sg13g2_decap_4
+X_230__41 vdd gnd net40 sg13g2_tiehi
+XFILLER_1_4 vdd gnd sg13g2_decap_8
+X_237_ net47 gnd vdd _007_ net19 clknet_2_1__leaf_clk sg13g2_dfrbpq_1
+X_168_ net27 _096_ _087_ _099_ vdd gnd _098_ sg13g2_nand4_1
+XFILLER_6_285 vdd gnd sg13g2_decap_8
+XFILLER_1_95 vdd gnd sg13g2_decap_8
+Xhold69 net10 vdd gnd net68 sg13g2_dlygate4sd3_1
+XFILLER_10_71 vdd gnd sg13g2_fill_1
+XFILLER_3_200 vdd gnd sg13g2_fill_1
+XFILLER_3_288 vdd gnd sg13g2_decap_8
+XFILLER_0_225 vdd gnd sg13g2_decap_8
+Xoutput15 net15 B[3] vdd gnd sg13g2_buf_1
+Xoutput26 net26 D[7] vdd gnd sg13g2_buf_1
+XFILLER_8_303 vdd gnd sg13g2_decap_4
+XFILLER_7_72 vdd gnd sg13g2_fill_1
+XFILLER_12_162 vdd gnd sg13g2_decap_4
+XFILLER_5_147 vdd gnd sg13g2_fill_2
+XFILLER_4_180 vdd gnd sg13g2_fill_2
+XFILLER_9_18 vdd gnd sg13g2_decap_8
+X_253_ net36 gnd vdd _023_ counter\[1\] clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_184_ _036_ net33 _035_ vdd gnd sg13g2_nand2_1
+XFILLER_9_294 vdd gnd sg13g2_decap_8
+X_236_ net49 gnd vdd _006_ net18 clknet_2_3__leaf_clk sg13g2_dfrbpq_1
+X_167_ net33 _097_ _098_ vdd gnd sg13g2_and2_1
+XFILLER_6_264 vdd gnd sg13g2_decap_8
+XFILLER_1_74 vdd gnd sg13g2_decap_8
+XFILLER_3_212 vdd gnd sg13g2_fill_1
+XFILLER_3_267 vdd gnd sg13g2_decap_8
+X_219_ _048_ vdd _055_ gnd _093_ _038_ sg13g2_o21ai_1
+Xoutput16 net16 B[4] vdd gnd sg13g2_buf_1
+XFILLER_11_7 vdd gnd sg13g2_decap_8
+Xclkbuf_0_clk clknet_0_clk clk vdd gnd sg13g2_buf_16
+XFILLER_12_174 vdd gnd sg13g2_fill_1
+X_237__48 vdd gnd net47 sg13g2_tiehi
+XFILLER_5_104 vdd gnd sg13g2_fill_2
+X_252_ net44 gnd vdd net87 counter\[0\] clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_183_ _082_ _085_ _092_ _035_ vdd gnd sg13g2_nor3_1
+XFILLER_11_228 vdd gnd sg13g2_decap_4
+XFILLER_9_273 vdd gnd sg13g2_decap_8
+X_235_ net51 gnd vdd _005_ net17 clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+XFILLER_10_294 vdd gnd sg13g2_decap_8
+XFILLER_1_53 vdd gnd sg13g2_decap_8
+X_166_ _076_ _077_ _097_ vdd gnd sg13g2_nor2_1
+XFILLER_6_243 vdd gnd sg13g2_decap_8
+XFILLER_3_246 vdd gnd sg13g2_decap_8
+X_218_ _054_ net68 _040_ vdd gnd sg13g2_nand2_1
+X_149_ _081_ _076_ _078_ _079_ vdd gnd sg13g2_and3_1
+XFILLER_0_216 vdd gnd sg13g2_decap_4
+Xoutput17 net17 B[5] vdd gnd sg13g2_buf_1
+XFILLER_5_308 vdd gnd sg13g2_fill_1
+XFILLER_12_186 vdd gnd sg13g2_decap_8
+XFILLER_12_19 vdd gnd sg13g2_decap_8
+XFILLER_5_149 vdd gnd sg13g2_fill_1
+XFILLER_4_182 vdd gnd sg13g2_fill_1
+Xclkbuf_2_0__f_clk clknet_2_0__leaf_clk clknet_0_clk vdd gnd sg13g2_buf_16
+X_251_ net52 gnd vdd _021_ net11 clknet_2_3__leaf_clk sg13g2_dfrbpq_1
+Xfanout30 net32 net30 vdd gnd sg13g2_buf_1
+X_182_ gnd vdd _031_ _033_ _003_ net30 sg13g2_a21oi_1
+XFILLER_8_0 vdd gnd sg13g2_decap_8
+XFILLER_10_273 vdd gnd sg13g2_decap_8
+XFILLER_1_32 vdd gnd sg13g2_decap_8
+X_234_ net53 gnd vdd _004_ net16 clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+X_165_ _096_ _082_ _086_ vdd gnd sg13g2_nand2_1
+XFILLER_6_299 vdd gnd sg13g2_decap_8
+XFILLER_3_225 vdd gnd sg13g2_decap_8
+X_217_ gnd vdd _052_ _053_ _019_ net29 sg13g2_a21oi_1
+X_148_ _080_ _078_ _079_ vdd gnd sg13g2_nand2_1
+XFILLER_2_291 vdd gnd sg13g2_decap_8
+Xoutput18 net18 B[6] vdd gnd sg13g2_buf_1
+XFILLER_0_239 vdd gnd sg13g2_decap_8
+XFILLER_12_121 vdd gnd sg13g2_fill_2
+XFILLER_8_169 vdd gnd sg13g2_decap_8
+XFILLER_8_147 vdd gnd sg13g2_fill_2
+XFILLER_8_125 vdd gnd sg13g2_fill_1
+X_251__53 vdd gnd net52 sg13g2_tiehi
+X_236__50 vdd gnd net49 sg13g2_tiehi
+XFILLER_5_106 vdd gnd sg13g2_fill_1
+XFILLER_4_32 vdd gnd sg13g2_decap_8
+XFILLER_4_76 vdd gnd sg13g2_fill_1
+X_250_ net34 gnd vdd _020_ net10 clknet_2_1__leaf_clk sg13g2_dfrbpq_1
+Xfanout31 net32 net31 vdd gnd sg13g2_buf_1
+X_181_ _034_ _068_ _032_ vdd gnd sg13g2_nand2_1
+XFILLER_1_11 vdd gnd sg13g2_decap_8
+XFILLER_1_88 vdd gnd sg13g2_decap_8
+X_233_ net55 gnd vdd _003_ net15 clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+X_164_ gnd vdd _094_ _095_ _000_ net29 sg13g2_a21oi_1
+XFILLER_6_278 vdd gnd sg13g2_decap_8
+XFILLER_2_270 vdd gnd sg13g2_decap_8
+X_216_ _081_ _086_ net2 _053_ vdd gnd net27 sg13g2_nand4_1
+X_147_ net28 counter\[3\] _079_ vdd gnd counter\[1\] sg13g2_nand3b_1
+Xoutput19 net19 D[0] vdd gnd sg13g2_buf_1
+XFILLER_8_307 vdd gnd sg13g2_fill_2
+XFILLER_7_32 vdd gnd sg13g2_decap_4
+XFILLER_12_155 vdd gnd sg13g2_decap_8
+XFILLER_7_181 vdd gnd sg13g2_decap_8
+XFILLER_4_11 vdd gnd sg13g2_decap_8
+Xfanout32 net4 net32 vdd gnd sg13g2_buf_1
+X_180_ _033_ net70 _032_ vdd gnd sg13g2_nand2_1
+XFILLER_9_287 vdd gnd sg13g2_decap_8
+X_232_ net57 gnd vdd _002_ net14 clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+X_163_ net81 vdd _095_ gnd _087_ _092_ sg13g2_o21ai_1
+XFILLER_6_257 vdd gnd sg13g2_decap_8
+XFILLER_1_67 vdd gnd sg13g2_decap_8
+XFILLER_5_290 vdd gnd sg13g2_decap_8
+XFILLER_10_21 vdd gnd sg13g2_decap_8
+X_215_ _052_ net73 _035_ vdd gnd sg13g2_nand2b_1
+X_146_ _074_ _077_ _073_ _078_ vdd gnd sg13g2_nand3_1
+XFILLER_7_11 vdd gnd sg13g2_decap_8
+X_129_ vdd _061_ net69 gnd sg13g2_inv_1
+XFILLER_12_134 vdd gnd sg13g2_fill_1
+XFILLER_8_149 vdd gnd sg13g2_fill_1
+XFILLER_8_116 vdd gnd sg13g2_fill_2
+Xfanout33 net3 net33 vdd gnd sg13g2_buf_1
+XFILLER_1_144 vdd gnd sg13g2_fill_1
+XFILLER_1_199 vdd gnd sg13g2_decap_8
+XFILLER_9_266 vdd gnd sg13g2_decap_8
+XFILLER_9_233 vdd gnd sg13g2_fill_1
+XFILLER_10_287 vdd gnd sg13g2_decap_8
+X_231_ net gnd vdd _001_ net13 clknet_2_2__leaf_clk sg13g2_dfrbpq_1
+X_162_ _094_ net33 _093_ vdd gnd sg13g2_nand2_1
+XFILLER_6_236 vdd gnd sg13g2_decap_8
+XFILLER_6_0 vdd gnd sg13g2_decap_8
+XFILLER_1_46 vdd gnd sg13g2_decap_8
+XFILLER_10_99 vdd gnd sg13g2_fill_2
+XFILLER_3_239 vdd gnd sg13g2_decap_8
+Xinput1 En net1 vdd gnd sg13g2_buf_1
+X_214_ _051_ vdd _018_ gnd _061_ _034_ sg13g2_o21ai_1
+X_145_ counter\[1\] _070_ _077_ vdd gnd sg13g2_and2_1
+XFILLER_0_209 vdd gnd sg13g2_decap_8
+X_249__39 vdd gnd net38 sg13g2_tiehi
+X_128_ vdd _060_ net78 gnd sg13g2_inv_1
+XFILLER_12_146 vdd gnd sg13g2_decap_4
+XFILLER_12_179 vdd gnd sg13g2_decap_8
+XFILLER_4_301 vdd gnd sg13g2_decap_4
+XFILLER_1_304 vdd gnd sg13g2_fill_1
+X_233__56 vdd gnd net55 sg13g2_tiehi
+XFILLER_10_233 vdd gnd sg13g2_fill_1
+X_230_ net40 gnd vdd _000_ net12 clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_161_ _087_ _092_ _093_ vdd gnd sg13g2_nor2_1
+XFILLER_1_25 vdd gnd sg13g2_decap_8
+XFILLER_3_218 vdd gnd sg13g2_decap_8
+Xinput2 Om net2 vdd gnd sg13g2_buf_1
+XFILLER_2_284 vdd gnd sg13g2_decap_8
+X_213_ _068_ net27 net2 _051_ vdd gnd _030_ sg13g2_nand4_1
+X_144_ _073_ _074_ _071_ _076_ vdd gnd sg13g2_nand3_1
+XFILLER_12_114 vdd gnd sg13g2_decap_8
+XFILLER_8_118 vdd gnd sg13g2_fill_1
+XFILLER_7_195 vdd gnd sg13g2_decap_4
+XFILLER_4_110 vdd gnd sg13g2_fill_1
+XFILLER_4_143 vdd gnd sg13g2_fill_2
+XFILLER_4_25 vdd gnd sg13g2_decap_8
+XFILLER_1_102 vdd gnd sg13g2_decap_4
+XFILLER_5_90 vdd gnd sg13g2_decap_8
+XFILLER_10_201 vdd gnd sg13g2_fill_1
+X_160_ _092_ _073_ _090_ vdd gnd sg13g2_nand2_1
+Xinput3 Op net3 vdd gnd sg13g2_buf_1
+XFILLER_10_35 vdd gnd sg13g2_fill_2
+X_212_ _050_ _028_ _017_ vdd gnd sg13g2_nor2b_1
+X_143_ _073_ _074_ _075_ vdd gnd sg13g2_and2_1
+XFILLER_2_263 vdd gnd sg13g2_decap_8
+XFILLER_2_91 vdd gnd sg13g2_decap_8
+XFILLER_7_36 vdd gnd sg13g2_fill_2
+XFILLER_7_25 vdd gnd sg13g2_decap_8
+X_245__55 vdd gnd net54 sg13g2_tiehi
+XFILLER_5_80 vdd gnd sg13g2_decap_4
+Xclkbuf_2_1__f_clk clknet_2_1__leaf_clk clknet_0_clk vdd gnd sg13g2_buf_16
+Xinput4 rst net4 vdd gnd sg13g2_buf_1
+XFILLER_5_283 vdd gnd sg13g2_decap_8
+XFILLER_10_14 vdd gnd sg13g2_decap_8
+X_211_ _068_ vdd _050_ gnd net80 _027_ sg13g2_o21ai_1
+X_142_ net28 _070_ counter\[3\] _074_ vdd gnd sg13g2_nand3_1
+XFILLER_2_242 vdd gnd sg13g2_decap_8
+XFILLER_2_70 vdd gnd sg13g2_decap_8
+XFILLER_12_127 vdd gnd sg13g2_decap_8
+XFILLER_11_160 vdd gnd sg13g2_fill_1
+XFILLER_8_7 vdd gnd sg13g2_decap_8
+XFILLER_0_181 vdd gnd sg13g2_decap_8
+XFILLER_1_39 vdd gnd sg13g2_decap_8
+XFILLER_5_262 vdd gnd sg13g2_decap_8
+XFILLER_10_37 vdd gnd sg13g2_fill_1
+XFILLER_2_221 vdd gnd sg13g2_decap_8
+XFILLER_2_298 vdd gnd sg13g2_decap_8
+X_210_ gnd vdd _047_ _049_ _016_ net29 sg13g2_a21oi_1
+X_141_ counter\[1\] net28 counter\[2\] _073_ vdd gnd _069_ sg13g2_nand4_1
+X_248__43 vdd gnd net42 sg13g2_tiehi
+XFILLER_12_139 vdd gnd sg13g2_decap_8
+XFILLER_7_143 vdd gnd sg13g2_decap_4
+X_242__38 vdd gnd net37 sg13g2_tiehi
+XFILLER_4_39 vdd gnd sg13g2_fill_1
+XFILLER_3_190 vdd gnd sg13g2_fill_1
+Xfanout27 _091_ net27 vdd gnd sg13g2_buf_1
+XFILLER_8_282 vdd gnd sg13g2_decap_8
+XFILLER_1_18 vdd gnd sg13g2_decap_8
+XFILLER_5_241 vdd gnd sg13g2_decap_8
+XFILLER_2_200 vdd gnd sg13g2_decap_8
+XFILLER_2_277 vdd gnd sg13g2_decap_8
+X_140_ _072_ counter\[1\] net28 vdd gnd sg13g2_nand2_1
+XFILLER_12_107 vdd gnd sg13g2_decap_8
+X_239__44 vdd gnd net43 sg13g2_tiehi
+XFILLER_7_199 vdd gnd sg13g2_fill_2
+XFILLER_7_188 vdd gnd sg13g2_decap_8
+XFILLER_8_93 vdd gnd sg13g2_decap_4
+XFILLER_4_18 vdd gnd sg13g2_decap_8
+XFILLER_1_106 vdd gnd sg13g2_fill_2
+Xfanout28 net86 net28 vdd gnd sg13g2_buf_1
+XFILLER_0_150 vdd gnd sg13g2_fill_2
+XFILLER_8_261 vdd gnd sg13g2_decap_8
+XFILLER_10_28 vdd gnd sg13g2_decap_8
+XFILLER_5_297 vdd gnd sg13g2_decap_8
+XFILLER_2_256 vdd gnd sg13g2_decap_8
+XFILLER_2_84 vdd gnd sg13g2_decap_8
+X_199_ gnd vdd _064_ _031_ _010_ net29 sg13g2_a21oi_1
+XFILLER_11_82 vdd gnd sg13g2_decap_4
+XFILLER_2_0 vdd gnd sg13g2_decap_8
+XFILLER_7_304 vdd gnd sg13g2_fill_1
+XFILLER_7_18 vdd gnd sg13g2_decap_8
+XFILLER_7_134 vdd gnd sg13g2_decap_4
+XFILLER_8_61 vdd gnd sg13g2_decap_4
+X_241__40 vdd gnd net39 sg13g2_tiehi
+Xfanout29 net32 net29 vdd gnd sg13g2_buf_1
+XFILLER_0_195 vdd gnd sg13g2_decap_8
+XFILLER_8_240 vdd gnd sg13g2_decap_4
+XFILLER_5_84 vdd gnd sg13g2_fill_2
+XFILLER_10_239 vdd gnd sg13g2_decap_8
+XFILLER_6_7 vdd gnd sg13g2_decap_8
+XFILLER_5_276 vdd gnd sg13g2_decap_8
+XFILLER_2_235 vdd gnd sg13g2_decap_8
+X_198_ gnd vdd _065_ _028_ _009_ net29 sg13g2_a21oi_1
+XFILLER_4_4 vdd gnd sg13g2_decap_8
+XFILLER_1_290 vdd gnd sg13g2_decap_8
+XFILLER_2_63 vdd gnd sg13g2_decap_8
+X_254__49 vdd gnd net48 sg13g2_tiehi
+XFILLER_11_153 vdd gnd sg13g2_fill_2
+XFILLER_8_51 vdd gnd sg13g2_fill_1
+XFILLER_6_190 vdd gnd sg13g2_fill_1
+XFILLER_0_174 vdd gnd sg13g2_fill_2
+XFILLER_10_0 vdd gnd sg13g2_decap_8
+XFILLER_12_281 vdd gnd sg13g2_decap_8
+XFILLER_8_296 vdd gnd sg13g2_decap_8
+XFILLER_10_229 vdd gnd sg13g2_decap_4
+XFILLER_5_255 vdd gnd sg13g2_decap_8
+XFILLER_2_214 vdd gnd sg13g2_decap_8
+X_197_ gnd vdd _066_ _099_ _008_ net29 sg13g2_a21oi_1
+XFILLER_2_42 vdd gnd sg13g2_decap_8
+X_249_ net38 gnd vdd _019_ net9 clknet_2_1__leaf_clk sg13g2_dfrbpq_1
+XFILLER_7_147 vdd gnd sg13g2_fill_2
+XFILLER_3_172 vdd gnd sg13g2_decap_8
+XFILLER_8_275 vdd gnd sg13g2_decap_8
+XFILLER_5_97 vdd gnd sg13g2_decap_8
+XFILLER_5_201 vdd gnd sg13g2_fill_1
+XFILLER_2_21 vdd gnd sg13g2_decap_8
+XFILLER_2_98 vdd gnd sg13g2_decap_8
+X_196_ gnd vdd _067_ _094_ _007_ net29 sg13g2_a21oi_1
+X_248_ net42 gnd vdd _018_ net8 clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_179_ _032_ _091_ _072_ vdd gnd sg13g2_nand2b_1
+XFILLER_11_188 vdd gnd sg13g2_decap_4
+Xclkbuf_2_2__f_clk clknet_2_2__leaf_clk clknet_0_clk vdd gnd sg13g2_buf_16
+XFILLER_8_42 vdd gnd sg13g2_fill_1
+XFILLER_6_181 vdd gnd sg13g2_decap_8
+XFILLER_3_151 vdd gnd sg13g2_fill_1
+XFILLER_0_121 vdd gnd sg13g2_fill_2
+XFILLER_0_176 vdd gnd sg13g2_fill_1
+XFILLER_5_21 vdd gnd sg13g2_decap_8
+XFILLER_2_249 vdd gnd sg13g2_decap_8
+XFILLER_2_77 vdd gnd sg13g2_decap_8
+X_195_ gnd vdd _042_ _044_ _006_ net31 sg13g2_a21oi_1
+XFILLER_11_304 vdd gnd sg13g2_decap_4
+XFILLER_11_86 vdd gnd sg13g2_fill_1
+X_247_ net46 gnd vdd _017_ net7 clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_178_ net27 _030_ net33 _031_ vdd gnd sg13g2_nand3_1
+XFILLER_7_127 vdd gnd sg13g2_decap_8
+XFILLER_7_105 vdd gnd sg13g2_fill_2
+X_235__52 vdd gnd net51 sg13g2_tiehi
+XFILLER_8_65 vdd gnd sg13g2_fill_1
+XFILLER_8_21 vdd gnd sg13g2_decap_8
+XFILLER_4_108 vdd gnd sg13g2_fill_2
+XFILLER_0_111 vdd gnd sg13g2_decap_4
+XFILLER_0_188 vdd gnd sg13g2_decap_8
+XFILLER_5_66 vdd gnd sg13g2_fill_1
+XFILLER_5_269 vdd gnd sg13g2_decap_8
+XFILLER_4_280 vdd gnd sg13g2_decap_8
+XFILLER_2_228 vdd gnd sg13g2_decap_8
+XFILLER_1_283 vdd gnd sg13g2_decap_8
+XFILLER_2_56 vdd gnd sg13g2_decap_8
+X_194_ _044_ net67 _043_ vdd gnd sg13g2_nand2_1
+XFILLER_11_21 vdd gnd sg13g2_decap_8
+X_246_ net50 gnd vdd _016_ net6 clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_177_ _076_ _077_ _030_ vdd gnd sg13g2_nor2b_1
+XFILLER_9_180 vdd gnd sg13g2_decap_8
+X_229_ net32 net83 _025_ vdd gnd sg13g2_nor2b_1
+XFILLER_3_186 vdd gnd sg13g2_decap_4
+XFILLER_0_134 vdd gnd sg13g2_fill_1
+XFILLER_12_274 vdd gnd sg13g2_decap_8
+XFILLER_8_289 vdd gnd sg13g2_decap_8
+XFILLER_8_234 vdd gnd sg13g2_fill_2
+XFILLER_5_248 vdd gnd sg13g2_decap_8
+XFILLER_2_207 vdd gnd sg13g2_decap_8
+X_193_ _086_ _091_ _082_ _043_ vdd gnd _026_ sg13g2_nand4_1
+XFILLER_1_262 vdd gnd sg13g2_decap_8
+XFILLER_2_35 vdd gnd sg13g2_decap_8
+X_245_ net54 gnd vdd _015_ net5 clknet_2_0__leaf_clk sg13g2_dfrbpq_1
+X_176_ gnd vdd _028_ _029_ _002_ net30 sg13g2_a21oi_1
+XFILLER_3_302 vdd gnd sg13g2_decap_8
+X_250__35 vdd gnd net34 sg13g2_tiehi
+X_228_ gnd vdd _060_ _032_ _024_ net30 sg13g2_a21oi_1
+X_159_ _073_ _090_ _091_ vdd gnd sg13g2_and2_1
+XFILLER_12_8 vdd gnd sg13g2_decap_8
+XFILLER_0_90 vdd gnd sg13g2_decap_8
+XFILLER_12_231 vdd gnd sg13g2_decap_8
+XFILLER_8_268 vdd gnd sg13g2_decap_8
+XFILLER_5_35 vdd gnd sg13g2_decap_4
+XFILLER_7_290 vdd gnd sg13g2_decap_8
+X_192_ _076_ _080_ net33 _042_ vdd gnd _038_ sg13g2_nand4_1
+XFILLER_1_241 vdd gnd sg13g2_decap_8
+XFILLER_2_14 vdd gnd sg13g2_decap_8
+XFILLER_2_7 vdd gnd sg13g2_decap_8
+X_244_ net58 gnd vdd _014_ net26 clknet_2_3__leaf_clk sg13g2_dfrbpq_1
+X_175_ _029_ net76 _027_ vdd gnd sg13g2_nand2b_1
+XFILLER_3_90 vdd gnd sg13g2_fill_2
+XFILLER_0_4 vdd gnd sg13g2_decap_8
+XFILLER_10_181 vdd gnd sg13g2_fill_1
+X_227_ _034_ net85 _023_ vdd gnd sg13g2_nor2_1
+X_158_ _088_ _089_ _090_ vdd gnd sg13g2_nor2b_1
+XFILLER_8_35 vdd gnd sg13g2_decap_8
+XFILLER_6_174 vdd gnd sg13g2_decap_8
+XFILLER_3_144 vdd gnd sg13g2_decap_8
+X_232__58 vdd gnd net57 sg13g2_tiehi
+XFILLER_5_14 vdd gnd sg13g2_decap_8
+XFILLER_4_294 vdd gnd sg13g2_decap_8
+XFILLER_1_220 vdd gnd sg13g2_decap_8
+XFILLER_1_297 vdd gnd sg13g2_decap_8
+X_191_ gnd vdd _039_ _041_ _005_ net31 sg13g2_a21oi_1
+XFILLER_11_308 vdd gnd sg13g2_fill_1
+XFILLER_11_35 vdd gnd sg13g2_decap_4
+X_243_ net35 gnd vdd _013_ net25 clknet_2_3__leaf_clk sg13g2_dfrbpq_1
+X_174_ _028_ net33 _027_ vdd gnd sg13g2_nand2_1
+XFILLER_9_194 vdd gnd sg13g2_decap_4
+XFILLER_9_150 vdd gnd sg13g2_decap_4
+X_226_ gnd vdd net28 _090_ _059_ net84 sg13g2_a21oi_1
+X_157_ gnd vdd net33 net2 _089_ counter\[3\] sg13g2_a21oi_1
+XFILLER_8_47 vdd gnd sg13g2_decap_4
+XFILLER_8_14 vdd gnd sg13g2_decap_8
+X_209_ net27 _096_ _087_ _049_ vdd gnd _048_ sg13g2_nand4_1
+XFILLER_0_104 vdd gnd sg13g2_decap_8
+XFILLER_0_115 vdd gnd sg13g2_fill_1
+XFILLER_12_288 vdd gnd sg13g2_decap_8
+XFILLER_12_299 vdd gnd sg13g2_fill_2
+XFILLER_8_248 vdd gnd sg13g2_decap_4
+XFILLER_8_226 vdd gnd sg13g2_decap_4
+XFILLER_10_7 vdd gnd sg13g2_decap_8
+XFILLER_4_273 vdd gnd sg13g2_decap_8
+XFILLER_1_276 vdd gnd sg13g2_decap_8
+XFILLER_2_49 vdd gnd sg13g2_decap_8
+X_190_ _041_ net72 _040_ vdd gnd sg13g2_nand2_1
+XFILLER_11_14 vdd gnd sg13g2_decap_8
+X_242_ net37 gnd vdd _012_ net24 clknet_2_3__leaf_clk sg13g2_dfrbpq_1
+X_173_ _027_ _085_ _091_ _026_ vdd gnd sg13g2_and3_1
+XFILLER_9_173 vdd gnd sg13g2_fill_2
+XFILLER_3_92 vdd gnd sg13g2_fill_1
+X_225_ gnd vdd net28 net27 _022_ _058_ sg13g2_a21oi_1
+X_156_ net1 vdd _088_ gnd net33 net2 sg13g2_o21ai_1
+XFILLER_6_132 vdd gnd sg13g2_decap_8
+XFILLER_6_121 vdd gnd sg13g2_fill_1
+XFILLER_3_102 vdd gnd sg13g2_fill_2
+XFILLER_3_179 vdd gnd sg13g2_decap_8
+X_208_ net2 _097_ _048_ vdd gnd sg13g2_and2_1
+X_139_ _070_ counter\[3\] net28 _071_ vdd gnd sg13g2_a21o_1
+XFILLER_0_127 vdd gnd sg13g2_decap_8
+XFILLER_12_201 vdd gnd sg13g2_fill_1
+XFILLER_12_267 vdd gnd sg13g2_decap_8
+Xclkbuf_2_3__f_clk clknet_2_3__leaf_clk clknet_0_clk vdd gnd sg13g2_buf_16
+XFILLER_4_252 vdd gnd sg13g2_decap_8
+XFILLER_6_92 vdd gnd sg13g2_fill_2
+XFILLER_1_255 vdd gnd sg13g2_decap_8
+XFILLER_2_28 vdd gnd sg13g2_decap_8
+X_241_ net39 gnd vdd _011_ net23 clknet_2_3__leaf_clk sg13g2_dfrbpq_1
+X_172_ _026_ _078_ _079_ _075_ _071_ vdd gnd sg13g2_a22oi_1
+XFILLER_3_82 vdd gnd sg13g2_decap_4
+X_224_ _068_ vdd _058_ gnd net28 _090_ sg13g2_o21ai_1
+X_155_ _078_ _079_ _076_ _087_ vdd gnd _085_ sg13g2_nand4_1
+XFILLER_6_188 vdd gnd sg13g2_fill_2
+X_207_ _047_ net71 _100_ vdd gnd sg13g2_nand2_1
+X_138_ counter\[2\] counter\[1\] counter\[3\] _070_ vdd gnd sg13g2_nand3_1
+XFILLER_0_83 vdd gnd sg13g2_decap_8
+XFILLER_12_224 vdd gnd sg13g2_decap_8
+XFILLER_5_28 vdd gnd sg13g2_decap_8
+XFILLER_11_290 vdd gnd sg13g2_decap_8
+XFILLER_7_283 vdd gnd sg13g2_decap_8
+XFILLER_6_82 vdd gnd sg13g2_fill_2
+XFILLER_6_71 vdd gnd sg13g2_decap_8
+XFILLER_1_234 vdd gnd sg13g2_decap_8
+XFILLER_9_4 vdd gnd sg13g2_decap_8
+XFILLER_9_301 vdd gnd sg13g2_decap_4
+X_240_ net41 gnd vdd _010_ net22 clknet_2_1__leaf_clk sg13g2_dfrbpq_1
+X_171_ gnd vdd _099_ _101_ _001_ net30 sg13g2_a21oi_1
+X_253__37 vdd gnd net36 sg13g2_tiehi
+XFILLER_10_141 vdd gnd sg13g2_decap_4
+X_244__59 vdd gnd net58 sg13g2_tiehi
+X_223_ gnd vdd _056_ _057_ _021_ net30 sg13g2_a21oi_1
+XFILLER_8_28 vdd gnd sg13g2_decap_8
+XFILLER_12_81 vdd gnd sg13g2_decap_8
+X_154_ vdd _086_ _085_ gnd sg13g2_inv_1
+XFILLER_3_104 vdd gnd sg13g2_fill_1
+XFILLER_3_137 vdd gnd sg13g2_decap_8
+X_206_ _046_ _094_ _015_ vdd gnd sg13g2_nor2b_1
+X_137_ _069_ counter\[3\] counter\[1\] vdd gnd sg13g2_nand2_1
+XFILLER_0_62 vdd gnd sg13g2_decap_8
+XFILLER_7_262 vdd gnd sg13g2_decap_8
+XFILLER_4_287 vdd gnd sg13g2_decap_8
+XFILLER_1_213 vdd gnd sg13g2_decap_8
+XFILLER_11_28 vdd gnd sg13g2_decap_8
+XFILLER_11_39 vdd gnd sg13g2_fill_2
+XFILLER_10_301 vdd gnd sg13g2_decap_8
+X_170_ _101_ net75 _100_ vdd gnd sg13g2_nand2_1
+X_238__46 vdd gnd net45 sg13g2_tiehi
+XFILLER_9_198 vdd gnd sg13g2_fill_2
+XFILLER_9_187 vdd gnd sg13g2_decap_8
+XFILLER_9_143 vdd gnd sg13g2_decap_8
+XFILLER_10_120 vdd gnd sg13g2_decap_4
+X_222_ _076_ _080_ net2 _057_ vdd gnd _038_ sg13g2_nand4_1
+X_153_ gnd vdd _085_ _084_ _083_ sg13g2_or2_1
+XFILLER_6_146 vdd gnd sg13g2_decap_4
+X_205_ _068_ vdd _046_ gnd net82 _093_ sg13g2_o21ai_1
+X_136_ vdd _068_ net29 gnd sg13g2_inv_1
+XFILLER_0_41 vdd gnd sg13g2_decap_8
+XFILLER_7_241 vdd gnd sg13g2_decap_8
+XFILLER_4_266 vdd gnd sg13g2_decap_8
+Xhold80 _024_ vdd gnd net79 sg13g2_dlygate4sd3_1
+XFILLER_1_269 vdd gnd sg13g2_decap_8
+XFILLER_0_291 vdd gnd sg13g2_decap_8
+X_247__47 vdd gnd net46 sg13g2_tiehi
+XFILLER_6_306 vdd gnd sg13g2_fill_2
+XFILLER_12_50 vdd gnd sg13g2_decap_4
+X_221_ _056_ net77 _043_ vdd gnd sg13g2_nand2_1
+X_152_ _084_ _069_ counter\[2\] counter\[0\] counter\[1\] vdd gnd sg13g2_a22oi_1
+XFILLER_5_0 vdd gnd sg13g2_decap_8
+X_240__42 vdd gnd net41 sg13g2_tiehi
+X_204_ net31 net59 _014_ vdd gnd sg13g2_nor2b_1
+XFILLER_0_97 vdd gnd sg13g2_decap_8
+XFILLER_2_150 vdd gnd sg13g2_decap_8
+XFILLER_2_172 vdd gnd sg13g2_decap_8
+XFILLER_2_183 vdd gnd sg13g2_fill_2
+XFILLER_2_194 vdd gnd sg13g2_fill_2
+X_135_ vdd _067_ net66 gnd sg13g2_inv_1
+XFILLER_12_205 vdd gnd sg13g2_fill_2
+XFILLER_7_297 vdd gnd sg13g2_decap_8
+XFILLER_4_245 vdd gnd sg13g2_decap_8
+Xhold70 net8 vdd gnd net69 sg13g2_dlygate4sd3_1
+Xhold81 net7 vdd gnd net80 sg13g2_dlygate4sd3_1
+XFILLER_6_63 vdd gnd sg13g2_fill_2
+XFILLER_1_248 vdd gnd sg13g2_decap_8
+XFILLER_0_281 vdd gnd sg13g2_decap_4
+XFILLER_7_4 vdd gnd sg13g2_decap_8
+XFILLER_3_42 vdd gnd sg13g2_fill_2
+XFILLER_3_53 vdd gnd sg13g2_fill_1
+XFILLER_3_75 vdd gnd sg13g2_decap_8
+XFILLER_10_177 vdd gnd sg13g2_decap_4
+XFILLER_12_40 vdd gnd sg13g2_decap_4
+X_220_ gnd vdd _054_ _055_ _020_ net32 sg13g2_a21oi_1
+X_151_ gnd vdd counter\[3\] _060_ _083_ _072_ sg13g2_a21oi_1
+XFILLER_5_181 vdd gnd sg13g2_decap_8
+XFILLER_0_76 vdd gnd sg13g2_decap_8
+X_203_ gnd vdd _062_ _042_ _013_ net31 sg13g2_a21oi_1
+X_134_ vdd _066_ net65 gnd sg13g2_inv_1
+XFILLER_11_283 vdd gnd sg13g2_decap_8
+XFILLER_7_221 vdd gnd sg13g2_fill_2
+XFILLER_7_276 vdd gnd sg13g2_decap_8
+Xhold60 net26 vdd gnd net59 sg13g2_dlygate4sd3_1
+Xhold71 net15 vdd gnd net70 sg13g2_dlygate4sd3_1
+Xhold82 net12 vdd gnd net81 sg13g2_dlygate4sd3_1
+XFILLER_6_42 vdd gnd sg13g2_fill_2
+XFILLER_1_227 vdd gnd sg13g2_decap_8
+XFILLER_0_260 vdd gnd sg13g2_decap_8
+XFILLER_6_308 vdd gnd sg13g2_fill_1
+XFILLER_3_21 vdd gnd sg13g2_decap_8
+XFILLER_10_101 vdd gnd sg13g2_fill_1
+XFILLER_10_134 vdd gnd sg13g2_decap_8
+XFILLER_10_145 vdd gnd sg13g2_fill_1
+X_150_ _078_ _079_ _076_ _082_ vdd gnd sg13g2_nand3_1
+XFILLER_0_11 vdd gnd sg13g2_decap_8
+XFILLER_0_22 vdd gnd sg13g2_fill_1
+X_202_ gnd vdd _063_ _039_ _012_ net30 sg13g2_a21oi_1
+X_133_ vdd _065_ net62 gnd sg13g2_inv_1
+XFILLER_0_55 vdd gnd sg13g2_decap_8
+XFILLER_7_255 vdd gnd sg13g2_decap_8
+Xhold61 net23 vdd gnd net60 sg13g2_dlygate4sd3_1
+Xhold72 net6 vdd gnd net71 sg13g2_dlygate4sd3_1
+Xhold83 net5 vdd gnd net82 sg13g2_dlygate4sd3_1
+XFILLER_6_21 vdd gnd sg13g2_decap_8
+XFILLER_1_206 vdd gnd sg13g2_decap_8
+Xoutput5 net5 BN[0] vdd gnd sg13g2_buf_1
+XFILLER_3_44 vdd gnd sg13g2_fill_1
+XFILLER_9_136 vdd gnd sg13g2_decap_8
+XFILLER_12_64 vdd gnd sg13g2_decap_4
+XFILLER_6_139 vdd gnd sg13g2_decap_8
+XFILLER_2_131 vdd gnd sg13g2_decap_8
+XFILLER_2_164 vdd gnd sg13g2_decap_4
+XFILLER_3_0 vdd gnd sg13g2_decap_8
+X_201_ net30 _045_ _011_ vdd gnd sg13g2_nor2_1
+X_132_ vdd _064_ net63 gnd sg13g2_inv_1
+XFILLER_0_34 vdd gnd sg13g2_decap_8
+X_231__34 vdd gnd net sg13g2_tiehi
+XFILLER_9_32 vdd gnd sg13g2_decap_8
+XFILLER_7_234 vdd gnd sg13g2_decap_8
+XFILLER_4_259 vdd gnd sg13g2_decap_8
+Xhold62 net25 vdd gnd net61 sg13g2_dlygate4sd3_1
+Xhold73 net17 vdd gnd net72 sg13g2_dlygate4sd3_1
+Xhold84 counter\[3\] vdd gnd net83 sg13g2_dlygate4sd3_1
+XFILLER_3_281 vdd gnd sg13g2_decap_8
+XFILLER_6_88 vdd gnd sg13g2_decap_4
+Xoutput6 net6 BN[1] vdd gnd sg13g2_buf_1
+.ends
+

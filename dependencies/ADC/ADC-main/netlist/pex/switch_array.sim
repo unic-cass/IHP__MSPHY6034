@@ -1,0 +1,83 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x D_MSB vdd T_gate_switch_0.Control vdd s=10880,456 d=10880,456 l=26 w=160 x=208 y=554 sg13_lv_pmos
+x vo gnd S2 vdd s=27200,936 d=27200,936 l=26 w=400 x=11285 y=445 sg13_lv_pmos
+x vo gnd S4 vdd s=27200,936 d=27200,936 l=26 w=400 x=7080 y=443 sg13_lv_pmos
+x D4 gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=6505 y=259 sg13_lv_nmos
+x D_MSB gnd S_MSB gnd s=13600,536 d=13600,536 l=26 w=200 x=783 y=-57 sg13_lv_nmos
+x D_MSB vref S_MSB vdd s=27200,936 d=27200,936 l=26 w=400 x=-567 y=439 sg13_lv_pmos
+x vo gnd S6 vdd s=27200,936 d=27200,936 l=26 w=400 x=2883 y=437 sg13_lv_pmos
+x D5 vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=4404 y=557 sg13_lv_pmos
+x vo vref S4 gnd s=13600,536 d=13600,536 l=26 w=200 x=5729 y=-55 sg13_lv_nmos
+x D3 gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=8604 y=259 sg13_lv_nmos
+x D5 gnd S5 gnd s=13600,536 d=13600,536 l=26 w=200 x=4979 y=-54 sg13_lv_nmos
+x vo vref S3 gnd s=13600,536 d=13600,536 l=26 w=200 x=7828 y=-55 sg13_lv_nmos
+x vo gnd S3 vdd s=27200,936 d=27200,936 l=26 w=400 x=9179 y=443 sg13_lv_pmos
+x D6 gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=2308 y=253 sg13_lv_nmos
+x D2 vref S2 vdd s=27200,936 d=27200,936 l=26 w=400 x=9934 y=444 sg13_lv_pmos
+x D4 gnd S4 gnd s=13600,536 d=13600,536 l=26 w=200 x=7080 y=-54 sg13_lv_nmos
+x D4 vref S4 vdd s=27200,936 d=27200,936 l=26 w=400 x=5729 y=442 sg13_lv_pmos
+x D1 vref S1 vdd s=27200,936 d=27200,936 l=26 w=400 x=12031 y=440 sg13_lv_pmos
+x D3 vref S3 vdd s=27200,936 d=27200,936 l=26 w=400 x=7828 y=442 sg13_lv_pmos
+x T_gate_switch_0.Control vref S_MSB gnd s=13600,536 d=13600,536 l=26 w=200 x=-567 y=-58 sg13_lv_nmos
+x D2 gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=10710 y=261 sg13_lv_nmos
+x D3 gnd S3 gnd s=13600,536 d=13600,536 l=26 w=200 x=9179 y=-54 sg13_lv_nmos
+x vo gnd S1 vdd s=27200,936 d=27200,936 l=26 w=400 x=13382 y=441 sg13_lv_pmos
+x D1 gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=12807 y=257 sg13_lv_nmos
+x D2 vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=10710 y=559 sg13_lv_pmos
+x vo vref S1 gnd s=13600,536 d=13600,536 l=26 w=200 x=12031 y=-57 sg13_lv_nmos
+x D4 vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=6505 y=557 sg13_lv_pmos
+x vo vref S6 gnd s=13600,536 d=13600,536 l=26 w=200 x=1532 y=-61 sg13_lv_nmos
+x D3 vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=8604 y=557 sg13_lv_pmos
+x D6 vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=2308 y=551 sg13_lv_pmos
+x D_MSB gnd T_gate_switch_0.Control gnd s=5440,296 d=5440,296 l=26 w=80 x=208 y=256 sg13_lv_nmos
+x D5 gnd vo gnd s=5440,296 d=5440,296 l=26 w=80 x=4404 y=259 sg13_lv_nmos
+x vo vref S5 gnd s=13600,536 d=13600,536 l=26 w=200 x=3628 y=-55 sg13_lv_nmos
+x vo vref S2 gnd s=13600,536 d=13600,536 l=26 w=200 x=9934 y=-53 sg13_lv_nmos
+x D1 vdd vo vdd s=10880,456 d=10880,456 l=26 w=160 x=12807 y=555 sg13_lv_pmos
+x T_gate_switch_0.Control gnd S_MSB vdd s=27200,936 d=27200,936 l=26 w=400 x=783 y=440 sg13_lv_pmos
+x D2 gnd S2 gnd s=13600,536 d=13600,536 l=26 w=200 x=11285 y=-52 sg13_lv_nmos
+x D5 vref S5 vdd s=27200,936 d=27200,936 l=26 w=400 x=3628 y=442 sg13_lv_pmos
+x D1 gnd S1 gnd s=13600,536 d=13600,536 l=26 w=200 x=13382 y=-56 sg13_lv_nmos
+x D6 gnd S6 gnd s=13600,536 d=13600,536 l=26 w=200 x=2883 y=-60 sg13_lv_nmos
+x vo gnd S5 vdd s=27200,936 d=27200,936 l=26 w=400 x=4979 y=443 sg13_lv_pmos
+x D6 vref S6 vdd s=27200,936 d=27200,936 l=26 w=400 x=1532 y=436 sg13_lv_pmos
+C vdd vo 4.7
+R gnd 82
+= gnd T_gate_switch_0.inverter_0.gnd
+= gnd T_gate_switch_0.T_gate_0.gnd
+= gnd T_gate_switch_0.gnd
+C S10 2.7
+R S1 15
+C vo0 10.0
+R vo 64
+= vo !Control
+= vo Control
+C S20 2.7
+R S2 15
+C S30 2.7
+R S3 15
+C D10 2.1
+C D20 2.1
+C S40 2.7
+R S4 15
+C D30 2.1
+C S50 2.7
+R S5 15
+C S60 2.7
+R S6 15
+C D40 2.1
+C D50 2.1
+C S_MSB0 2.7
+R S_MSB 15
+C vref0 4.8
+R vref 39
+= vref T_gate_switch_0.vref
+C D60 2.1
+C D_MSB0 2.2
+C vdd0 23.5
+R vdd 50
+= vdd T_gate_switch_0.inverter_0.vdd
+= vdd T_gate_switch_0.T_gate_0.vdd
+= vdd T_gate_switch_0.vdd
+= T_gate_switch_0.Control T_gate_switch_0.inverter_0.vo
+= T_gate_switch_0.Control T_gate_switch_0.T_gate_0.!Control
