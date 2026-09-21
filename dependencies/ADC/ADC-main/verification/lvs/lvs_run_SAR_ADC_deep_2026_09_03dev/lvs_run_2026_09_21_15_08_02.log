@@ -1,0 +1,16 @@
+21-Sep-2026 22:08:03 | INFO    | Your Klayout version is: KLayout 0.30.5 (required >= 0.30.5)
+21-Sep-2026 22:08:03 | INFO    | Running SG13G2 LVS checks on design /home/admin/work/final/IHP__MSPHY6034/dependencies/ADC/release/v.1.0.0/gds/SAR_ADC.gds on cell SAR_ADC
+21-Sep-2026 22:08:23 | INFO    | ==============================================================================
+21-Sep-2026 22:08:23 | INFO    | Important Summary
+21-Sep-2026 22:08:23 | INFO    | +------------------+---------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 22:08:23 | INFO    | | Status           | PASS                                                                                                                |
+21-Sep-2026 22:08:23 | INFO    | | Mode             | COMPARE                                                                                                             |
+21-Sep-2026 22:08:23 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                                                             |
+21-Sep-2026 22:08:23 | INFO    | | Layout           | SAR_ADC.gds                                                                                                         |
+21-Sep-2026 22:08:23 | INFO    | | Top Cell         | SAR_ADC                                                                                                             |
+21-Sep-2026 22:08:23 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/dependencies/ADC/ADC-main/verification/lvs/lvs_run_SAR_ADC_deep_2026_09_03dev |
+21-Sep-2026 22:08:23 | INFO    | | Warnings         | 0                                                                                                                   |
+21-Sep-2026 22:08:23 | INFO    | | Errors           | 0                                                                                                                   |
+21-Sep-2026 22:08:23 | INFO    | | Run Time (s)     | 20.779                                                                                                              |
+21-Sep-2026 22:08:23 | INFO    | +------------------+---------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 22:08:23 | INFO    | ==============================================================================

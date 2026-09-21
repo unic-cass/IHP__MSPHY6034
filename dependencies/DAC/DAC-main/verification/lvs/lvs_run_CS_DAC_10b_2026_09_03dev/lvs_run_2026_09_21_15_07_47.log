@@ -1,0 +1,16 @@
+21-Sep-2026 22:07:48 | INFO    | Your Klayout version is: KLayout 0.30.5 (required >= 0.30.5)
+21-Sep-2026 22:07:48 | INFO    | Running SG13G2 LVS checks on design /home/admin/work/final/IHP__MSPHY6034/dependencies/DAC/release/v.1.0.0/gds/CS_DAC_10b.gds on cell CS_DAC_10b
+21-Sep-2026 22:08:14 | INFO    | ==============================================================================
+21-Sep-2026 22:08:14 | INFO    | Important Summary
+21-Sep-2026 22:08:14 | INFO    | +------------------+-------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 22:08:14 | INFO    | | Status           | PASS                                                                                                              |
+21-Sep-2026 22:08:14 | INFO    | | Mode             | COMPARE                                                                                                           |
+21-Sep-2026 22:08:14 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                                                           |
+21-Sep-2026 22:08:14 | INFO    | | Layout           | CS_DAC_10b.gds                                                                                                    |
+21-Sep-2026 22:08:14 | INFO    | | Top Cell         | CS_DAC_10b                                                                                                        |
+21-Sep-2026 22:08:14 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/dependencies/DAC/DAC-main/verification/lvs/lvs_run_CS_DAC_10b_2026_09_03dev |
+21-Sep-2026 22:08:14 | INFO    | | Warnings         | 0                                                                                                                 |
+21-Sep-2026 22:08:14 | INFO    | | Errors           | 0                                                                                                                 |
+21-Sep-2026 22:08:14 | INFO    | | Run Time (s)     | 26.511                                                                                                            |
+21-Sep-2026 22:08:14 | INFO    | +------------------+-------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 22:08:14 | INFO    | ==============================================================================

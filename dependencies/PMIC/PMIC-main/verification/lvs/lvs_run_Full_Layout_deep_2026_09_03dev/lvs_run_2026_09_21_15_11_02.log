@@ -1,0 +1,16 @@
+21-Sep-2026 22:11:02 | INFO    | Your Klayout version is: KLayout 0.30.5 (required >= 0.30.5)
+21-Sep-2026 22:11:02 | INFO    | Running SG13G2 LVS checks on design /home/admin/work/final/IHP__MSPHY6034/dependencies/PMIC/release/v.1.0.0/gds/Full_Layout.gds on cell Full_Layout
+21-Sep-2026 22:11:37 | INFO    | ==============================================================================
+21-Sep-2026 22:11:37 | INFO    | Important Summary
+21-Sep-2026 22:11:37 | INFO    | +------------------+---------------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 22:11:37 | INFO    | | Status           | PASS                                                                                                                      |
+21-Sep-2026 22:11:37 | INFO    | | Mode             | COMPARE                                                                                                                   |
+21-Sep-2026 22:11:37 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                                                                   |
+21-Sep-2026 22:11:37 | INFO    | | Layout           | Full_Layout.gds                                                                                                           |
+21-Sep-2026 22:11:37 | INFO    | | Top Cell         | Full_Layout                                                                                                               |
+21-Sep-2026 22:11:37 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/dependencies/PMIC/PMIC-main/verification/lvs/lvs_run_Full_Layout_deep_2026_09_03dev |
+21-Sep-2026 22:11:37 | INFO    | | Warnings         | 0                                                                                                                         |
+21-Sep-2026 22:11:37 | INFO    | | Errors           | 0                                                                                                                         |
+21-Sep-2026 22:11:37 | INFO    | | Run Time (s)     | 35.156                                                                                                                    |
+21-Sep-2026 22:11:37 | INFO    | +------------------+---------------------------------------------------------------------------------------------------------------------------+
+21-Sep-2026 22:11:37 | INFO    | ==============================================================================

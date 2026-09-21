@@ -1,0 +1,227 @@
+** sch_path: /home/ducluong/test/CS_DAC_10b.sch
+.subckt CS_DAC_10b CLK OUTN OUTP VBIAS VDD VSS X1 X10 X2 X3 X4 X5 X6 X7 X8 X9
+*.PININFO X9:I X8:I X7:I X6:I X5:I X4:I X3:I X2:I X10:I X1:I VSS:B VDD:I VBIAS:I OUTP:B OUTN:B CLK:I
+x1 net8 net9 net10 net11 net12 net13 net14 CLK net1 net2 net3 net4 net5 net6 net7 OUTN OUTP VBIAS VDD VSS 6MSB
+x3 net8 net9 net10 net11 net12 net13 net14 X5 X6 X7 VDD VSS thermo_decoder
+x5 net1 net2 net3 net4 net5 net6 net7 X8 X9 X10 VDD VSS thermo_decoder
+x2 CLK OUTP OUTN VBIAS VDD VSS X1 X2 X3 X4 4LSB_weighted
+.ends
+.include "/home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
+* expanding   symbol:  6MSB.sym # of pins=20
+** sym_path: /home/ducluong/test/6MSB.sym
+** sch_path: /home/ducluong/test/6MSB.sch
+.subckt 6MSB C1 C2 C3 C4 C5 C6 C7 CLK D1 D2 D3 D4 D5 D6 D7 OUTN OUTP VBIAS VDD VSS
+*.PININFO VSS:B VDD:I VBIAS:I OUTP:B OUTN:B D7:I D6:I D5:I D4:I D3:I D2:I D1:I CLK:I C7:I C6:I C5:I C4:I C3:I C2:I C1:I
+x33 CLK C1 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x1 CLK C2 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x2 CLK C3 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x3 CLK C4 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x4 CLK C5 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x5 CLK C6 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x6 CLK C7 OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x7 CLK VSS OUTN OUTP D1 VDD VBIAS VDD VSS Unit_cell
+x8 CLK C1 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x9 CLK C2 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x10 CLK C3 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x11 CLK C4 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x12 CLK C5 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x13 CLK C6 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x14 CLK C7 OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x15 CLK VSS OUTN OUTP D2 D1 VBIAS VDD VSS Unit_cell
+x16 CLK C1 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x17 CLK C2 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x18 CLK C3 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x19 CLK C4 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x20 CLK C5 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x21 CLK C6 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x22 CLK C7 OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x23 CLK VSS OUTN OUTP D3 D2 VBIAS VDD VSS Unit_cell
+x24 CLK C1 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x25 CLK C2 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x26 CLK C3 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x27 CLK C4 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x28 CLK C5 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x29 CLK C6 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x30 CLK C7 OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x31 CLK VSS OUTN OUTP D4 D3 VBIAS VDD VSS Unit_cell
+x32 CLK C1 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x34 CLK C2 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x35 CLK C3 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x36 CLK C4 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x37 CLK C5 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x38 CLK C6 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x39 CLK C7 OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x40 CLK VSS OUTN OUTP D5 D4 VBIAS VDD VSS Unit_cell
+x41 CLK C1 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x42 CLK C2 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x43 CLK C3 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x44 CLK C4 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x45 CLK C5 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x46 CLK C6 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x47 CLK C7 OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x48 CLK VSS OUTN OUTP D6 D5 VBIAS VDD VSS Unit_cell
+x49 CLK C1 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x50 CLK C2 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x51 CLK C3 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x52 CLK C4 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x53 CLK C5 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x54 CLK C6 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x55 CLK C7 OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x56 CLK VSS OUTN OUTP D7 D6 VBIAS VDD VSS Unit_cell
+x57 CLK C1 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x58 CLK C2 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x59 CLK C3 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x60 CLK C4 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x61 CLK C5 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x62 CLK C6 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+x63 CLK C7 OUTN OUTP VSS D7 VBIAS VDD VSS Unit_cell
+.ends
+
+
+* expanding   symbol:  thermo_decoder.sym # of pins=12
+** sym_path: /home/ducluong/test/thermo_decoder.sym
+** sch_path: /home/ducluong/test/thermo_decoder.sch
+.subckt thermo_decoder D1 D2 D3 D4 D5 D6 D7 X0 X1 X2 VDD VSS
+*.PININFO X2:I X1:I X0:I D7:O D6:O D5:O D4:O D3:O D1:O D2:O VDD:I VSS:I
+x1 net3 X0 X1 VDD VSS sg13g2_and2_2
+x2 D7 X2 net3 VDD VSS sg13g2_and2_2
+x3 D6 X1 X2 VDD VSS sg13g2_and2_2
+x4 D2 X2 X1 VDD VSS sg13g2_or2_2
+x5 D1 D2 X0 VDD VSS sg13g2_or2_2
+x6 net2 X0 X1 VDD VSS sg13g2_or2_2
+x7 D5 X2 net2 VDD VSS sg13g2_and2_2
+x8 net1 X0 X1 VDD VSS sg13g2_and2_2
+x9 D3 net1 X2 VDD VSS sg13g2_or2_2
+x10 D4 X2 VDD VSS sg13g2_buf_2
+.ends
+
+
+* expanding   symbol:  4LSB_weighted.sym # of pins=10
+** sym_path: /home/ducluong/test/4LSB_weighted.sym
+** sch_path: /home/ducluong/test/4LSB_weighted.sch
+.subckt 4LSB_weighted CLK OUTN OUTP VBIAS VDD VSS X1 X2 X3 X4
+*.PININFO X4:I X3:I X2:I X1:I VSS:B VDD:B VBIAS:I OUTP:B OUTN:B CLK:I
+x9 net1 net5 OUTN OUTP VBIAS VSS CS_Switch_1x
+x2 net2 net6 OUTN OUTP VBIAS VSS CS_Switch_2x
+x5 net3 net7 OUTN OUTP VBIAS VSS CS_Switch_4x
+x10 net4 net8 OUTN OUTP VBIAS VSS CS_Switch_8x
+x7 net1 net5 CLK X1 VDD VDD VSS sg13g2_dfrbp_2
+x8 net2 net6 CLK X2 VDD VDD VSS sg13g2_dfrbp_2
+x11 net3 net7 CLK X3 VDD VDD VSS sg13g2_dfrbp_2
+x12 net4 net8 CLK X4 VDD VDD VSS sg13g2_dfrbp_2
+.ends
+
+
+* expanding   symbol:  Unit_cell.sym # of pins=9
+** sym_path: /home/ducluong/test/Unit_cell.sym
+** sch_path: /home/ducluong/test/Unit_cell.sch
+.subckt Unit_cell CLK Ci OUTN OUTP Ri Ri-1 VBIAS VDD VSS
+*.PININFO VSS:B VDD:I VBIAS:I Ri-1:I Ri:I OUTP:B OUTN:B Ci:I CLK:I
+x1 net3 net2 OUTN OUTP VBIAS VSS CS_Switch_16x
+x2 net4 Ri Ci VDD VSS sg13g2_or2_2
+x3 net1 Ri-1 net4 VDD VSS sg13g2_nand2_2
+x4 net3 net2 CLK net1 VDD VDD VSS sg13g2_dfrbp_2
+.ends
+
+
+* expanding   symbol:  CS_Switch_1x.sym # of pins=6
+** sym_path: /home/ducluong/test/CS_Switch_1x.sym
+** sch_path: /home/ducluong/test/CS_Switch_1x.sch
+.subckt CS_Switch_1x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+M7 net1 VBIAS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M5 net2 VBIAS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M6 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M2 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M9 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M11 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M3 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M4 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M1 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M8 VSS VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M10 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M12 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_2x.sym # of pins=6
+** sym_path: /home/ducluong/test/CS_Switch_2x.sym
+** sch_path: /home/ducluong/test/CS_Switch_2x.sch
+.subckt CS_Switch_2x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+M7 net2 VBIAS net1 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+M5 net1 VBIAS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+M6 OUTP INP net2 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M2 OUTP INP net2 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M9 OUTN INN net2 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M11 OUTN INN net2 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M3 net2 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M4 net2 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M10 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M1 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M8 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M12 net1 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_4x.sym # of pins=6
+** sym_path: /home/ducluong/test/CS_Switch_4x.sym
+** sch_path: /home/ducluong/test/CS_Switch_4x.sch
+.subckt CS_Switch_4x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+M1 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M2 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M3 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M4 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M7 net1 VBIAS net2 VSS sg13_hv_nmos w=1.2u l=0.45u ng=4 m=1
+M5 net2 VBIAS VSS VSS sg13_hv_nmos w=1.2u l=0.45u ng=4 m=1
+M6 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M8 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M9 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M10 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M11 VSS VSS net2 VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M12 net2 VSS VSS VSS sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_8x.sym # of pins=6
+** sym_path: /home/ducluong/test/CS_Switch_8x.sym
+** sch_path: /home/ducluong/test/CS_Switch_8x.sch
+.subckt CS_Switch_8x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+M1 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M2 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M3 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M4 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=2 m=1
+M7 net1 VBIAS net2 VSS sg13_hv_nmos w=2.4u l=0.48u ng=4 m=1
+M5 net2 VBIAS VSS VSS sg13_hv_nmos w=2.4u l=0.48u ng=4 m=1
+M6 VSS VSS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+M8 net2 VSS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+M9 VSS VSS net2 VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+M10 net2 VSS VSS VSS sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1
+M11 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M12 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_16x.sym # of pins=6
+** sym_path: /home/ducluong/test/CS_Switch_16x.sym
+** sch_path: /home/ducluong/test/CS_Switch_16x.sch
+.subckt CS_Switch_16x INN INP OUTN OUTP VBIAS VSS
+*.PININFO VSS:B VBIAS:I OUTP:B OUTN:B INP:I INN:I
+M1 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+M2 OUTP INP net1 VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+M3 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+M4 OUTN INN net1 VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+M7 net1 VBIAS net2 VSS sg13_hv_nmos w=5.2u l=0.45u ng=6 m=1
+M5 net2 VBIAS VSS VSS sg13_hv_nmos w=5.2u l=0.45u ng=6 m=1
+M6 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M8 net1 VSS VSS VSS sg13_lv_nmos w=0.5u l=0.13u ng=1 m=1
+M9 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
+M10 VSS VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
+M11 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
+M12 VSS VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
+.ends
+
+
+.end
