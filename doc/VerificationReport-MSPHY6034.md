@@ -57,9 +57,12 @@ layer `134/25` are the real chip ports, while 50 extra labels on layers
 (`analog_io_padres[*]`, `uo_c2p[*]`, `ui_p2c[*]`, `dout[0]`, `VBAT/VH/…`).
 
 Experiment: stripping those 50 stray top-cell labels (on a copy) dropped the
-extracted layout pins from 96 to 56 — the 40 port names then align — but LVS
-still FAILs because ~16 further pins (`$7.*`, `$8.*`) are promoted from
-sub-cell labels onto top-level nets.
+extracted layout pins from 96 to 56 — the 40 port names then align. Tracing the
+remaining 16 extra pins (`$7.*`, `$8.*`) locates their labels inside the PMIC
+hierarchy (`FULL_FLOATING_GATE`: `B, IN, Y, Q, Qn, Reset, set, Vboot, vboot,
+VFE, VRE`; `gate_driver$2`: `vgmd1/vgmd5/vgmd78`). Removing all 42 of those
+labels as well **still** leaves LVS failing (nets 121 vs 120), so the extra
+labels are not the sole cause.
 
 Relaxing the checks does not help either: deep LVS still FAILs with
 `--ignore_top_ports_mismatch` and with `--ignore_top_ports_mismatch
@@ -69,7 +72,9 @@ show the same normalisation.)
 
 ### Likely fix direction
 
-Remove/relocate the non-port top-level labels in the layout (the extra top-cell
-text plus the sub-cell labels that leak to top-level nets) so the extracted top
-netlist exposes exactly the 40 chip ports, and align the remaining internal net
-names. This is a layout-side edit, not a verification-flow issue.
+Converging the chip-level LVS needs the top-level netlist reconciled between
+schematic and layout: align the chip ports (avoid extra top-level labels) **and**
+reconcile the top-level net names — the xschem schematic carries auto-generated
+internal names (`NET1`–`NET39`, …) that have no counterpart in the extracted
+layout netlist, and one extra net is present in the layout. This is a
+design/netlist task rather than a verification-flow change.
