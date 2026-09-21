@@ -1,0 +1,13 @@
+21-Sep-2026 23:34:42 | INFO    | KLayout version detected: 0.30.5 (required >= 0.30.5)
+21-Sep-2026 23:34:42 | INFO    | Using DRC JSON file: /home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+21-Sep-2026 23:34:42 | INFO    | Running IHP-SG13G2 main checks on design /home/admin/work/final/IHP__MSPHY6034/MSPHY6034-main/layout/klayout/MSPHY6034.gds, topcell: MSPHY6034
+21-Sep-2026 23:45:33 | INFO    | Running IHP-SG13G2 density checks on design /home/admin/work/final/IHP__MSPHY6034/MSPHY6034-main/layout/klayout/MSPHY6034.gds, topcell: MSPHY6034
+21-Sep-2026 23:46:07 | INFO    | Completed running Density checks.
+21-Sep-2026 23:46:07 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /home/admin/work/final/IHP__MSPHY6034/MSPHY6034-main/layout/klayout/MSPHY6034.gds, topcell: MSPHY6034
+21-Sep-2026 23:58:16 | INFO    | Completed running Sg13g2_maximal checks.
+21-Sep-2026 23:58:16 | ERROR   | ==================================================================================
+21-Sep-2026 23:58:16 | ERROR   | ❌ --- KLayout DRC Check Failed: Violations were detected in the layout. --- ❌
+21-Sep-2026 23:58:16 | ERROR   | ==================================================================================
+21-Sep-2026 23:58:16 | ERROR   | Violated rules are : {'V3.b', 'Pad.fR_TM1', 'V4.b', 'M5.j', 'M3Fil.h', 'GFil.g', 'Pad.fR_M2', 'M2Fil.h', 'M4.j', 'AFil.g', 'M3.j', 'AFil.g2', 'TM2.c', 'Pad.fR_M4', 'V2.b', 'M1Fil.h', 'MIM.gR', 'Pad.fR_M5', 'TV1.d', 'V1.b', 'M2.j', 'M4Fil.h', 'M1.j', 'Pad.d1R', 'M5Fil.h', 'Pad.fR_TM2', 'Pad.fR_M3'}
+
+21-Sep-2026 23:58:16 | INFO    | Total DRC Run time: 1414.89 seconds (including execution, analysis, and reporting)
