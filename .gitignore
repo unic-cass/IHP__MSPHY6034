@@ -2,3 +2,9 @@
 # origin for the imported dependency blocks. Never commit it as a gitlink —
 # its objects live only in its private .git, so a submodule pointer would dangle.
 IHP_SoC_team4/
+
+# Generated KLayout LVS marker databases (tool output; never commit).
+*.lvsdb
+
+# Local xschem project-config symlink (points at a machine-specific PDK install).
+/xschemrc
