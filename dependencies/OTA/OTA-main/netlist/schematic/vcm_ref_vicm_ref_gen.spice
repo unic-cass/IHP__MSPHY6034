@@ -1,0 +1,20 @@
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/vcm_ref_vicm_ref_gen.sch
+.subckt vcm_ref_vicm_ref_gen vdd b_v gnd vcm vicm
+*.PININFO vicm:B vdd:B vcm:B b_v:B gnd:B
+M6 net1 net1 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M13 net1 pos net2 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
+M14 vicm net1 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M15 vicm vicm net2 vdd sg13_hv_pmos w=2.25u l=0.5u ng=1 m=2
+M16 net2 b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=4
+M17 net1 pos net2 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
+M1 vdd vdd pos gnd sg13_hv_nmos w=10u l=0.45u ng=1 m=1
+M2 pos vdd gnd gnd sg13_hv_nmos w=0.3u l=3.7u ng=1 m=1
+M3 net3 net3 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M4 net3 pos1 net4 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
+M5 vcm net3 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M7 vcm vcm net4 vdd sg13_hv_pmos w=2.25u l=0.5u ng=1 m=2
+M8 net4 b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=4
+M9 net3 pos1 net4 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
+M10 vdd vdd pos1 gnd sg13_hv_nmos w=0.8u l=0.45u ng=1 m=1
+M11 pos1 vdd gnd gnd sg13_hv_nmos w=0.3u l=1.4u ng=1 m=1
+.ends

@@ -1,0 +1,21 @@
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Differntial_ended_symbol_making.sch
+.subckt Differntial_ended_symbol_making vdd vcm_ref vom vop gnd b_v vinm vinp VICM_REF
+*.PININFO b_v:B vinm:B vcm_ref:B vinp:B vop:B vom:B gnd:B vdd:B VICM_REF:B
+M7 vop nbias gnd gnd sg13_hv_nmos w=2u l=2u ng=1 m=2
+M8 vop vinm tail vdd sg13_hv_pmos w=4.5u l=1u ng=1 m=2
+M9 vom nbias gnd gnd sg13_hv_nmos w=2u l=2u ng=1 m=2
+M10 vom vinp tail vdd sg13_hv_pmos w=4.5u l=1u ng=1 m=2
+M11 tail b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=4
+M6 net1 net1 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M13 net1 vop tail_cmfb vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
+M14 nbias net1 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M15 nbias vcm_ref tail_cmfb vdd sg13_hv_pmos w=2.25u l=0.5u ng=1 m=2
+M16 tail_cmfb b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=4
+M17 net1 vom tail_cmfb vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
+M1 b_v b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=1
+C1 nbias gnd cap_cmim w=14.0e-6 l=50.0e-6 m=1
+M2 VICM_REF vinm vinm vdd sg13_hv_pmos w=50u l=1u ng=5 m=1
+M3 VICM_REF vinp vinp vdd sg13_hv_pmos w=50u l=1u ng=5 m=1
+M4 vdd vdd vdd vdd sg13_hv_pmos w=4.5u l=0.4u ng=1 m=4
+M5 gnd gnd gnd gnd sg13_hv_nmos w=2u l=2u ng=1 m=4
+.ends

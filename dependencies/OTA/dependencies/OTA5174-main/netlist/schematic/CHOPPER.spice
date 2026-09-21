@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/CHOPPER.sch
+.subckt CHOPPER PHIA OUT_A IN_A PHIB OUT_B IN_B GND
+*.PININFO IN_A:B IN_B:B OUT_B:B OUT_A:B PHIA:B PHIB:B GND:B
+M1 OUT_A PHIA IN_A GND sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M2 OUT_B PHIA IN_B GND sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M3 OUT_B PHIB IN_A GND sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M4 IN_B PHIB OUT_A GND sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends

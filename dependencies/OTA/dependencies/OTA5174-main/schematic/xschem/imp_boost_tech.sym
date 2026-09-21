@@ -1,0 +1,47 @@
+v {xschem version=3.4.6 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -81 -6 0 0 0.3 0.3 {}
+T {@name} 135 -142 0 0 0.2 0.2 {}
+P 4 5 130 -130 -130 -130 -130 130 130 130 130 -130 {}
+B 5 147.5 -122.5 152.5 -117.5 {name=phi1 dir=inout}
+L 7 130 -120 150 -120 {}
+T {phi1} 125 -124 0 1 0.2 0.2 {}
+B 5 147.5 -102.5 152.5 -97.5 {name=vinp dir=inout}
+L 7 130 -100 150 -100 {}
+T {vinp} 125 -104 0 1 0.2 0.2 {}
+B 5 147.5 -82.5 152.5 -77.5 {name=phi2 dir=inout}
+L 7 130 -80 150 -80 {}
+T {phi2} 125 -84 0 1 0.2 0.2 {}
+B 5 147.5 -62.5 152.5 -57.5 {name=vinm dir=inout}
+L 7 130 -60 150 -60 {}
+T {vinm} 125 -64 0 1 0.2 0.2 {}
+B 5 147.5 -42.5 152.5 -37.5 {name=phi3 dir=inout}
+L 7 130 -40 150 -40 {}
+T {phi3} 125 -44 0 1 0.2 0.2 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=vop dir=inout}
+L 7 130 -20 150 -20 {}
+T {vop} 125 -24 0 1 0.2 0.2 {}
+B 5 147.5 -2.5 152.5 2.5 {name=phi4 dir=inout}
+L 7 130 0 150 0 {}
+T {phi4} 125 -4 0 1 0.2 0.2 {}
+B 5 147.5 17.5 152.5 22.5 {name=vom dir=inout}
+L 7 130 20 150 20 {}
+T {vom} 125 16 0 1 0.2 0.2 {}
+B 5 147.5 37.5 152.5 42.5 {name=gnd sig_type=std_logic dir=inout}
+L 7 130 40 150 40 {}
+T {gnd} 125 36 0 1 0.2 0.2 {}
+B 5 147.5 57.5 152.5 62.5 {name=bv sig_type=std_logic dir=inout}
+L 7 130 60 150 60 {}
+T {bv} 125 56 0 1 0.2 0.2 {}
+B 5 147.5 77.5 152.5 82.5 {name=VICM_REF sig_type=std_logic dir=inout}
+L 7 130 80 150 80 {}
+T {VICM_REF} 125 76 0 1 0.2 0.2 {}
+B 5 147.5 97.5 152.5 102.5 {name=VCM_REF sig_type=std_logic dir=inout}
+L 7 130 100 150 100 {}
+T {VCM_REF} 125 96 0 1 0.2 0.2 {}
+B 5 147.5 117.5 152.5 122.5 {name=vdd sig_type=std_logic dir=inout}
+L 7 130 120 150 120 {}
+T {vdd} 125 116 0 1 0.2 0.2 {}
