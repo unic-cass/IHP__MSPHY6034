@@ -8,14 +8,23 @@
 *+ ui_PAD[6]:B ui_PAD[5]:B ui_PAD[4]:B ui_PAD[3]:B ui_PAD[2]:B analog_io[16]:B analog_io[15]:B analog_io[14]:B ui_PAD[1]:B analog_io[13]:B
 *+ analog_io[12]:B analog_io[4]:B analog_io[5]:B analog_io[6]:B analog_io[7]:B analog_io[8]:B analog_io[9]:B ui_PAD[0]:B analog_io[10]:B
 *+ analog_io[11]:B
-x1 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9] analog_io[4] analog_io[5]
-+ analog_io_padres[4] net35 analog_io_padres[5] analog_io_padres[6] net33 net34 analog_io_padres[7] net31 net32 net38 analog_io[3] analog_io[12]
-+ analog_io_padres[3] net37 analog_io[2] analog_io[13] analog_io_padres[2] net36 analog_io[1] ui_PAD[1] analog_io_padres[1] net30 analog_io[0]
-+ analog_io[14] analog_io_padres[0] net29 uo_PAD[8] analog_io[15] net28 uo_PAD[7] analog_io[16] net13 net26 uo_PAD[6] ui_PAD[2] net12 net25
-+ uo_PAD[5] ui_PAD[3] net11 net27 uo_PAD[4] ui_PAD[4] net4 net10 net9 net8 net7 net6 net5 net3 net2 net1 VSS VDD IOVDD IOVSS analog_io[19]
-+ analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] net14 user_project_wrapper
+x1 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9] analog_io[4] analog_io[5] net45 net35
++ net46 net47 net33 net34 net48 net31 net32 net38 analog_io[3] analog_io[12] net41 net37 analog_io[2] analog_io[13] net42 net36
++ analog_io[1] ui_PAD[1] net43 net30 analog_io[0] analog_io[14] net44 net29 uo_PAD[8] analog_io[15] net28 uo_PAD[7] analog_io[16] net13 net26
++ uo_PAD[6] ui_PAD[2] net12 net25 uo_PAD[5] ui_PAD[3] net11 net27 uo_PAD[4] ui_PAD[4] net4 net10 net9 net8 net7 net6 net5 net3 net2 net1 VSS
++ VDD IOVDD IOVSS analog_io[19] analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] net14
++ user_project_wrapper
 x5 net31 net32 net34 net33 net37 net35 net38 VSS net36 Full_Layout
-x6 net9 net25 net26 net27 net10 VDD VSS dout[0] net39 net24 net23 net22 net21 net20 net19 net18 net17 net16 net15 serial2parallel
+x6 net9 net25 net26 net27 net10 VDD VSS net39 net24 net23 net22 net21 net20 net19 net18 net17 net16 net15 net40 serial2parallel
+* noconn #net40
+* noconn #net45
+* noconn #net46
+* noconn #net47
+* noconn #net48
+* noconn #net41
+* noconn #net42
+* noconn #net43
+* noconn #net44
 x4 net9 net10 net15 VDD VSS net8 net3 net2 net1 net7 net6 net5 net4 net11 net12 net13 net14 SAR_ADC
 x2 net9 net29 net28 net30 VDD VSS net16 net39 net17 net18 net19 net20 net21 net22 net23 net24 CS_DAC_10b
 .ends
@@ -300,8 +309,6 @@ x8 VRE net7 predly VDD VSS sg13g2_and2_1
 C2 dly8 VSS cap_cmim w=80.0e-6 l=40.0e-6 m=3
 C1 Vboot vsource cap_cmim w=100.0e-6 l=42.0e-6 m=56
 M29 Vboot Vboot VBAT Vboot sg13_hv_pmos w=6u l=0.5u ng=1
-**** begin user architecture code
-
 **** begin user architecture code
 
 
@@ -8609,4 +8616,5 @@ M10 VSS VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
 M11 net1 VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
 M12 VSS VSS VSS VSS sg13_hv_nmos w=0.65u l=0.45u ng=1 m=1
 .ends
+
 
