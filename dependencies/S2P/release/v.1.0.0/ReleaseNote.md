@@ -9,9 +9,10 @@ digital, IHP SG13G2).
   xschem symbol `serial2parallel.sym`, OpenLane flow config
   (`config.json`, `pin_order.cfg`).
 - `doc/` — none supplied in source.
-- `gds/` — none yet; layout pending.
+- `gds/` — `serial2parallel.gds` (OpenLane final layout).
 
 ## Notes
 
-- Generated ModelSim/OpenROAD run outputs (`work/`, `runs/`, `*.wlf`,
-  `transcript`) are excluded.
+- The layout deliverables (`gds/`, plus `layout/{klayout,lef,def,magic}` and
+  `netlist/layout/` in `S2P-main/`) were extracted from the OpenLane run's
+  `final/` outputs. The generated `runs/`/`work/` trees themselves are excluded.
