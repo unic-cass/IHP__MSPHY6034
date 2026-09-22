@@ -1,0 +1,23 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:15
+
+.SUBCKT sg13g2_Clamp_N15N15D iovss pad[0] pad[1] pad[2] pad[3] pad[4] pad[5]
++ pad[6] pad[7] gate
+M$1 iovss gate pad[0] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.664p AD=4.004p
++ PS=15.32u PD=10.62u
+M$3 iovss gate pad[1] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$5 iovss gate pad[2] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$7 iovss gate pad[3] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$9 iovss gate pad[4] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$11 iovss gate pad[5] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$13 iovss gate pad[6] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$15 iovss gate pad[7] \$2 sg13_hv_nmos L=0.6u W=4.4u AS=1.408p AD=3.256p
++ PS=5.04u PD=10.28u
+D$16 \$2 gate dantenna A=0.6084p P=3.12u m=1
+R$17 \$2 iovss ptap1 A=55.7736p P=328.08u
+.ENDS sg13g2_Clamp_N15N15D

@@ -1,0 +1,9 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 18:38
+
+.SUBCKT sg13g2_SecondaryProtection
+D$1 \$1 core dantenna A=1.984p P=7.48u m=1
+D$2 core iovdd dpantenna A=3.1872p P=11.24u m=1
+R$3 pad core rppd w=1u l=2u ps=0 b=0 m=1
+R$4 \$1 iovss ptap1 A=4.3112p P=25.36u
+R$5 \$1 iovss ptap1 A=4.7192p P=27.76u
+.ENDS sg13g2_SecondaryProtection

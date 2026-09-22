@@ -1,0 +1,72 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_GateDecode.sch
+.subckt sg13g2_GateDecode iovdd vss en pgate vdd sub ngate core
+*.PININFO pgate:B ngate:B iovdd:B vss:B en:B vdd:B sub:B core:B
+x1 iovdd vss net3 pgate vdd sub sg13g2_LevelUp_noptap
+x2 iovdd vss net2 ngate vdd sub sg13g2_LevelUp_noptap
+x3 vss en net1 vdd sub sg13g2_io_inv_x1_noptap
+x4 vss core net3 vdd sub en sg13g2_io_nand2_x1_noptap
+x5 vss core net2 vdd sub net1 sg13g2_io_nor2_x1_noptap
+x6 vss vdd sub sg13g2_io_tie_noptap
+R2 vss sub ptap1 A=4.1895p P=30.33u
+.ends
+
+* expanding   symbol:  sg13g2_LevelUp_noptap.sym # of pins=6
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_LevelUp_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_LevelUp_noptap.sch
+.subckt sg13g2_LevelUp_noptap iovdd vss in out vdd sub
+*.PININFO iovdd:B vss:B out:B in:B vdd:B sub:B
+M1 net1 net3 vss sub sg13_hv_nmos w=1.9u l=0.45u ng=1 m=1
+M3 net1 net2 iovdd iovdd sg13_hv_pmos w=0.3u l=0.45u ng=1 m=1
+M4 net2 net1 iovdd iovdd sg13_hv_pmos w=0.3u l=0.45u ng=1 m=1
+M5 out net2 iovdd iovdd sg13_hv_pmos w=3.9u l=0.45u ng=1 m=1
+M2 net2 in vss sub sg13_hv_nmos w=1.9u l=0.45u ng=1 m=1
+M6 out net2 vss sub sg13_hv_nmos w=1.9u l=0.45u ng=1 m=1
+M7 net3 in vss sub sg13_lv_nmos w=2.75u l=0.13u ng=1 m=1
+M8 net3 in vdd vdd sg13_lv_pmos w=4.75u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  sg13g2_io_inv_x1_noptap.sym # of pins=5
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_inv_x1_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_inv_x1_noptap.sch
+.subckt sg13g2_io_inv_x1_noptap vss i nq vdd sub
+*.PININFO vss:B nq:B i:B vdd:B sub:B
+M7 nq i vss sub sg13_lv_nmos w=3.93u l=0.13u ng=1 m=1
+M8 nq i vdd vdd sg13_lv_pmos w=4.41u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  sg13g2_io_nand2_x1_noptap.sym # of pins=6
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_nand2_x1_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_nand2_x1_noptap.sch
+.subckt sg13g2_io_nand2_x1_noptap vss i0 nq vdd sub i1
+*.PININFO vss:B nq:B i0:B vdd:B sub:B i1:B
+M7 net1 i0 vss sub sg13_lv_nmos w=3.93u l=0.13u ng=1 m=1
+M8 nq i0 vdd vdd sg13_lv_pmos w=4.41u l=0.13u ng=1 m=1
+M2 nq i1 vdd vdd sg13_lv_pmos w=4.41u l=0.13u ng=1 m=1
+M1 nq i1 net1 sub sg13_lv_nmos w=3.93u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  sg13g2_io_nor2_x1_noptap.sym # of pins=6
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_nor2_x1_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_nor2_x1_noptap.sch
+.subckt sg13g2_io_nor2_x1_noptap vss i0 nq vdd sub i1
+*.PININFO vss:B nq:B i0:B vdd:B sub:B i1:B
+M7 nq i0 vss sub sg13_lv_nmos w=3.93u l=0.13u ng=1 m=1
+M8 net1 i0 vdd vdd sg13_lv_pmos w=4.41u l=0.13u ng=1 m=1
+M1 nq i1 vss sub sg13_lv_nmos w=3.93u l=0.13u ng=1 m=1
+M2 nq i1 net1 vdd sg13_lv_pmos w=4.41u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  sg13g2_io_tie_noptap.sym # of pins=3
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_tie_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_tie_noptap.sch
+.subckt sg13g2_io_tie_noptap vss vdd sub
+*.PININFO vss:B vdd:B sub:B
+* noconn vdd
+* noconn vss
+* noconn sub
+.ends
+

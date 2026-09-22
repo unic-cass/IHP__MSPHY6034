@@ -1,0 +1,7 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCPDiode.sch
+.subckt sg13g2_DCPDiode cathode guard anode1 anode2 sub
+*.PININFO anode2:B cathode:B guard:B anode1:B sub:B
+D1 anode1 cathode dpantenna l=27.78u w=1.26u
+R1 guard sub ptap1 A=33.5104p P=197.12u
+D2 anode2 cathode dpantenna l=27.78u w=1.26u
+.ends

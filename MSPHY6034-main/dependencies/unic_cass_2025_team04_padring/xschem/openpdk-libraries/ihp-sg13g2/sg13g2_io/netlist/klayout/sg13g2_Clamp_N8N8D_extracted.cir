@@ -1,0 +1,14 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:15
+
+.SUBCKT sg13g2_Clamp_N8N8D iovss pad[0] pad[1] pad[2] pad[3] gate
+M$1 iovss gate pad[0] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.664p AD=4.004p
++ PS=15.32u PD=10.62u
+M$3 iovss gate pad[1] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$5 iovss gate pad[2] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$7 iovss gate pad[3] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.664p
++ PS=10.62u PD=15.32u
+D$9 \$2 gate dantenna A=0.6084p P=3.12u m=1
+R$10 \$2 iovss ptap1 A=55.7736p P=328.08u
+.ENDS sg13g2_Clamp_N8N8D

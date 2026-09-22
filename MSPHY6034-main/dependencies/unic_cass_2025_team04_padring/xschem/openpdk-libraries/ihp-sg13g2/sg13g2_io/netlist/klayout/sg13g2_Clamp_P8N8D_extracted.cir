@@ -1,0 +1,14 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:11
+
+.SUBCKT sg13g2_Clamp_P8N8D iovss iovdd pad[0] pad[1] pad[2] pad[3] gate
+M$1 iovdd gate pad[0] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=14.1192p
++ AD=12.1212p PS=44.2u PD=30.28u
+M$3 iovdd gate pad[1] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$5 iovdd gate pad[2] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$7 iovdd gate pad[3] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=14.1192p PS=30.28u PD=44.2u
+D$17 gate iovdd dpantenna A=0.2304p P=1.92u m=1
+R$18 \$1 iovss ptap1 A=67.0344p P=394.32u
+.ENDS sg13g2_Clamp_P8N8D

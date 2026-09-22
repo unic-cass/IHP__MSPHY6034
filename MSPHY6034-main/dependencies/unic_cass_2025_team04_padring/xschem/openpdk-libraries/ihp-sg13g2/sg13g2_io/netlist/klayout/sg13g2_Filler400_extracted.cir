@@ -1,0 +1,8 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:05
+
+.SUBCKT sg13g2_Filler400 iovss1 iovss2 iovss3 vss
+R$1 \$1 vss ptap1 A=0.672p P=5.08u
+R$2 \$1 iovss3 ptap1 A=38.298p P=52.22u
+R$3 \$1 iovss2 ptap1 A=37.5336p P=51.24u
+R$4 \$1 iovss1 ptap1 A=38.3136p P=52.24u
+.ENDS sg13g2_Filler400

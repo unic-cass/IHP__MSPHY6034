@@ -1,0 +1,23 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:10
+
+.SUBCKT sg13g2_Clamp_P15N15D iovss iovdd pad[0] pad[1] pad[2] pad[3] pad[4]
++ pad[5] pad[6] pad[7] gate
+M$1 iovdd gate pad[0] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=14.1192p
++ AD=12.1212p PS=44.2u PD=30.28u
+M$3 iovdd gate pad[1] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$5 iovdd gate pad[2] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$7 iovdd gate pad[3] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$9 iovdd gate pad[4] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$11 iovdd gate pad[5] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$13 iovdd gate pad[6] iovdd sg13_hv_pmos L=0.6u W=26.64u AS=12.1212p
++ AD=12.1212p PS=30.28u PD=30.28u
+M$15 iovdd gate pad[7] iovdd sg13_hv_pmos L=0.6u W=13.32u AS=4.2624p AD=9.8568p
++ PS=14.6u PD=29.6u
+D$31 gate iovdd dpantenna A=0.6084p P=3.12u m=1
+R$32 \$1 iovss ptap1 A=67.0344p P=394.32u
+.ENDS sg13g2_Clamp_P15N15D

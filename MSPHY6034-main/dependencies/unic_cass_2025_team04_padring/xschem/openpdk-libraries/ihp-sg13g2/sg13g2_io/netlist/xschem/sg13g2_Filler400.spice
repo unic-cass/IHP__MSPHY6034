@@ -1,0 +1,10 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Filler400.sch
+.subckt sg13g2_Filler400 iovdd iovss1 vdd iovss2 iovss3 vss sub
+*.PININFO iovss1:B iovss2:B iovss3:B vss:B iovdd:B vdd:B sub:B
+R3 iovss3 sub ptap1 A=38.298p P=52.22u
+R4 vss sub ptap1 A=0.672p P=5.08u
+* noconn iovdd
+* noconn vdd
+R1 iovss1 sub ptap1 A=38.3136p P=52.24u
+R2 iovss2 sub ptap1 A=37.5336p P=51.24u
+.ends

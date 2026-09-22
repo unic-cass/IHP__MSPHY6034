@@ -1,0 +1,31 @@
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_IOPadVss.sch
+.subckt sg13g2_IOPadVss vss vdd sub iovss iovdd iovss1
+*.PININFO iovdd:B vss:B vdd:B sub:B iovss:B iovss1:B
+R2 vss sub ptap1 A=24p P=160.6u
+x2 iovdd sub vss vss sub sg13g2_DCPDiode_noptap
+x4 vss iovss vss iovdd sub sg13g2_DCNDiode
+* noconn vdd
+R1 iovss1 sub ptap1 A=5407.1p P=703.48u
+.ends
+
+* expanding   symbol:  sg13g2_DCPDiode_noptap.sym # of pins=5
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCPDiode_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCPDiode_noptap.sch
+.subckt sg13g2_DCPDiode_noptap cathode guard anode1 anode2 sub
+*.PININFO anode2:B cathode:B guard:B anode1:B sub:B
+D1 anode1 cathode dpantenna l=27.78u w=1.26u
+D2 anode2 cathode dpantenna l=27.78u w=1.26u
+.ends
+
+
+* expanding   symbol:  sg13g2_DCNDiode.sym # of pins=5
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCNDiode.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCNDiode.sch
+.subckt sg13g2_DCNDiode cathode1 anode cathode2 guard sub
+*.PININFO cathode2:B guard:B anode:B cathode1:B sub:B
+R1 anode sub ptap1 A=141.2964p P=221.76u
+D1 sub cathode1 dantenna l=27.78u w=1.26u
+* noconn guard
+D2 sub cathode2 dantenna l=27.78u w=1.26u
+.ends
+

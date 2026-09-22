@@ -1,0 +1,21 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:26
+
+.SUBCKT sg13g2_LevelDown pad iovdd iovss vss core vdd
+X$1 \$1 iovss \$10 pad iovdd sg13g2_SecondaryProtection
+M$1 core \$7 vss \$1 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p PS=6.18u
++ PD=6.18u
+M$2 vss \$10 \$7 \$1 sg13_hv_nmos L=0.45u W=2.65u AS=0.901p AD=0.901p PS=5.98u
++ PD=5.98u
+M$3 core \$7 vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p PS=10.18u
++ PD=10.18u
+M$4 vdd \$10 \$7 vdd sg13_hv_pmos L=0.45u W=4.65u AS=1.581p AD=1.581p PS=9.98u
++ PD=9.98u
+R$5 \$1 vss ptap1 A=2.019p P=14.06u
+.ENDS sg13g2_LevelDown
+
+.SUBCKT sg13g2_SecondaryProtection \$1 iovss core pad iovdd
+D$1 \$1 core dantenna A=1.984p P=7.48u m=1
+D$2 core iovdd dpantenna A=3.1872p P=11.24u m=1
+R$3 pad core rppd w=1u l=2u ps=0 b=0 m=1
+R$4 \$1 iovss ptap1 A=9.0304p P=53.12u
+.ENDS sg13g2_SecondaryProtection
