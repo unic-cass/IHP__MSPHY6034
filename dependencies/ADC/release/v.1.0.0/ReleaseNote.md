@@ -6,7 +6,8 @@ Imported block: **SAR_ADC_8BIT_IHP** (8-bit SAR ADC, IHP SG13G2).
 
 - `doc/` — README, block documentation (`docs/comparator.md`,
   `docs/digital_comps.md`, `docs/sar_adc.md`), block diagram.
-- `gds/` — `SAR_ADC.gds` (block layout), `user_project_wrapper.gds` (wrapper).
+- `gds/` — `SAR_ADC.gds` (block layout), `user_project_wrapper.gds` (wrapper),
+  and the digital sub-block layouts `clk_gen.gds` / `sar_algo.gds`.
 - `netlist/` — SPICE netlists (`spice/`), top verification netlist
   `SAR_ADC.spice`, LVS-extracted netlist `SAR_ADC_extracted.cir`, and
   digital RTL (`sar_logic.v`, `sar_logic_tb.v`, `sar_algo.v`,

@@ -1,0 +1,121 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO clk_gen
+  CLASS BLOCK ;
+  FOREIGN clk_gen ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 100.000 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER TopMetal1 ;
+        RECT 18.260 14.900 20.460 83.380 ;
+    END
+    PORT
+      LAYER TopMetal2 ;
+        RECT 5.760 27.620 94.080 29.820 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER TopMetal1 ;
+        RECT 24.460 14.490 26.660 83.790 ;
+    END
+    PORT
+      LAYER TopMetal2 ;
+        RECT 5.760 33.820 94.080 36.020 ;
+    END
+  END VSS
+  PIN fclk_comp
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 99.600 43.060 100.000 43.460 ;
+    END
+  END fclk_comp
+  PIN fclk_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 2.901600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 99.600 38.020 100.000 38.420 ;
+    END
+  END fclk_in
+  PIN fclk_samp
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 99.600 48.100 100.000 48.500 ;
+    END
+  END fclk_samp
+  PIN fdac_clk
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 99.600 47.260 100.000 47.660 ;
+    END
+  END fdac_clk
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.180700 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 99.600 39.700 100.000 40.100 ;
+    END
+  END rst
+  PIN vdd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 2.200 0.000 2.600 0.400 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 3.160 0.000 3.560 0.400 ;
+    END
+  END vss
+  OBS
+      LAYER GatPoly ;
+        RECT 5.760 14.970 94.080 83.310 ;
+      LAYER Metal1 ;
+        RECT 5.760 14.900 94.080 83.380 ;
+      LAYER Metal2 ;
+        RECT 18.440 14.975 95.145 83.305 ;
+      LAYER Metal3 ;
+        RECT 18.395 48.710 99.600 83.260 ;
+        RECT 18.395 47.890 99.390 48.710 ;
+        RECT 18.395 47.870 99.600 47.890 ;
+        RECT 18.395 47.050 99.390 47.870 ;
+        RECT 18.395 43.670 99.600 47.050 ;
+        RECT 18.395 42.850 99.390 43.670 ;
+        RECT 18.395 40.310 99.600 42.850 ;
+        RECT 18.395 39.490 99.390 40.310 ;
+        RECT 18.395 38.630 99.600 39.490 ;
+        RECT 18.395 37.810 99.390 38.630 ;
+        RECT 18.395 15.020 99.600 37.810 ;
+      LAYER Metal4 ;
+        RECT 18.440 14.975 26.480 83.305 ;
+      LAYER Metal5 ;
+        RECT 18.395 14.810 26.525 83.470 ;
+  END
+END clk_gen
+END LIBRARY
+
