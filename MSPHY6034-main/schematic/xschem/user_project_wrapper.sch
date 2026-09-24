@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 L 4 1230 430 1230 440 {}
 L 4 1230 440 1390 440 {}
@@ -1380,3 +1381,4 @@ C {iopin.sym} 1260 -2340 3 1 {name=p79 lab=analog_io_padres[7]}
 C {iopin.sym} 1100 -2340 3 1 {name=p80 lab=analog_io_padres[6]}
 C {iopin.sym} 940 -2340 3 1 {name=p81 lab=analog_io_padres[5]}
 C {iopin.sym} 780 -2340 3 1 {name=p82 lab=analog_io_padres[4]}
+C {iopin.sym} -110 -30 0 1 {name=p83 lab=SUB}
