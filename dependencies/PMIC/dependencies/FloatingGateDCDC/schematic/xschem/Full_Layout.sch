@@ -737,7 +737,6 @@ C {devices/lab_pin.sym} -880 -570 0 0 {name=p25 sig_type=std_logic lab=Q}
 C {devices/lab_pin.sym} -720 -620 2 1 {name=p26 sig_type=std_logic lab=QN}
 C {devices/code_shown.sym} -1490 -270 0 0 {name=LIB1 only_toplevel=false value="
 .include /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl
-.global VDD VSS
 "}
 C {sg13g2_pr/sg13_lv_pmos.sym} -1650 -830 0 0 {name=M3
 l=1u
@@ -982,3 +981,4 @@ C {devices/lab_pin.sym} -130 -110 1 0 {name=p27 sig_type=std_logic lab=TRIG}
 C {iopin.sym} -2210 -720 0 1 {name=p8 lab=VBAT}
 C {iopin.sym} -2350 -200 0 1 {name=p28 lab=IN}
 C {iopin.sym} -2200 -560 0 1 {name=p29 lab=VBAT2}
+C {iopin.sym} -2350 -120 0 1 {name=p9 lab=VDD}

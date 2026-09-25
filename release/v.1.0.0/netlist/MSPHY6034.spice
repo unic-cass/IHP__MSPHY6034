@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/MSPHY6034.sch
+* sch_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/team4_chip_top.sch
 .subckt MSPHY6034 IOVSS IOVDD analog_io[3] analog_io[2] analog_io[1] analog_io[0] uo_PAD[8] uo_PAD[7] uo_PAD[6] uo_PAD[5]
 + uo_PAD[4] VSS VDD analog_io[19] analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] ui_PAD[4] ui_PAD[3]
 + ui_PAD[2] analog_io[16] analog_io[15] analog_io[14] ui_PAD[1] analog_io[13] analog_io[12] analog_io[4] analog_io[5] analog_io[6]
@@ -230,6 +230,7 @@ x57 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[0] ui_p2c[0] sg13g2_IOPadIn
 x34 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[1] ui_p2c[1] sg13g2_IOPadIn
 x24 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[2] ui_p2c[2] sg13g2_IOPadIn
 x19 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[3] ui_p2c[3] sg13g2_IOPadIn
+x12 VSS VDD SUB IOVSS IOVDD uo_c2p[4] uo_PAD[4] IOVDD sg13g2_IOPadOut30mA
 x8 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[4] ui_p2c[4] sg13g2_IOPadIn
 x20 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[5] ui_p2c[5] sg13g2_IOPadIn
 x13 VSS VDD SUB IOVSS IOVDD IOVSS ui_PAD[6] ui_p2c[6] sg13g2_IOPadIn
@@ -237,7 +238,6 @@ x14 VSS VDD SUB IOVSS IOVDD uo_c2p[0] uo_PAD[0] IOVDD sg13g2_IOPadOut30mA
 x11 VSS VDD SUB IOVSS IOVDD uo_c2p[1] uo_PAD[1] IOVDD sg13g2_IOPadOut30mA
 x3 VSS VDD SUB IOVSS IOVDD uo_c2p[2] uo_PAD[2] IOVDD sg13g2_IOPadOut30mA
 x4 VSS VDD SUB IOVSS IOVDD uo_c2p[3] uo_PAD[3] IOVDD sg13g2_IOPadOut30mA
-x12 VSS VDD SUB IOVSS IOVDD uo_c2p[4] uo_PAD[4] IOVDD sg13g2_IOPadOut30mA
 x53 VSS VDD SUB IOVSS IOVDD uo_c2p[5] uo_PAD[5] IOVDD sg13g2_IOPadOut30mA
 x52 VSS VDD SUB IOVSS IOVDD uo_c2p[6] uo_PAD[6] IOVDD sg13g2_IOPadOut30mA
 x51 VSS VDD SUB IOVSS IOVDD uo_c2p[7] uo_PAD[7] IOVDD sg13g2_IOPadOut30mA
@@ -253,10 +253,10 @@ x28 VSS VDD SUB IOVSS IOVDD IOVSS sg13g2_IOPadIOVdd
 .ends
 
 .include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
-.include "/home/designer/shared/unic_cass_2025_team04_padring/SAR_ADC.spice"
-.include "/home/designer/shared/unic_cass_2025_team04_padring/serial2parallel.cdl"
-.include "/home/designer/shared/unic_cass_2025_team04_padring/CS_DAC_10b.spice"
-.include "/home/designer/shared/unic_cass_2025_team04_padring/Full_Layout.spice"
+.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/SAR_ADC.spice"
+.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/CS_DAC_10b.spice"
+.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/Full_Layout.spice"
+.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/serial2parallel.spice"
 
 * expanding   symbol:  sg13g2_Corner_noptap.sym # of pins=7
 ** sym_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Corner_noptap.sym

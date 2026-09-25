@@ -425,9 +425,12 @@ if {[info exists PDK_ROOT]} {
 # This overrides some of the variables set above.
 set XSCHEM_START_WINDOW ${PDK_ROOT}/${PDK}/libs.tech/xschem/start_page.sch
 append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK}/libs.tech/xschem
-append XSCHEM_LIBRARY_PATH :/home/designer/shared/unic_cass_2025_team04_padring/xschem/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem
-append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__SoC_team4/dependencies/SAR_ADC_8BIT_IHP/xschem/
-append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__SoC_team4/dependencies/CS_DAC/CS_DAC-/xschem/
+append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__MSPHY6034/MSPHY6034-main/schematic/xschem/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem
+append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__MSPHY6034/dependencies/ADC/ADC-main/schematic/xschem
+append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__MSPHY6034/dependencies/DAC/DAC-main/schematic/xschem
+append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__MSPHY6034/dependencies/PMIC/PMIC-main/schematic/xschem
+append XSCHEM_LIBRARY_PATH :/home/designer/shared/IHP__MSPHY6034/dependencies/S2P/S2P-main/schematic/xschem
+
 # allow a user-specific path add-on (https://github.com/iic-jku/iic-osic-tools/issues/7)
 if { [info exists ::env(XSCHEM_USER_LIBRARY_PATH) ] } {
     append XSCHEM_LIBRARY_PATH :$env(XSCHEM_USER_LIBRARY_PATH)

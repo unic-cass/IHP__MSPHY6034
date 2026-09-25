@@ -1,46 +1,44 @@
-** sch_path: /home/wsl_rks/Designs/redesign_Floating_Gate_Driver_2025/ALL_Floating_Gate/Sch/Final_SCH/Full_Layout.sch
-.include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
-*.global VDD VSS
-.subckt Full_Layout Vout G2 VH VSS VHLS Vddls Vs
-*.PININFO Vout:B G2:B VH:B VSS:B VHLS:B Vddls:B Vs:B
+** sch_path: /home/designer/shared/FloatingGateDCDC/schematic/xschem/Full_Layout.sch
+.subckt Full_Layout VBAT VBAT2 IN VH VDD VHLS Vout Vddls VSS Vs
+*.PININFO Vout:B VH:B VSS:B VHLS:B Vddls:B Vs:B VBAT:B IN:B VBAT2:B VDD:B
 M2 VSS net1 Vout VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 M1 Vout TRIG VH Vout sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 MD9 VgMD2 Vs Vddls Vddls sg13_lv_pmos w=1.12u l=0.13u ng=1 m=2
 MD10 VSS Vs VgMD2 VSS sg13_lv_nmos w=1.12u l=0.13u ng=1 m=2
-MD1 VgMD5 VgMD1 VHLS VHLS sg13_hv_pmos w=10u l=0.4u ng=1 m=1
-MD3 VgMD1 VgMD5 VHLS VHLS sg13_hv_pmos w=10u l=0.4u ng=1 m=1
+MD1 VgMD5 VgMD1 VHLS VHLS sg13_hv_pmos w=10u l=0.4u ng=1
+MD3 VgMD1 VgMD5 VHLS VHLS sg13_hv_pmos w=10u l=0.4u ng=1
 MD5 VgMD78 VgMD5 VHLS VHLS sg13_hv_pmos w=10u l=0.4u ng=1 m=30
 MD7 net1 VgMD78 VHLS VHLS sg13_hv_pmos w=10u l=0.4u ng=1 m=250
 MD2 VSS VgMD2 VgMD5 VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=6
 MD4 VSS Vs VgMD1 VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=6
 MD6 VSS Vs VgMD78 VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=25
 MD8 VSS VgMD78 net1 VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=200
-M3 RESET SET Vboot Vboot sg13_hv_pmos w=5u l=1u ng=1 m=1
-M4 SET SET Vboot Vboot sg13_hv_pmos w=0.5u l=1u ng=1 m=1
-M5 SET RESET Vboot Vboot sg13_hv_pmos w=5u l=1u ng=1 m=1
-M6 RESET RESET Vboot Vboot sg13_hv_pmos w=0.5u l=1u ng=1 m=1
-M7 net2 RESET Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1 m=1
-M8 SET SET net2 net2 sg13_hv_pmos w=1u l=0.5u ng=1 m=1
-M9 net3 SET Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1 m=1
-M10 RESET RESET net3 net3 sg13_hv_pmos w=1u l=0.5u ng=1 m=1
-M11 net6 VRE SET VSS sg13_hv_nmos w=30u l=0.5u ng=5 m=1
-M12 net6 VFE RESET VSS sg13_hv_nmos w=30u l=0.5u ng=5 m=1
-M13 VSS VBAT2 VBAT2 VSS sg13_hv_nmos w=200u l=2u ng=20 m=1
-M14 VSS VBAT2 net6 VSS sg13_hv_nmos w=200u l=2u ng=20 m=1
-M15 net4 net5 Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1 m=1
-M16 net5 net4 Vboot Vboot sg13_hv_pmos w=3u l=0.5u ng=1 m=1
-M17 TRIG net5 Vboot Vboot sg13_hv_pmos w=195u l=0.5u ng=65 m=1
-M18 vsource Q net4 vsource sg13_hv_nmos w=3u l=0.5u ng=1 m=1
-M19 vsource QN net5 vsource sg13_hv_nmos w=3u l=0.5u ng=1 m=1
-M20 vsource net5 TRIG vsource sg13_hv_nmos w=72u l=0.5u ng=24 m=1
-M21 Q RESET Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10 m=1
-M22 Q QN Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10 m=1
-M23 net11 RESET Q vsource sg13_hv_nmos w=5u l=3u ng=10 m=1
-M24 vsource QN net11 vsource sg13_hv_nmos w=5u l=3u ng=10 m=1
-M25 QN Q Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10 m=1
-M26 QN SET Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10 m=1
-M27 net12 Q QN vsource sg13_hv_nmos w=5u l=3u ng=10 m=1
-M28 vsource SET net12 vsource sg13_hv_nmos w=5u l=3u ng=10 m=1
+M3 RESET SET Vboot Vboot sg13_hv_pmos w=5u l=1u ng=1
+M4 SET SET Vboot Vboot sg13_hv_pmos w=0.5u l=1u ng=1
+M5 SET RESET Vboot Vboot sg13_hv_pmos w=5u l=1u ng=1
+M6 RESET RESET Vboot Vboot sg13_hv_pmos w=0.5u l=1u ng=1
+M7 net2 RESET Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1
+M8 SET SET net2 net2 sg13_hv_pmos w=1u l=0.5u ng=1
+M9 net3 SET Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1
+M10 RESET RESET net3 net3 sg13_hv_pmos w=1u l=0.5u ng=1
+M11 net6 VRE SET VSS sg13_hv_nmos w=30u l=0.5u ng=5
+M12 net6 VFE RESET VSS sg13_hv_nmos w=30u l=0.5u ng=5
+M13 VSS VBAT2 VBAT2 VSS sg13_hv_nmos w=200u l=2u ng=20
+M14 VSS VBAT2 net6 VSS sg13_hv_nmos w=200u l=2u ng=20
+M15 net4 net5 Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1
+M16 net5 net4 Vboot Vboot sg13_hv_pmos w=3u l=0.5u ng=1
+M17 TRIG net5 Vboot Vboot sg13_hv_pmos w=195u l=0.5u ng=65
+M18 vsource Q net4 vsource sg13_hv_nmos w=3u l=0.5u ng=1
+M19 vsource QN net5 vsource sg13_hv_nmos w=3u l=0.5u ng=1
+M20 vsource net5 TRIG vsource sg13_hv_nmos w=72u l=0.5u ng=24
+M21 Q RESET Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
+M22 Q QN Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
+M23 net11 RESET Q vsource sg13_hv_nmos w=5u l=3u ng=10
+M24 vsource QN net11 vsource sg13_hv_nmos w=5u l=3u ng=10
+M25 QN Q Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
+M26 QN SET Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
+M27 net12 Q QN vsource sg13_hv_nmos w=5u l=3u ng=10
+M28 vsource SET net12 vsource sg13_hv_nmos w=5u l=3u ng=10
 x1 net8 IN VDD VSS sg13g2_inv_1
 x2 predly net8 VDD VSS sg13g2_inv_1
 x3 net9 predly VDD VSS sg13g2_inv_1
@@ -51,12 +49,14 @@ x7 VFE net10 dly8 VDD VSS sg13g2_and2_1
 x8 VRE net7 predly VDD VSS sg13g2_and2_1
 C2 dly8 VSS cap_cmim w=80.0e-6 l=40.0e-6 m=3
 C1 Vboot vsource cap_cmim w=100.0e-6 l=42.0e-6 m=56
-M29 Vboot Vboot VBAT Vboot sg13_hv_pmos w=6u l=0.5u ng=1 m=1
+M29 Vboot Vboot VBAT Vboot sg13_hv_pmos w=6u l=0.5u ng=1
 **** begin user architecture code
 
 
+.include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
 
 
 **** end user architecture code
 .ends
-.end
+
+

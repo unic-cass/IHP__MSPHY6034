@@ -1,8 +1,6 @@
 ** sch_path: /home/designer/shared/FloatingGateDCDC/schematic/xschem/Full_Layout.sch
-.include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
-.global VDD VSS
-.subckt Full_Layout VBAT VBAT2 VH IN VHLS Vout Vddls VSS Vs
-*.PININFO Vout:B VH:B VSS:B VHLS:B Vddls:B Vs:B VBAT:B IN:B VBAT2:B
+.subckt Full_Layout VBAT VBAT2 IN VH VDD VHLS Vout Vddls VSS Vs
+*.PININFO Vout:B VH:B VSS:B VHLS:B Vddls:B Vs:B VBAT:B IN:B VBAT2:B VDD:B
 M2 VSS net1 Vout VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 M1 Vout TRIG VH Vout sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 MD9 VgMD2 Vs Vddls Vddls sg13_lv_pmos w=1.12u l=0.13u ng=1 m=2
@@ -55,8 +53,10 @@ M29 Vboot Vboot VBAT Vboot sg13_hv_pmos w=6u l=0.5u ng=1
 **** begin user architecture code
 
 
+.include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
 
 
 **** end user architecture code
 .ends
-.end
+
+
