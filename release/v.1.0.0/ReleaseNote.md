@@ -20,8 +20,8 @@ Initial release of the MSPHY6034 IP library (IHP SG13CMOS).
   (incl. `Clock_gen_using_transistor_hv/` sub-block), SPICE netlists, GDS
   layouts. See `dependencies/OTA/release/v.1.0.0/ReleaseNote.md`.
 - **Top** — chip integration (`MSPHY6034`): padring + sub-IP integration.
-  `gds/MSPHY6034.gds`, `netlist/MSPHY6034.spice`, `doc/MSPHY6034.sch`.
-  Padring source in `MSPHY6034-main/`.
+  `gds/MSPHY6034.gds.gz` (gzip-compressed GDS), `netlist/MSPHY6034.spice`,
+  `doc/MSPHY6034.sch`. Padring source in `MSPHY6034-main/`.
 
 Deliverables are organized per module as `doc/`, `gds/`, `netlist/`.
 Generated tool/build artifacts (Verilator/OpenROAD/ModelSim run outputs,
