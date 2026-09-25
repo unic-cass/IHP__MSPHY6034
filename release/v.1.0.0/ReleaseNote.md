@@ -19,7 +19,8 @@ Initial release of the MSPHY6034 IP library (IHP SG13CMOS).
 - **OTA** — Chopper-stabilized OTA block (`OTA5174`): xschem schematics
   (incl. `Clock_gen_using_transistor_hv/` sub-block), SPICE netlists, GDS
   layouts. See `dependencies/OTA/release/v.1.0.0/ReleaseNote.md`.
-- **Top** — chip integration (`MSPHY6034`): padring + sub-IP integration.
+- **Top** — chip integration (`MSPHY6034`): padring + sub-IP integration,
+  including a sealring (SG13_dev PCell) merged at the die boundary.
   `gds/MSPHY6034.gds.gz` (gzip-compressed GDS), `netlist/MSPHY6034.spice`,
   `doc/MSPHY6034.sch`. Padring source in `MSPHY6034-main/`.
 
