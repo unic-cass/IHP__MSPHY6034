@@ -1,20 +1,23 @@
 * sch_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/team4_chip_top.sch
-.subckt MSPHY6034 IOVSS IOVDD analog_io[3] analog_io[2] analog_io[1] analog_io[0] uo_PAD[8] uo_PAD[7] uo_PAD[6] uo_PAD[5]
-+ uo_PAD[4] VSS VDD analog_io[19] analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] ui_PAD[4] ui_PAD[3]
-+ ui_PAD[2] analog_io[16] analog_io[15] analog_io[14] ui_PAD[1] analog_io[13] analog_io[12] analog_io[4] analog_io[5] analog_io[6]
-+ analog_io[7] analog_io[8] analog_io[9] ui_PAD[0] analog_io[10] analog_io[11]
+.subckt MSPHY6034 IOVSS IOVDD analog_io[3] analog_io[2] analog_io[1] analog_io[0] uo_PAD[8] uo_PAD[7] uo_PAD[6]
++ uo_PAD[5] uo_PAD[4] VSS VDD analog_io[19] analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0]
++ ui_PAD[6] ui_PAD[5] ui_PAD[4] ui_PAD[3] ui_PAD[2] analog_io[16] analog_io[15] analog_io[14] ui_PAD[1]
++ analog_io[13] analog_io[12] analog_io[4] analog_io[5] analog_io[6] analog_io[7] analog_io[8] analog_io[9]
++ ui_PAD[0] analog_io[10] analog_io[11] an8 an9 an10 an11 an12 an13 an14 an15 an16 an17 an18 an19 c1 c2 c3 c4 c5 c6
++ c7 c8 c9 c10 dout[0] en ui0 ui1 ui2 ui3 ui4 ui5 ui6 uo0 uo1 uo2 uo3 uo4 uo5 uo6 uo7 uo8
 *.PININFO IOVSS:B IOVDD:B analog_io[3]:B analog_io[2]:B analog_io[1]:B analog_io[0]:B uo_PAD[8]:B uo_PAD[7]:B uo_PAD[6]:B
 *+ uo_PAD[5]:B uo_PAD[4]:B VSS:B VDD:B analog_io[19]:B analog_io[18]:B analog_io[17]:B uo_PAD[3]:B uo_PAD[2]:B uo_PAD[1]:B uo_PAD[0]:B
 *+ ui_PAD[6]:B ui_PAD[5]:B ui_PAD[4]:B ui_PAD[3]:B ui_PAD[2]:B analog_io[16]:B analog_io[15]:B analog_io[14]:B ui_PAD[1]:B analog_io[13]:B
 *+ analog_io[12]:B analog_io[4]:B analog_io[5]:B analog_io[6]:B analog_io[7]:B analog_io[8]:B analog_io[9]:B ui_PAD[0]:B analog_io[10]:B
 *+ analog_io[11]:B
-x1 net10 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9] analog_io[4] analog_io[5] net6
-+ an11 net7 net8 ui0 an10 net9 an8 an9 an12 analog_io[3] analog_io[12] net2 an13 analog_io[2] analog_io[13] net3 ui1 analog_io[1]
-+ ui_PAD[1] net4 an14 analog_io[0] analog_io[14] net5 an15 uo_PAD[8] analog_io[15] an16 uo_PAD[7] analog_io[16] uo7 ui2 uo_PAD[6] ui_PAD[2]
-+ uo6 ui3 uo_PAD[5] ui_PAD[3] uo5 ui4 uo_PAD[4] ui_PAD[4] uo4 ui5 ui6 uo0 uo1 uo2 uo3 an17 an18 an19 VSS VDD IOVDD IOVSS analog_io[19]
-+ analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] uo8 user_project_wrapper
+x1 net10 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9]
++ analog_io[4] analog_io[5] an11 ui0 an10 an8 an9 an12 analog_io[3] analog_io[12] an13 analog_io[2]
++ analog_io[13] ui1 analog_io[1] ui_PAD[1] an14 analog_io[0] analog_io[14] an15 uo_PAD[8] analog_io[15] an16
++ uo_PAD[7] analog_io[16] uo7 ui2 uo_PAD[6] ui_PAD[2] uo6 ui3 uo_PAD[5] ui_PAD[3] uo5 ui4 uo_PAD[4] ui_PAD[4]
++ uo4 ui5 ui6 uo0 uo1 uo2 uo3 an17 an18 an19 VSS VDD IOVDD IOVSS analog_io[19] analog_io[18] analog_io[17]
++ uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] uo8 user_project_wrapper
 x5 vsource an8 an9 ui0 an10 VDD an13 an11 an12 VSS ui1 Full_Layout
-x6 VDD VSS ui6 ui2 ui4 ui5 ui3 dout[0] en c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 serial2parallel
+x6 VDD VSS ui6 ui2 ui4 ui5 ui3 net1 en c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 serial2parallel
 * noconn #net1
 * noconn #net6
 * noconn #net7
@@ -32,13 +35,15 @@ x2 ui6 an15 an16 an14 VDD VSS c1 c10 c2 c3 c4 c5 c6 c7 c8 c9 CS_DAC_10b
 * expanding   symbol:  user_project_wrapper.sym # of pins=89
 ** sym_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/user_project_wrapper.sym
 ** sch_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/user_project_wrapper.sch
-.subckt user_project_wrapper SUB analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9]
-+ analog_io_padres[7] analog_io_padres[8] analog_io_padres[9] analog_io_padres[12] analog_io[3] analog_io[12] analog_io_padres[3] analog_io_padres[13]
-+ analog_io[2] analog_io[13] analog_io_padres[2] ui_p2c[1] analog_io[1] ui_PAD[1] analog_io_padres[1] analog_io_padres[14] analog_io[0]
-+ analog_io[14] analog_io_padres[0] analog_io_padres[15] uo_PAD[8] analog_io[15] analog_io_padres[16] uo_PAD[7] analog_io[16] uo_c2p[7] ui_p2c[2]
-+ uo_PAD[6] ui_PAD[2] uo_c2p[6] ui_p2c[3] uo_PAD[5] ui_PAD[3] uo_c2p[5] ui_p2c[4] uo_PAD[4] ui_PAD[4] uo_c2p[4] ui_p2c[5] ui_p2c[6] uo_c2p[0]
-+ uo_c2p[1] uo_c2p[2] uo_c2p[3] analog_io_padres[17] analog_io_padres[18] analog_io_padres[19] VSS VDD IOVDD IOVSS analog_io[19]
-+ analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] uo_c2p[8]
+.subckt user_project_wrapper SUB analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7]
++ analog_io[9] analog_io[4] analog_io[5] analog_io_padres[11] ui_p2c[0] analog_io_padres[10]
++ analog_io_padres[8] analog_io_padres[9] analog_io_padres[12] analog_io[3] analog_io[12] analog_io_padres[13]
++ analog_io[2] analog_io[13] ui_p2c[1] analog_io[1] ui_PAD[1] analog_io_padres[14] analog_io[0] analog_io[14]
++ analog_io_padres[15] uo_PAD[8] analog_io[15] analog_io_padres[16] uo_PAD[7] analog_io[16] uo_c2p[7]
++ ui_p2c[2] uo_PAD[6] ui_PAD[2] uo_c2p[6] ui_p2c[3] uo_PAD[5] ui_PAD[3] uo_c2p[5] ui_p2c[4] uo_PAD[4]
++ ui_PAD[4] uo_c2p[4] ui_p2c[5] ui_p2c[6] uo_c2p[0] uo_c2p[1] uo_c2p[2] uo_c2p[3] analog_io_padres[17]
++ analog_io_padres[18] analog_io_padres[19] VSS VDD IOVDD IOVSS analog_io[19] analog_io[18] analog_io[17]
++ uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] uo_c2p[8]
 *.PININFO VSS:B VDD:B IOVDD:B IOVSS:B uo_PAD[4]:B uo_PAD[5]:B uo_PAD[6]:B uo_PAD[7]:B uo_PAD[8]:B analog_io[0]:B analog_io[1]:B
 *+ analog_io[2]:B analog_io[3]:B analog_io[4]:B analog_io[5]:B analog_io[6]:B analog_io[7]:B analog_io[8]:B analog_io[9]:B ui_PAD[0]:B
 *+ analog_io[10]:B analog_io[11]:B analog_io[12]:B analog_io[13]:B ui_PAD[1]:B analog_io[14]:B analog_io[15]:B analog_io[16]:B ui_PAD[2]:B
@@ -251,11 +256,11 @@ x27 VSS VDD SUB IOVSS IOVDD sg13g2_IOPadIOVss
 x28 VSS VDD SUB IOVSS IOVDD IOVSS sg13g2_IOPadIOVdd
 .ends
 
-.include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/SAR_ADC.spice"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/CS_DAC_10b.spice"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/Full_Layout.spice"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/serial2parallel.spice"
+.include "/home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/SAR_ADC.spice"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/CS_DAC_10b.spice"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/Full_Layout.spice"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/serial2parallel.spice"
 
 * expanding   symbol:  sg13g2_Corner_noptap.sym # of pins=7
 ** sym_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Corner_noptap.sym

@@ -1,8 +1,10 @@
 * sch_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/team4_chip_top.sch
-.subckt MSPHY6034 IOVSS IOVDD analog_io[3] analog_io[2] analog_io[1] analog_io[0] uo_PAD[8] uo_PAD[7] uo_PAD[6] uo_PAD[5]
-+ uo_PAD[4] VSS VDD analog_io[19] analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] ui_PAD[4] ui_PAD[3]
-+ ui_PAD[2] analog_io[16] analog_io[15] analog_io[14] ui_PAD[1] analog_io[13] analog_io[12] analog_io[4] analog_io[5] analog_io[6]
-+ analog_io[7] analog_io[8] analog_io[9] ui_PAD[0] analog_io[10] analog_io[11]
+.subckt MSPHY6034 IOVSS IOVDD analog_io[3] analog_io[2] analog_io[1] analog_io[0] uo_PAD[8] uo_PAD[7] uo_PAD[6]
++ uo_PAD[5] uo_PAD[4] VSS VDD analog_io[19] analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0]
++ ui_PAD[6] ui_PAD[5] ui_PAD[4] ui_PAD[3] ui_PAD[2] analog_io[16] analog_io[15] analog_io[14] ui_PAD[1]
++ analog_io[13] analog_io[12] analog_io[4] analog_io[5] analog_io[6] analog_io[7] analog_io[8] analog_io[9]
++ ui_PAD[0] analog_io[10] analog_io[11] an8 an9 an10 an11 an12 an13 an14 an15 an16 an17 an18 an19 c1 c2 c3 c4 c5 c6
++ c7 c8 c9 c10 dout[0] en ui0 ui1 ui2 ui3 ui4 ui5 ui6 uo0 uo1 uo2 uo3 uo4 uo5 uo6 uo7 uo8
 *.PININFO IOVSS:B IOVDD:B analog_io[3]:B analog_io[2]:B analog_io[1]:B analog_io[0]:B uo_PAD[8]:B uo_PAD[7]:B uo_PAD[6]:B
 *+ uo_PAD[5]:B uo_PAD[4]:B VSS:B VDD:B analog_io[19]:B analog_io[18]:B analog_io[17]:B uo_PAD[3]:B uo_PAD[2]:B uo_PAD[1]:B uo_PAD[0]:B
 *+ ui_PAD[6]:B ui_PAD[5]:B ui_PAD[4]:B ui_PAD[3]:B ui_PAD[2]:B analog_io[16]:B analog_io[15]:B analog_io[14]:B ui_PAD[1]:B analog_io[13]:B
