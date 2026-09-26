@@ -15,7 +15,7 @@ x1 net10 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_
 + analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] uo8 user_project_wrapper
 x5 vsource an8 an9 ui0 an10 VDD an13 an11 an12 VSS ui1 Full_Layout
 x6 VDD VSS ui6 ui2 ui4 ui5 ui3 dout[0] en c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 serial2parallel
-* noconn #net1
+* noconn #dout[0]
 * noconn #net6
 * noconn #net7
 * noconn #net8
@@ -26,7 +26,7 @@ x6 VDD VSS ui6 ui2 ui4 ui5 ui3 dout[0] en c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 serial2
 * noconn #net5
 x4 an17 an19 VDD VSS an18 uo8 uo7 uo6 uo5 uo4 uo3 uo1 uo2 ui6 ui5 en uo0 SAR_ADC
 x2 ui6 an15 an16 an14 VDD VSS c1 c10 c2 c3 c4 c5 c6 c7 c8 c9 CS_DAC_10b
-* noconn #net10
+* noconn #dout[0]0
 .ends
 
 * expanding   symbol:  user_project_wrapper.sym # of pins=89
