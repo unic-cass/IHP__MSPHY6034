@@ -10,7 +10,7 @@
 *+ ui_PAD[6]:B ui_PAD[5]:B ui_PAD[4]:B ui_PAD[3]:B ui_PAD[2]:B analog_io[16]:B analog_io[15]:B analog_io[14]:B ui_PAD[1]:B analog_io[13]:B
 *+ analog_io[12]:B analog_io[4]:B analog_io[5]:B analog_io[6]:B analog_io[7]:B analog_io[8]:B analog_io[9]:B ui_PAD[0]:B analog_io[10]:B
 *+ analog_io[11]:B
-x1 net10 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9]
+x1 vsource analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9]
 + analog_io[4] analog_io[5] an11 ui0 an10 an8 an9 an12 analog_io[3] analog_io[12] an13 analog_io[2]
 + analog_io[13] ui1 analog_io[1] ui_PAD[1] an14 analog_io[0] analog_io[14] an15 uo_PAD[8] analog_io[15] an16
 + uo_PAD[7] analog_io[16] uo7 ui2 uo_PAD[6] ui_PAD[2] uo6 ui3 uo_PAD[5] ui_PAD[3] uo5 ui4 uo_PAD[4] ui_PAD[4]
@@ -29,7 +29,7 @@ x6 VDD VSS ui6 ui2 ui4 ui5 ui3 dout[0] en c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 serial2
 * noconn #net5
 x4 an17 an19 VDD VSS an18 uo8 uo7 uo6 uo5 uo4 uo3 uo1 uo2 ui6 ui5 en uo0 SAR_ADC
 x2 ui6 an15 an16 an14 VDD VSS c1 c10 c2 c3 c4 c5 c6 c7 c8 c9 CS_DAC_10b
-* noconn #net10
+* noconn #vsource
 .ends
 
 * expanding   symbol:  user_project_wrapper.sym # of pins=89
