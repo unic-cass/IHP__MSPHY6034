@@ -13,7 +13,7 @@ x1 net10 analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_
 + ui_PAD[1] net4 an14 analog_io[0] analog_io[14] net5 an15 uo_PAD[8] analog_io[15] an16 uo_PAD[7] analog_io[16] uo7 ui2 uo_PAD[6] ui_PAD[2]
 + uo6 ui3 uo_PAD[5] ui_PAD[3] uo5 ui4 uo_PAD[4] ui_PAD[4] uo4 ui5 ui6 uo0 uo1 uo2 uo3 an17 an18 an19 VSS VDD IOVDD IOVSS analog_io[19]
 + analog_io[18] analog_io[17] uo_PAD[3] uo_PAD[2] uo_PAD[1] uo_PAD[0] ui_PAD[6] ui_PAD[5] uo8 user_project_wrapper
-x5 an8 an9 ui0 an10 VDD an13 an11 an12 VSS ui1 Full_Layout
+x5 vsource an8 an9 ui0 an10 VDD an13 an11 an12 VSS ui1 Full_Layout
 x6 VDD VSS ui6 ui2 ui4 ui5 ui3 net1 en c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 serial2parallel
 * noconn #net1
 * noconn #net6

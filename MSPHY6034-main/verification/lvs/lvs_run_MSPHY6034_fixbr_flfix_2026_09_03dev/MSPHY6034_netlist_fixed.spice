@@ -252,11 +252,11 @@ x27 VSS VDD SUB IOVSS IOVDD sg13g2_IOPadIOVss
 x28 VSS VDD SUB IOVSS IOVDD IOVSS sg13g2_IOPadIOVdd
 .ends
 
-.include "/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/SAR_ADC.spice"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/CS_DAC_10b.spice"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/Full_Layout.spice"
-.include "/home/designer/shared/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/serial2parallel.spice"
+.include "/home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/SAR_ADC.spice"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/CS_DAC_10b.spice"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/Full_Layout.spice"
+.include "/home/admin/work/final/IHP__MSPHY6034/release/v.1.0.0/netlist/dependencies/serial2parallel.spice"
 
 * expanding   symbol:  sg13g2_Corner_noptap.sym # of pins=7
 ** sym_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Corner_noptap.sym

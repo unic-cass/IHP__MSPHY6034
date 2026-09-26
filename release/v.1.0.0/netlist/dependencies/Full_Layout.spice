@@ -1,6 +1,6 @@
 ** sch_path: /home/designer/shared/FloatingGateDCDC/schematic/xschem/Full_Layout.sch
-.subckt Full_Layout VBAT VBAT2 IN VH VDD VHLS Vout Vddls VSS Vs
-*.PININFO Vout:B VH:B VSS:B VHLS:B Vddls:B Vs:B VBAT:B IN:B VBAT2:B VDD:B
+.subckt Full_Layout Vsource VBAT VBAT2 IN VH VDD VHLS Vout Vddls VSS Vs
+*.PININFO Vsource:B Vout:B VH:B VSS:B VHLS:B Vddls:B Vs:B VBAT:B IN:B VBAT2:B VDD:B
 M2 VSS net1 Vout VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 M1 Vout TRIG VH Vout sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 MD9 VgMD2 Vs Vddls Vddls sg13_lv_pmos w=1.12u l=0.13u ng=1 m=2
@@ -28,17 +28,17 @@ M14 VSS VBAT2 net6 VSS sg13_hv_nmos w=200u l=2u ng=20
 M15 net4 net5 Vboot Vboot sg13_hv_pmos w=1u l=0.5u ng=1
 M16 net5 net4 Vboot Vboot sg13_hv_pmos w=3u l=0.5u ng=1
 M17 TRIG net5 Vboot Vboot sg13_hv_pmos w=195u l=0.5u ng=65
-M18 vsource Q net4 vsource sg13_hv_nmos w=3u l=0.5u ng=1
-M19 vsource QN net5 vsource sg13_hv_nmos w=3u l=0.5u ng=1
-M20 vsource net5 TRIG vsource sg13_hv_nmos w=72u l=0.5u ng=24
+M18 Vsource Q net4 Vsource sg13_hv_nmos w=3u l=0.5u ng=1
+M19 Vsource QN net5 Vsource sg13_hv_nmos w=3u l=0.5u ng=1
+M20 Vsource net5 TRIG Vsource sg13_hv_nmos w=72u l=0.5u ng=24
 M21 Q RESET Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
 M22 Q QN Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
-M23 net11 RESET Q vsource sg13_hv_nmos w=5u l=3u ng=10
-M24 vsource QN net11 vsource sg13_hv_nmos w=5u l=3u ng=10
+M23 net11 RESET Q Vsource sg13_hv_nmos w=5u l=3u ng=10
+M24 Vsource QN net11 Vsource sg13_hv_nmos w=5u l=3u ng=10
 M25 QN Q Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
 M26 QN SET Vboot Vboot sg13_hv_pmos w=5u l=3u ng=10
-M27 net12 Q QN vsource sg13_hv_nmos w=5u l=3u ng=10
-M28 vsource SET net12 vsource sg13_hv_nmos w=5u l=3u ng=10
+M27 net12 Q QN Vsource sg13_hv_nmos w=5u l=3u ng=10
+M28 Vsource SET net12 Vsource sg13_hv_nmos w=5u l=3u ng=10
 x1 net8 IN VDD VSS sg13g2_inv_1
 x2 predly net8 VDD VSS sg13g2_inv_1
 x3 net9 predly VDD VSS sg13g2_inv_1
@@ -48,7 +48,7 @@ x6 net7 dly8 VDD VSS sg13g2_inv_1
 x7 VFE net10 dly8 VDD VSS sg13g2_and2_1
 x8 VRE net7 predly VDD VSS sg13g2_and2_1
 C2 dly8 VSS cap_cmim w=80.0e-6 l=40.0e-6 m=3
-C1 Vboot vsource cap_cmim w=100.0e-6 l=42.0e-6 m=56
+C1 Vboot Vsource cap_cmim w=100.0e-6 l=42.0e-6 m=56
 M29 Vboot Vboot VBAT Vboot sg13_hv_pmos w=6u l=0.5u ng=1
 **** begin user architecture code
 
