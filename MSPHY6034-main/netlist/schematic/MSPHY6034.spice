@@ -33,7 +33,6 @@ x2 ui6 an15 an16 an14 VDD VSS c1 c10 c2 c3 c4 c5 c6 c7 c8 c9 CS_DAC_10b
 ** sym_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/user_project_wrapper.sym
 ** sch_path: /home/designer/shared/unic_cass_2025_team04_padring/xschem/user_project_wrapper.sch
 .subckt user_project_wrapper SUB analog_io[8] analog_io[6] analog_io[11] ui_PAD[0] analog_io[10] analog_io[7] analog_io[9]
-+ analog_io[4] analog_io[5] analog_io_padres[4] analog_io_padres[11] analog_io_padres[5] analog_io_padres[6] ui_p2c[0] analog_io_padres[10]
 + analog_io_padres[7] analog_io_padres[8] analog_io_padres[9] analog_io_padres[12] analog_io[3] analog_io[12] analog_io_padres[3] analog_io_padres[13]
 + analog_io[2] analog_io[13] analog_io_padres[2] ui_p2c[1] analog_io[1] ui_PAD[1] analog_io_padres[1] analog_io_padres[14] analog_io[0]
 + analog_io[14] analog_io_padres[0] analog_io_padres[15] uo_PAD[8] analog_io[15] analog_io_padres[16] uo_PAD[7] analog_io[16] uo_c2p[7] ui_p2c[2]
