@@ -1,0 +1,6 @@
+25-Sep-2026 20:58:00 | INFO    | KLayout version detected: 0.30.5 (required >= 0.30.5)
+25-Sep-2026 20:58:00 | INFO    | Using DRC JSON file: /home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+25-Sep-2026 20:58:00 | INFO    | Running IHP-SG13G2 main checks on design /tmp/opencode/rel_final/MSPHY6034.gds, topcell: MSPHY6034
+25-Sep-2026 21:11:38 | INFO    | Running IHP-SG13G2 density checks on design /tmp/opencode/rel_final/MSPHY6034.gds, topcell: MSPHY6034
+25-Sep-2026 21:12:17 | INFO    | Completed running Density checks.
+25-Sep-2026 21:12:17 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /tmp/opencode/rel_final/MSPHY6034.gds, topcell: MSPHY6034

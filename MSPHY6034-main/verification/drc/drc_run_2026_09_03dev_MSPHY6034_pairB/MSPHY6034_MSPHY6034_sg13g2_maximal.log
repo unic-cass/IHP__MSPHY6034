@@ -1,0 +1,9 @@
+# Logfile created on 2026-09-26 04:14:56 +0700 by logger.rb/61378
+2026-09-26 04:14:56 +0700: Memory Usage (416152K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /tmp/opencode/pairB/MSPHY6034.gds
+2026-09-26 04:14:56 +0700: Memory Usage (416152K) : Ruby Version for klayout: 2.5.9
+2026-09-26 04:14:58 +0700: Memory Usage (479252K) : Loading database to memory is complete.
+2026-09-26 04:14:58 +0700: Memory Usage (479252K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/admin/work/final/IHP__MSPHY6034/MSPHY6034-main/verification/drc/drc_run_2026_09_03dev_MSPHY6034_pairB/MSPHY6034_MSPHY6034_sg13g2_maximal.lyrdb
+2026-09-26 04:14:58 +0700: Memory Usage (479316K) : Evaluate switches.
+2026-09-26 04:14:58 +0700: Memory Usage (479316K) : Klayout will use 96 thread(s)
+2026-09-26 04:14:58 +0700: Memory Usage (479316K) : deep mode is enabled for sg13g2_maximal runset.
+2026-09-26 04:30:18 +0700: Memory Usage (7688992K) : KLayout DRC run for maximum ruleSet completed in 922.17 seconds
