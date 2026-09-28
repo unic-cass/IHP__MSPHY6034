@@ -316,7 +316,6 @@ C {iopin.sym} 1490 -2670 1 1 {name=p96 lab=analog_io[9]}
 C {iopin.sym} 1520 -2670 1 1 {name=p97 lab=ui_PAD[0]}
 C {iopin.sym} 1550 -2670 1 1 {name=p98 lab=analog_io[10]}
 C {iopin.sym} 1590 -2670 1 1 {name=p99 lab=analog_io[11]}
-C {noconn.sym} 160 -1370 0 0 {name=l10}
 C {lab_pin.sym} 1720 -1810 2 0 {name=p100 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1030 -1620 2 0 {name=p101 sig_type=std_logic lab=uo8}
 C {lab_pin.sym} 1050 -1590 2 0 {name=p102 sig_type=std_logic lab=uo7}
@@ -359,3 +358,4 @@ C {lab_pin.sym} 1610 -1100 0 0 {name=p138 sig_type=std_logic lab=c9}
 C {lab_pin.sym} 1630 -1260 0 0 {name=p139 sig_type=std_logic lab=c10}
 C {/home/designer/shared/SAR_ADC_8BIT_IHP/xschem/SAR_ADC.sym} 1110 -810 1 1 {name=x3}
 C {/home/designer/shared/CS_DAC/CS_DAC-/xschem/CS_DAC_10b.sym} 1830 -1220 0 0 {name=x2}
+C {lab_pin.sym} 160 -1370 0 0 {name=p140 sig_type=std_logic lab=VSS}

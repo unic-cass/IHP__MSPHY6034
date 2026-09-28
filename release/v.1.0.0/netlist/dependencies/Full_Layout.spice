@@ -1,5 +1,5 @@
 ** sch_path: /home/designer/shared/FloatingGateDCDC/schematic/xschem/Full_Layout.sch
-.subckt Full_Layout Vsource VBAT VBAT2 IN VH VDD VHLS Vout Vddls VSS Vs
+.subckt Full_Layout VBAT VBAT2 IN VH VDD VHLS Vout Vddls VSS Vs
 *.PININFO Vsource:B Vout:B VH:B VSS:B VHLS:B Vddls:B Vs:B VBAT:B IN:B VBAT2:B VDD:B
 M2 VSS net1 Vout VSS sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
 M1 Vout TRIG VH Vout sg13_hv_nmos w=10u l=0.45u ng=1 m=4080
