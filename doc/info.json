@@ -5,8 +5,8 @@
   "unique_id": "6034",
   "license": "Apache-2.0",
   "trl": 0,
-  "sealring_x": 1.0,
-  "sealring_y": 1.0,
+  "sealring_x": 1936.0,
+  "sealring_y": 1936.0,
   "repository": "",
   "pdk_version": "",
   "process": "SG13CMOS",
@@ -31,7 +31,7 @@
   "top_cell_name": "MSPHY6034",
   "release": {
     "version": "v.1.0.0",
-    "gds": "release/v.1.0.0/gds",
+    "gds": "release/v.1.0.0/gds/MSPHY6034.gds.gz",
     "netlist": "release/v.1.0.0/netlist",
     "doc": "release/v.1.0.0/doc"
   }
