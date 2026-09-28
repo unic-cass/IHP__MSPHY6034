@@ -1,0 +1,1728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>Density DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/density.drc'</generator>
+ <top-cell>MSPHY6034</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>AFil.g</name>
+   <description>5.6. AFil.g: Min. global Activ density [%]: 35.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>AFil.g2</name>
+   <description>5.6. AFil.g2: Min. Activ coverage ratio for any 800.0 x 800.0 µm2 chip area [%]: 25.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>GFil.g</name>
+   <description>5.9. GFil.g: Min. global GatPoly density [%]: 15.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.j</name>
+   <description>5.16. M1.j: Min. global Metal1 density [%]: 35.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.j</name>
+   <description>5.17. M2.j: Min. global Metal2 density [%]: 35.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.j</name>
+   <description>5.17. M3.j: Min. global Metal3 density [%]: 35.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.j</name>
+   <description>5.17. M4.j: Min. global Metal4 density [%]: 35.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.j</name>
+   <description>5.17. M5.j: Min. global Metal5 density [%]: 35.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1Fil.h</name>
+   <description>5.18. M1Fil.h: Min. Metal1 and Metal1:filler coverage ratio for any 800.0 x 800.0 µm2 chip area [%]: 25.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2Fil.h</name>
+   <description>5.18. M2Fil.h: Min. Metal2 and Metal2:filler coverage ratio for any 800.0 x 800.0 µm2 chip area [%]: 25.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3Fil.h</name>
+   <description>5.18. M3Fil.h: Min. Metal3 and Metal3:filler coverage ratio for any 800.0 x 800.0 µm2 chip area [%]: 25.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4Fil.h</name>
+   <description>5.18. M4Fil.h: Min. Metal4 and Metal4:filler coverage ratio for any 800.0 x 800.0 µm2 chip area [%]: 25.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5Fil.h</name>
+   <description>5.18. M5Fil.h: Min. Metal5 and Metal5:filler coverage ratio for any 800.0 x 800.0 µm2 chip area [%]: 25.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM2.c</name>
+   <description>5.25. TM2.c: Min. global TopMetal2 density [%]: 25.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_M1</name>
+   <description>Min. metal1:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_M2</name>
+   <description>Min. metal2:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_M3</name>
+   <description>Min. metal3:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_M4</name>
+   <description>Min. metal4:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_M5</name>
+   <description>Min. metal5:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_TM1</name>
+   <description>Min. topmetal1:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.i_TM2</name>
+   <description>Min. topmetal2:slit density for any Metal plate bigger than 35µm x 35µm [%] is 6.00.</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>MSPHY6034</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'AFil.g'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 790055.282'</value>
+    <value>text: 'ratio_percent     : 19.751'</value>
+    <value>text: 'limit_percent     : 35.000 (min)'</value>
+    <value>text: 'gap_percent       : 15.249 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 609944.718'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,800;1200,1600;2000,1600;2000,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,800.000) - (2000.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 150228.674'</value>
+    <value>text: 'ratio_percent     : 23.473'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 1.527 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 9771.326'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,1200;0,2000;800,2000;800,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,1200.000) - (800.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 116667.075'</value>
+    <value>text: 'ratio_percent     : 18.229'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 6.771 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 43332.925'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,800;0,1600;800,1600;800,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,800.000) - (800.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 72192.182'</value>
+    <value>text: 'ratio_percent     : 11.280'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 13.720 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 87807.818'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,800;800,1600;1600,1600;1600,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,800.000) - (1600.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 100198.389'</value>
+    <value>text: 'ratio_percent     : 15.656'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 9.344 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 59801.611'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,1200;400,2000;1200,2000;1200,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,1200.000) - (1200.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 107316.235'</value>
+    <value>text: 'ratio_percent     : 16.768'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 8.232 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 52683.765'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,400;800,1200;1600,1200;1600,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,400.000) - (1600.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 35169.994'</value>
+    <value>text: 'ratio_percent     : 5.495'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 19.505 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 124830.006'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,800;800,800;800,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,0.000) - (800.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 119879.408'</value>
+    <value>text: 'ratio_percent     : 18.731'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 6.269 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 40120.592'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,400;0,1200;800,1200;800,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,400.000) - (800.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 78617.097'</value>
+    <value>text: 'ratio_percent     : 12.284'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 12.716 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 81382.903'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,0;800,800;1600,800;1600,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,0.000) - (1600.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 117350.635'</value>
+    <value>text: 'ratio_percent     : 18.336'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 6.664 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 42649.365'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,400;1200,1200;2000,1200;2000,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,400.000) - (2000.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 117905.150'</value>
+    <value>text: 'ratio_percent     : 18.423'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 6.577 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 42094.850'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,800;400,1600;1200,1600;1200,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,800.000) - (1200.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 27381.692'</value>
+    <value>text: 'ratio_percent     : 4.278'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 20.722 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 132618.308'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,0;400,800;1200,800;1200,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,0.000) - (1200.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 85424.884'</value>
+    <value>text: 'ratio_percent     : 13.348'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 11.652 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 74575.116'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'AFil.g2'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,400;400,1200;1200,1200;1200,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,400.000) - (1200.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 9418.045'</value>
+    <value>text: 'ratio_percent     : 1.472'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 23.528 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 150581.955'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'GFil.g'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 118563.461'</value>
+    <value>text: 'ratio_percent     : 2.964'</value>
+    <value>text: 'limit_percent     : 15.000 (min)'</value>
+    <value>text: 'gap_percent       : 12.036 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 481436.539'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.j'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 750529.395'</value>
+    <value>text: 'ratio_percent     : 18.763'</value>
+    <value>text: 'limit_percent     : 35.000 (min)'</value>
+    <value>text: 'gap_percent       : 16.237 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 649470.605'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.j'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 290418.708'</value>
+    <value>text: 'ratio_percent     : 7.260'</value>
+    <value>text: 'limit_percent     : 35.000 (min)'</value>
+    <value>text: 'gap_percent       : 27.740 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 1109581.292'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.j'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 1037311.206'</value>
+    <value>text: 'ratio_percent     : 25.933'</value>
+    <value>text: 'limit_percent     : 35.000 (min)'</value>
+    <value>text: 'gap_percent       : 9.067 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 362688.794'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4.j'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 1021252.209'</value>
+    <value>text: 'ratio_percent     : 25.531'</value>
+    <value>text: 'limit_percent     : 35.000 (min)'</value>
+    <value>text: 'gap_percent       : 9.469 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 378747.791'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5.j'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 1278200.125'</value>
+    <value>text: 'ratio_percent     : 31.955'</value>
+    <value>text: 'limit_percent     : 35.000 (min)'</value>
+    <value>text: 'gap_percent       : 3.045 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 121799.875'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,800;1200,1600;2000,1600;2000,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,800.000) - (2000.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 125798.935'</value>
+    <value>text: 'ratio_percent     : 19.656'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 5.344 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 34201.065'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,1200;0,2000;800,2000;800,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,1200.000) - (800.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 111400.643'</value>
+    <value>text: 'ratio_percent     : 17.406'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 7.594 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 48599.357'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,800;0,1600;800,1600;800,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,800.000) - (800.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 68601.225'</value>
+    <value>text: 'ratio_percent     : 10.719'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 14.281 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 91398.775'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,800;800,1600;1600,1600;1600,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,800.000) - (1600.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 70828.235'</value>
+    <value>text: 'ratio_percent     : 11.067'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 13.933 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 89171.765'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,400;0,1200;800,1200;800,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,400.000) - (800.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 78039.554'</value>
+    <value>text: 'ratio_percent     : 12.194'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 12.806 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 81960.446'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,400;1200,1200;2000,1200;2000,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,400.000) - (2000.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 129655.295'</value>
+    <value>text: 'ratio_percent     : 20.259'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 4.741 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 30344.705'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,0;800,800;1600,800;1600,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,0.000) - (1600.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 128014.760'</value>
+    <value>text: 'ratio_percent     : 20.002'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 4.998 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 31985.240'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,800;800,800;800,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,0.000) - (800.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 116365.030'</value>
+    <value>text: 'ratio_percent     : 18.182'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 6.818 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 43634.970'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,400;800,1200;1600,1200;1600,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,400.000) - (1600.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 48538.722'</value>
+    <value>text: 'ratio_percent     : 7.584'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 17.416 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 111461.278'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,800;400,1600;1200,1600;1200,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,800.000) - (1200.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 19173.756'</value>
+    <value>text: 'ratio_percent     : 2.996'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 22.004 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 140826.244'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,0;400,800;1200,800;1200,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,0.000) - (1200.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 85697.295'</value>
+    <value>text: 'ratio_percent     : 13.390'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 11.610 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 74302.705'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,400;400,1200;1200,1200;1200,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,400.000) - (1200.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 11524.471'</value>
+    <value>text: 'ratio_percent     : 1.801'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 23.199 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 148475.529'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,1200;400,2000;1200,2000;1200,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,1200.000) - (1200.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 96065.793'</value>
+    <value>text: 'ratio_percent     : 15.010'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 9.990 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 63934.207'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,1200;800,2000;1600,2000;1600,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,1200.000) - (1600.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 150644.207'</value>
+    <value>text: 'ratio_percent     : 23.538'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 1.462 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 9355.793'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,800;0,1600;800,1600;800,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,800.000) - (800.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 27608.401'</value>
+    <value>text: 'ratio_percent     : 4.314'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 20.686 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 132391.599'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,1200;0,2000;800,2000;800,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,1200.000) - (800.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 46149.551'</value>
+    <value>text: 'ratio_percent     : 7.211'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 17.789 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 113850.449'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,800;800,800;800,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,0.000) - (800.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 48148.082'</value>
+    <value>text: 'ratio_percent     : 7.523'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 17.477 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 111851.918'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,400;800,1200;1600,1200;1600,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,400.000) - (1600.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 6288.800'</value>
+    <value>text: 'ratio_percent     : 0.983'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 24.017 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 153711.200'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,400;0,1200;800,1200;800,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,400.000) - (800.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 32455.715'</value>
+    <value>text: 'ratio_percent     : 5.071'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 19.929 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 127544.285'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,400;1200,1200;2000,1200;2000,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,400.000) - (2000.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 38231.821'</value>
+    <value>text: 'ratio_percent     : 5.974'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 19.026 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 121768.179'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,0;800,800;1600,800;1600,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,0.000) - (1600.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 30593.448'</value>
+    <value>text: 'ratio_percent     : 4.780'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 20.220 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 129406.552'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,800;800,1600;1600,1600;1600,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,800.000) - (1600.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 45430.711'</value>
+    <value>text: 'ratio_percent     : 7.099'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 17.901 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 114569.289'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,0;400,800;1200,800;1200,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,0.000) - (1200.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 33820.235'</value>
+    <value>text: 'ratio_percent     : 5.284'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 19.716 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 126179.765'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,400;400,1200;1200,1200;1200,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,400.000) - (1200.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 3304.089'</value>
+    <value>text: 'ratio_percent     : 0.516'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 24.484 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 156695.911'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,800;400,1600;1200,1600;1200,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,800.000) - (1200.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 12060.764'</value>
+    <value>text: 'ratio_percent     : 1.884'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 23.116 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 147939.236'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,1200;1200,2000;2000,2000;2000,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,1200.000) - (2000.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 83729.345'</value>
+    <value>text: 'ratio_percent     : 13.083'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 11.917 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 76270.655'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,0;1200,800;2000,800;2000,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,0.000) - (2000.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 48176.768'</value>
+    <value>text: 'ratio_percent     : 7.528'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 17.472 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 111823.232'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,800;1200,1600;2000,1600;2000,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,800.000) - (2000.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 66010.084'</value>
+    <value>text: 'ratio_percent     : 10.314'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 14.686 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 93989.916'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,1200;800,2000;1600,2000;1600,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,1200.000) - (1600.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 80416.202'</value>
+    <value>text: 'ratio_percent     : 12.565'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 12.435 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 79583.798'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,1200;400,2000;1200,2000;1200,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,1200.000) - (1200.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 50244.000'</value>
+    <value>text: 'ratio_percent     : 7.851'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 17.149 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 109756.000'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,400;0,1200;800,1200;800,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,400.000) - (800.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 129601.847'</value>
+    <value>text: 'ratio_percent     : 20.250'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 4.750 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 30398.153'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,0;800,800;1600,800;1600,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,0.000) - (1600.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 142391.612'</value>
+    <value>text: 'ratio_percent     : 22.249'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 2.751 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 17608.388'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,400;1200,1200;2000,1200;2000,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,400.000) - (2000.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 146844.522'</value>
+    <value>text: 'ratio_percent     : 22.944'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 2.056 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 13155.478'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,1200;400,2000;1200,2000;1200,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,1200.000) - (1200.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 146568.664'</value>
+    <value>text: 'ratio_percent     : 22.901'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 2.099 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 13431.336'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,800;800,1600;1600,1600;1600,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,800.000) - (1600.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 54776.863'</value>
+    <value>text: 'ratio_percent     : 8.559'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 16.441 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 105223.137'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,400;400,1200;1200,1200;1200,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,400.000) - (1200.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 2700.276'</value>
+    <value>text: 'ratio_percent     : 0.422'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 24.578 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 157299.724'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,0;400,800;1200,800;1200,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,0.000) - (1200.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 130617.053'</value>
+    <value>text: 'ratio_percent     : 20.409'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 4.591 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 29382.947'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,800;400,1600;1200,1600;1200,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,800.000) - (1200.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 16836.683'</value>
+    <value>text: 'ratio_percent     : 2.631'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 22.369 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 143163.317'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,800;0,1600;800,1600;800,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,800.000) - (800.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 127063.723'</value>
+    <value>text: 'ratio_percent     : 19.854'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 5.146 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 32936.277'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,400;800,1200;1600,1200;1600,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,400.000) - (1600.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 19082.372'</value>
+    <value>text: 'ratio_percent     : 2.982'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 22.018 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 140917.628'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,0;400,800;1200,800;1200,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,0.000) - (1200.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 129332.942'</value>
+    <value>text: 'ratio_percent     : 20.208'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 4.792 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 30667.058'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,400;400,1200;1200,1200;1200,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,400.000) - (1200.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 2214.772'</value>
+    <value>text: 'ratio_percent     : 0.346'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 24.654 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 157785.228'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,800;400,1600;1200,1600;1200,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,800.000) - (1200.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 11016.379'</value>
+    <value>text: 'ratio_percent     : 1.721'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 23.279 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 148983.621'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,800;0,1600;800,1600;800,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,800.000) - (800.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 125982.083'</value>
+    <value>text: 'ratio_percent     : 19.685'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 5.315 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 34017.917'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,800;1200,1600;2000,1600;2000,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,800.000) - (2000.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 153284.716'</value>
+    <value>text: 'ratio_percent     : 23.951'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 1.049 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 6715.284'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,800;800,1600;1600,1600;1600,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,800.000) - (1600.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 38318.110'</value>
+    <value>text: 'ratio_percent     : 5.987'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 19.013 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 121681.890'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,400;800,1200;1600,1200;1600,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,400.000) - (1600.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 28725.862'</value>
+    <value>text: 'ratio_percent     : 4.488'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 20.512 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 131274.138'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,400;0,1200;800,1200;800,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,400.000) - (800.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 126873.202'</value>
+    <value>text: 'ratio_percent     : 19.824'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 5.176 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 33126.798'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,0;800,800;1600,800;1600,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,0.000) - (1600.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 155778.852'</value>
+    <value>text: 'ratio_percent     : 24.340'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 0.660 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 4221.148'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1200,400;1200,1200;2000,1200;2000,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (1200.000,400.000) - (2000.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 153395.152'</value>
+    <value>text: 'ratio_percent     : 23.968'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 1.032 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 6604.848'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M4Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,1200;400,2000;1200,2000;1200,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,1200.000) - (1200.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 138461.670'</value>
+    <value>text: 'ratio_percent     : 21.635'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 3.365 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 21538.330'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,1200;400,2000;1200,2000;1200,1200)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,1200.000) - (1200.000,2000.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 157026.009'</value>
+    <value>text: 'ratio_percent     : 24.535'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 0.465 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 2973.991'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,800;0,1600;800,1600;800,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,800.000) - (800.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 126888.483'</value>
+    <value>text: 'ratio_percent     : 19.826'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 5.174 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 33111.517'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,0;400,800;1200,800;1200,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,0.000) - (1200.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 144912.808'</value>
+    <value>text: 'ratio_percent     : 22.643'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 2.357 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 15087.192'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,400;400,1200;1200,1200;1200,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,400.000) - (1200.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 84811.405'</value>
+    <value>text: 'ratio_percent     : 13.252'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 11.748 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 75188.595'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (400,800;400,1600;1200,1600;1200,800)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (400.000,800.000) - (1200.000,1600.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 96068.754'</value>
+    <value>text: 'ratio_percent     : 15.011'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 9.989 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 63931.246'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,400;0,1200;800,1200;800,400)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (0.000,400.000) - (800.000,1200.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 143317.926'</value>
+    <value>text: 'ratio_percent     : 22.393'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 2.607 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 16682.074'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5Fil.h'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (800,0;800,800;1600,800;1600,0)</value>
+    <value>text: 'Local Density Window Violation'</value>
+    <value>text: 'window_bbox_um    : (800.000,0.000) - (1600.000,800.000)'</value>
+    <value>text: 'window_area_um2   : 640000.000'</value>
+    <value>text: 'layer_area_um2    : 128086.720'</value>
+    <value>text: 'ratio_percent     : 20.014'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 4.986 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 31913.280'</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'TM2.c'</category>
+   <cell>MSPHY6034</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,2000;2000,2000;2000,0)</value>
+    <value>text: 'Global Density Violation'</value>
+    <value>text: 'chip_bbox_um      : (0.000,0.000) - (2000.000,2000.000)'</value>
+    <value>text: 'chip_area_um2     : 4000000.000'</value>
+    <value>text: 'layer_area_um2    : 923495.918'</value>
+    <value>text: 'ratio_percent     : 23.087'</value>
+    <value>text: 'limit_percent     : 25.000 (min)'</value>
+    <value>text: 'gap_percent       : 1.913 (below limit)'</value>
+    <value>text: 'area_gap_um2      : 76504.082'</value>
+   </values>
+  </item>
+ </items>
+</report-database>
