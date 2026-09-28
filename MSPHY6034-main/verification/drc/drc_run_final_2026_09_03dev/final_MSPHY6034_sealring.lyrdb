@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>Main DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/dkits/ihp-sg13g2/2026.09.03.dev-cfc0e22/ihp-sg13g2/libs.tech/klayout/tech/drc/ihp-sg13g2.drc'</generator>
+ <top-cell>MSPHY6034</top-cell>
+ <tags>
+ </tags>
+ <categories>
+ </categories>
+ <cells>
+  <cell>
+   <name>MSPHY6034</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

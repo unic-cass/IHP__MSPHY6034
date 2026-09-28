@@ -1,0 +1,16 @@
+28-Sep-2026 20:01:43 | INFO    | Your Klayout version is: KLayout 0.30.5 (required >= 0.30.5)
+28-Sep-2026 20:01:43 | INFO    | Running SG13G2 LVS checks on design /tmp/opencode/final.gds on cell MSPHY6034
+28-Sep-2026 20:21:24 | INFO    | ==============================================================================
+28-Sep-2026 20:21:24 | INFO    | Important Summary
+28-Sep-2026 20:21:24 | INFO    | +------------------+---------------------------------------------------------------------------------------------------+
+28-Sep-2026 20:21:24 | INFO    | | Status           | PASS                                                                                              |
+28-Sep-2026 20:21:24 | INFO    | | Mode             | COMPARE                                                                                           |
+28-Sep-2026 20:21:24 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                                           |
+28-Sep-2026 20:21:24 | INFO    | | Layout           | final.gds                                                                                         |
+28-Sep-2026 20:21:24 | INFO    | | Top Cell         | MSPHY6034                                                                                         |
+28-Sep-2026 20:21:24 | INFO    | | Results Dir      | /home/admin/work/final/IHP__MSPHY6034/MSPHY6034-main/verification/lvs/lvs_run_final_2026_09_03dev |
+28-Sep-2026 20:21:24 | INFO    | | Warnings         | 0                                                                                                 |
+28-Sep-2026 20:21:24 | INFO    | | Errors           | 0                                                                                                 |
+28-Sep-2026 20:21:24 | INFO    | | Run Time (s)     | 1181.951                                                                                          |
+28-Sep-2026 20:21:24 | INFO    | +------------------+---------------------------------------------------------------------------------------------------+
+28-Sep-2026 20:21:24 | INFO    | ==============================================================================
